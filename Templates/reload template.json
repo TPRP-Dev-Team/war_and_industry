@@ -1,0 +1,118 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "guns:m16a4_empty", //the empty guns itendifier
+      "category": "commands" //This part is important so the item doesnt show up in creative inventory
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "guns_m16a4_empty" //texture identifer, set in "item_texture.json"
+      },
+      "minecraft:display_name": {
+        "value": "M16A4" //What the gun shows as its display text
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 20 //determines how long the reload time will last, approximately 5-6 durability per second gets used (assuming reasonably smooth performance)
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "condition": "query.get_equipped_item_name('off_hand')=='magazine_556x45'", //This is for checking that the ammo for the gun is in the offhand, replace "magazine_556x45" with the identifier for your guns ammo
+          "event": "guns:m16_reload" //This determines the events identifier, for being called in the events section below
+        }
+      },
+      //the component below assumes using 64x64 textures as that is the prefered size for our packs guns
+      "minecraft:render_offsets": { //ONLY CHANGE VALUES MARKED UNLESS TOLD OTHERWISE BY KEITH, For determining how the gun shows up in first and third person views (third person is also what other people see)
+        "main_hand": {
+          "first_person": {
+            "position": [
+              0.5,
+              0.5,
+              -1.5 //Change this to move the gun foreward in first person
+            ],
+            "rotation": [
+              0,
+              270,
+              90
+            ],
+            "scale": [
+              0.025,
+              0.025,
+              0.025
+            ]
+          },
+          "third_person": {
+            "position": [
+              -1.6,
+              1.8, //Change this to move the gun foreward in first person
+              1.1
+            ],
+            "rotation": [
+              45,
+              190,
+              90
+            ],
+            "scale": [
+              0.03,
+              0.03,
+              0.03
+            ]
+          }
+        }
+      }
+    },
+    "events": {
+      "guns:m16_reload": {
+        "sequence": [
+          { //this waits about a second(assuming constant usage) for the gun to play the first step of the reload sounds
+            "condition": "q.remaining_durability==(q.max_durability-6)", //This does not need to be changed, what it does is tell the thing to wait about a second before playing this part
+            "run_command": {
+              "command": [
+                "playsound guns.m16.reload_1 @a ~ ~ ~ 40 1 40" //"guns.m16.reload_1" is the magazine being put into a magwell sound and can be used on other guns which have magazines, if your gun uses a different reload sound then swap this with your sound
+
+              ]
+            }
+          },
+          {
+            "condition": "q.remaining_durability==9",
+            "run_command": {
+              "command": [
+                "playsound guns.m16.reload_2 @a ~ ~ ~ 40 1 40" //"guns.m16.reload_2", 2nd reload sound
+
+              ]
+            }
+          },
+          {
+            "condition": "q.remaining_durability==4",
+            "run_command": {
+              "command": [
+                "playsound guns.m16.reload_3 @a ~ ~ ~ 40 1 40" //"guns.m16.reload_3", 3rd reload sound
+
+              ]
+            }
+          },
+          { //For tracking used time
+            "condition": "q.remaining_durability>1", //tells it not to take away durability when gun has reached 1 durability, this is to allow the following command to have time to finish its job from the previous run-through
+            "damage": {
+              "type": "durability",
+              "amount": 1,
+              "target": "self"
+            }
+          },
+          { //Complete reload action
+            "condition": "q.remaining_durability==1",
+            "run_command": {
+              "command": [
+                "title @s actionbar Ammo 30/30", //Tells the user that its ammo is refilled, change "30/30" with whatever your guns max ammo is
+                "clear @s guns:magazine_556x45 -1 1", //replace "guns:magazine_556x45" with the identifer of the ammunition for the gun
+                "replaceitem entity @s slot.weapon.mainhand 0 guns:m16a4" //replace "guns:m16a4" with the identifier of the gun that was reloaded
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

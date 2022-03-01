@@ -1,0 +1,84 @@
+{ //ONLY CHANGE STUFF THAT IS MARKED FOR CHANGES
+
+
+  //TThis File Goes In "Behavior Pack/Entities"
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "guns:bullet_556x45", //bullet identifier
+      "runtime_identifier": "minecraft:arrow", //this is important for determining certain behaviors DO NOT CHANGE THIS
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:collision_box": { //self explanatory, feel free to change if you are making something that has a larger round
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          },
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "block",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 48, //Determines damage to entities it hits, 48 is just barely enough to kill an unarmored character with 1 shot
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true,
+            "power_multiplier": 1
+          },
+          "remove_on_hit": {},
+          "arrow_effect": {}
+        },
+        //"hit_sound": "bow.hit", //At a later time we will have a standardized hit sound, for now we are doing without one
+        "power": 1,
+        "gravity": 0.02, //Change this to a higher number for heavier rounds, the bow uses 0.1
+        "uncertainty_base": 0.3, //This changes the bullets accuracy
+        "uncertainty_multiplier": 0, //This multiplier determines how much the gamemode(peaceful, normal, hard) affects the uncertainty
+        "anchor": 1,
+        "should_bounce": false,
+        "offset": [
+          0,
+          0.1,
+          0
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+    "events": {}
+  }
+}

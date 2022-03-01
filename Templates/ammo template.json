@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "guns:magazine_556x45", //the ammo itendifier
+      "category": "equipment" //Tells the game that the item should appear in the "equipment" category
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "guns_m556nato" //texture identifer, set in "item_texture.json"
+      },
+      "minecraft:allow_off_hand": true, //Important for allowing the reload mechanic to work
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.bows" //Tells the game that the item should appear in the "equipment" category
+      }
+    }
+  }
+}
