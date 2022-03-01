@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "guns:g18e"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"&+"
+		],
+		"key": {
+			"&": {
+				"item": "guns:g18e"
+			},
+			"+": {
+				"item": "minecraft:fire_charge"
+			}
+		},
+		"result": {
+			"item": "guns:g18e"
+		}
+	}
+}
