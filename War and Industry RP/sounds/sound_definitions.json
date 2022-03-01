@@ -1,0 +1,271 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		//-------M16A4------------------
+		"guns.m16.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M16Single"
+			],
+			"min_distance": 0.0,
+			"max_distance": 600.1
+		},
+		"guns.m16suppressed.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M16SuppressedSingle"
+			],
+			"min_distance": 0.0,
+			"max_distance": 20.1
+		},
+		"guns.m16.reload_1": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M16Reload_1"
+			],
+			"min_distance": 0.0,
+			"max_distance": 7.1
+		},
+		"guns.m16.reload_2": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M16Reload_2"
+			],
+			"min_distance": 0.0,
+			"max_distance": 10.1
+		},
+		"guns.m16.reload_3": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M16Reload_3"
+			],
+			"min_distance": 0.0,
+			"max_distance": 10.1
+		},
+		//----------------------------------
+
+		//-------Glock 18------------------
+		"guns.g18.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/G18Single"
+			],
+			"min_distance": 0.0,
+			"max_distance": 300.1
+		},
+		"guns.g18suppressed.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/G18SuppressedSingle"
+			],
+			"min_distance": 0.0,
+			"max_distance": 30.1
+		},
+		"guns.g18.reload_1": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/G18Reload_1"
+			],
+			"min_distance": 0.0,
+			"max_distance": 10.1
+		},
+		"guns.g18.reload_2": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/G18Reload_2"
+			],
+			"min_distance": 0.0,
+			"max_distance": 10.1
+		},
+		//----------------------------------
+
+		//-------AK-47------------------
+		"guns.ak47.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/AK47Single"
+			],
+			"min_distance": 0.0,
+			"max_distance": 600.1
+		},
+		"guns.ak47.bolt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/AK47Bolt"
+			],
+			"min_distance": 0.0,
+			"max_distance": 15.1
+		},
+		"guns.ak47.reload": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/AK47Reload"
+			],
+			"min_distance": 0.0,
+			"max_distance": 15.1
+		},
+		//----------------------------------
+
+		//-------M1 Garand------------------
+		"guns.m1garand.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M1GarandSingle"
+			],
+			"min_distance": 0.0,
+			"max_distance": 600.1
+		},
+		"guns.m1garand.ping": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M1GarandPing"
+			],
+			"min_distance": 0.0,
+			"max_distance": 30.1
+		},
+		"guns.m1garand.reload_1": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M1GarandReload_1"
+			],
+			"min_distance": 0.0,
+			"max_distance": 10.1
+		},
+		"guns.m1garand.reload_2": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M1GarandReload_2"
+			],
+			"min_distance": 0.0,
+			"max_distance": 10.1
+		},
+		"guns.m1garand.reload_3": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M1GarandReload_3"
+			],
+			"min_distance": 0.0,
+			"max_distance": 10.1
+		},
+		//----------------------------------
+
+		//-------Kar 98K------------------
+		"guns.kar98k.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/Kar98KSingle"
+			],
+			"min_distance": 0.0,
+			"max_distance": 600.1
+		},
+		"guns.kar98k.bolt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/Kar98KBolt"
+			],
+			"min_distance": 0.0,
+			"max_distance": 15.1
+		},
+		//----------------------------------
+
+		//-------30 30 Winchester------------------
+		"guns.3030winchester.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/30-30Winchester"
+			],
+			"min_distance": 0.0,
+			"max_distance": 500.1
+		},
+		"guns.3030winchester.reload": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/3030WinchesterReload"
+			],
+			"min_distance": 0.0,
+			"max_distance": 10.1
+		},
+		"guns.3030winchester.lever": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/3030WinchesterLever"
+			],
+			"min_distance": 0.0,
+			"max_distance": 15.1
+		},
+		//----------------------------------
+
+		//-------Musket------------------
+		"guns.musket.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/MusketSingle"
+			],
+			"min_distance": 0.0,
+			"max_distance": 300.1
+		},
+		//"guns.musket.ramrod": { //STILL NEED TO MAKE THIS
+		//	"category": "neutral",
+		//	"sounds": [
+		//		"sounds/name"
+		//	],
+		//	"min_distance": 0.0,
+		//	"max_distance": 15.1
+		//},
+		//----------------------------------
+
+		//-------Benelli M3------------------
+		"guns.benellim3.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/BennelliM3Single"
+			],
+			"min_distance": 0.0,
+			"max_distance": 100.1
+		},
+		"guns.benellim3.reload": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/BenelliM3Reload"
+			],
+			"min_distance": 0.0,
+			"max_distance": 15.1
+		},
+		"guns.benellim3.pump": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/BenelliM3Pump"
+			],
+			"min_distance": 0.0,
+			"max_distance": 15.1
+		},
+
+		//-------M107------------------
+		"guns.m107.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M107Single"
+			],
+			"min_distance": 0.0,
+			"max_distance": 700.1
+		},
+		"guns.m107s.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/M107Suppressed_Single"
+			],
+			"min_distance": 0.0,
+			"max_distance": 30.1
+		},
+
+		//-------UMP9------------------
+		"guns.ump9.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/UMP9Single"
+			],
+			"min_distance": 0.0,
+			"max_distance": 300.1
+		}
+	}
+}
