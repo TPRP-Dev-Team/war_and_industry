@@ -1,0 +1,37 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Guns Testing",
+		"description": "guns",
+		"min_engine_version": [
+			1,
+			17,
+			0
+		],
+		"uuid": "785404f4-cd72-456b-ba1b-fe10d4f6e2af",
+		"version": [
+			1,
+			1,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "guns",
+			"type": "resources",
+			"uuid": "a0a66f89-a558-4e9f-8d06-6859a1251dd5",
+			"version": [
+				1,
+				1,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.1.5"
+			]
+		}
+	}
+}
