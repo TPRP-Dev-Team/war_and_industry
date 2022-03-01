@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "guns:rocket",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/rocket"
+			},
+			"geometry": {
+				"default": "geometry.rocket"
+			},
+			"animations": {
+				"look": "animation.projectile.look"
+			},
+			"scripts": {
+				"animate": [
+					"look"
+				]
+			},
+			"render_controllers": [
+				"controller.render.grenade"
+			]
+		}
+	}
+}
+

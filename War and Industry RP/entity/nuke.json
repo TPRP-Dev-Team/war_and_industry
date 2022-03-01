@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "guns:nuke",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pineapple_grenade"
+      },
+      "geometry": {
+        "default": "geometry.pineapple_grenade"
+      },
+      "render_controllers": [
+        "controller.render.grenade"
+      ]
+    }
+  }
+}

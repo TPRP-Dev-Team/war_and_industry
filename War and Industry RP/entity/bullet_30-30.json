@@ -1,0 +1,21 @@
+//This file goes in "Behavior Pack/Entity"
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "guns:bullet_30-30", // This is the only thing you change
+      "materials": {
+        "default": "entity_alphatest" //This must be the same
+      },
+      "textures": {
+        "default": "textures/entity/bullet_texture" // Keep this the same
+      },
+      "geometry": {
+        "default": "geometry.bullet" //Unless you add your own model which I will not have instructions for, just us this
+      },
+      "render_controllers": [
+        "controller.render.bullet" //There is no need to use anything else, leave this as is
+      ]
+    }
+  }
+}
