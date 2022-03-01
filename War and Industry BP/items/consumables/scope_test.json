@@ -1,0 +1,20 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "namespace:spyglass",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "comsumable_medkit"
+      },
+      "minecraft:display_name": {
+        "value": "Test Scope"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.bow"
+      }
+    }
+  }
+}

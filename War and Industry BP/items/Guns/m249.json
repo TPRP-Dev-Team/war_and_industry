@@ -1,0 +1,932 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:m249",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_m249"
+			},
+			"minecraft:display_name": {
+				"value": "M249"
+			},
+			"minecraft:durability": {
+				"max_durability": 101
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.bows"
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"condition": "q.remaining_durability>0",
+					"event": "guns:m249_shoot"
+				}
+			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"position": [
+							0.5,
+							0.5,
+							-1.5
+						],
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.025,
+							0.025,
+							0.025
+						]
+					},
+					"third_person": {
+						"position": [
+							-1.6,
+							1.8,
+							1.1
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.03,
+							0.03,
+							0.03
+						]
+					}
+				}
+			}
+		},
+		"events": {
+			"guns:m249_shoot": {
+				"sequence": [
+					{
+						"condition": "q.remaining_durability>1",
+						"shoot": {
+							"projectile": "guns:bullet_556x45",
+							"launch_power": 11
+						}
+					},
+					{
+						"condition": "q.remaining_durability>1",
+						"damage": {
+							"type": "durability",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"condition": "q.remaining_durability>1",
+						"run_command": {
+							"command": [
+								"playsound guns.m16.fire @a ~ ~ ~ 1 1 0"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability>1",
+						"run_command": {
+							"command": [
+								"playsound guns.m107.fire @a ~ ~ ~ 1 1 0"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability>1 && query.is_sneaking",
+						"run_command": {
+							"command": [
+								"camerashake add @s 0.006 1 rotational"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability>1 && !query.is_sneaking",
+						"run_command": {
+							"command": [
+								"camerashake add @s 0.02 1 rotational"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability>1 && query.is_sprinting",
+						"run_command": {
+							"command": [
+								"camerashake add @s 0.06 1 rotational"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==1",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 0/30",
+								"replaceitem entity @s slot.weapon.mainhand 0 guns:m249_empty"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==2",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 1/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==3",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 2/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==4",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 3/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==5",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 4/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==6",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 5/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==7",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 6/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==8",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 7/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==9",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 8/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==10",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 9/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==11",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 10/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==12",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 11/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==13",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 12/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==14",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 13/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==15",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 14/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==16",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 15/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==17",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 16/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==18",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 17/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==19",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 18/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==20",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 19/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==21",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 20/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==22",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 21/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==23",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 22/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==24",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 23/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==25",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 24/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==26",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 25/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==27",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 26/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==28",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 27/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==29",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 28/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==30",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 29/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==31",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 30/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==32",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 31/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==33",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 32/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==34",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 33/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==35",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 34/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==36",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 35/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==37",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 36/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==38",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 37/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==39",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 38/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==40",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 39/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==41",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 40/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==42",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 41/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==43",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 42/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==44",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 43/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==45",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 44/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==46",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 45/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==47",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 46/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==48",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 47/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==49",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 48/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==50",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 49/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==51",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 50/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==52",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 51/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==53",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 52/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==54",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 53/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==55",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 54/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==56",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 55/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==57",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 56/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==58",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 57/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==59",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 58/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==60",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 59/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==61",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 60/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==62",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 61/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==63",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 62/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==64",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 63/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==65",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 64/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==66",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 65/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==67",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 66/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==68",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 67/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==69",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 68/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==70",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 69/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==71",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 70/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==72",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 71/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==73",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 72/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==74",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 73/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==75",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 74/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==76",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 75/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==77",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 76/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==78",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 77/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==79",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 78/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==80",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 79/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==81",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 80/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==82",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 81/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==83",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 82/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==84",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 83/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==85",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 84/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==86",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 85/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==87",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 86/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==88",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 87/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==89",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 88/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==90",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 89/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==91",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 90/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==92",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 91/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==93",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 92/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==94",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 93/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==95",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 94/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==96",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 95/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==97",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 96/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==98",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 97/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==99",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 98/100"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==100",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 99/100"
+							]
+						}
+					}
+
+				]
+			}
+		}
+	}
+}

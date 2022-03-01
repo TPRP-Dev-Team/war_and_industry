@@ -1,0 +1,192 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:nuke_item",
+			"category": "commands"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "grenade_pineapple"
+			},
+			"minecraft:display_name": {
+				"value": "Pineapple Nuke"
+			},
+			"minecraft:hover_text_color": "dark_red",
+			"minecraft:durability": {
+				"max_durability": 11
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.bows"
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"condition": "q.remaining_durability>1",
+					"event": "g18_shoot",
+					"target": "self"
+				}
+			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.012,
+							0.012,
+							0.012
+						]
+					},
+					"third_person": {
+						"position": [
+							-0.2,
+							1.0,
+							0.5
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.015,
+							0.015,
+							0.015
+						]
+					}
+				}
+			}
+		},
+		"events": {
+			"g18_shoot": {
+				"sequence": [
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 10,
+							"target": "self"
+						}
+					},
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 10,
+							"target": "self"
+						}
+					},
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 10,
+							"target": "self"
+						}
+					},
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 10,
+							"target": "self"
+						}
+					},
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 10,
+							"target": "self"
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"playsound firework.launch @a ~ ~ ~ 1 1 0"
+							]
+						}
+					},
+					{
+						"condition": "q.remaining_durability==1",
+						"run_command": {
+							"command": [
+								"title @s actionbar Ammo 0/1"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}
