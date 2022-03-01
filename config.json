@@ -1,0 +1,24 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Guns Testing",
+	"namespace": "guns",
+	"targetVersion": "1.17.10",
+	"description": "guns",
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"experimentalGameplay": {
+		"enableGameTestFramework": false,
+		"additionalModdingCapabilities": false,
+		"cavesAndCliffs": true,
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": true,
+		"upcomingCreatorFeatures": true,
+		"experimentalMolangFeatures": true,
+		"educationEdition": true
+	},
+	"authors": [
+		"TPRP Dev Team"
+	]
+}
