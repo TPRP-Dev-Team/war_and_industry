@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:magazine_45cal25rd",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_magazine_45cal_25rd"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.bows"
+			},
+			"minecraft:display_name": {
+				"value": "45 Cal Mag(25rd)" //What the ammo shows as its display text
+			},
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

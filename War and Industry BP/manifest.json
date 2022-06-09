@@ -1,8 +1,8 @@
-{
+{ // Behavior Pack Manifest
 	"format_version": 2,
 	"header": {
-		"name": "Guns Testing",
-		"description": "guns",
+		"name": "War & Industry",
+		"description": "War & Industry",
 		"min_engine_version": [
 			1,
 			17,
@@ -17,7 +17,7 @@
 	},
 	"modules": [
 		{
-			"description": "guns",
+			"description": "War & Industry",
 			"type": "data",
 			"uuid": "27cb15c3-9b3b-402d-88f4-38e2ec3dec71",
 			"version": [
@@ -29,7 +29,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "785404f4-cd72-456b-ba1b-fe10d4f6e2af",
+			"uuid": "785404f4-cd72-456b-ba1b-fe10d4f6e2af",  //Resource Pack ID
 			"version": [
 				1,
 				1,
@@ -38,10 +38,5 @@
 		}
 	],
 	"metadata": {
-		"generated_with": {
-			"bridge": [
-				"2.1.5"
-			]
-		}
 	}
 }

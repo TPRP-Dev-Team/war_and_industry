@@ -1,0 +1,63 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "guns:nuke",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+		},
+
+		"component_groups": {},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.31,
+				"height": 0.31
+			},
+			"minecraft:scale": {
+				"value": 0.5
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"stick_in_ground": {
+						"shake_time": 1.0
+					}
+				},
+				"hit_sound": "bow.hit",
+				"power": 0.5,
+				"gravity": 0.04,
+				"inertia": 1,
+				"liquid_inertia": 0.1,
+				"uncertainty_base": 45,
+				"uncertainty_multiplier": 1,
+				"anchor": 1,
+				"offset": [ 0, 0.1, 0 ],
+				"reflect_on_hurt": false,
+				"catch_fire": false
+			},
+			"minecraft:explode": {
+				"breaks_blocks": true,
+				"fuse_length": [ 5, 10 ],
+				"fuse_lit": true,
+				"power": 70,
+				"causes_fire": true,
+				"fire_affected_by_griefing": false,
+				"destroy_affected_by_griefing": false
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 150.0,
+					"max_dropped_ticks": 0,
+					"use_motion_prediction_hints": true
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:magazine_50cal",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_magazine_50cal"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.bows"
+			},
+			"minecraft:display_name": {
+				"value": "50 Cal Mag" //What the ammo shows as its display text
+			},
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

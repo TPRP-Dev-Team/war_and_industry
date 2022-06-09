@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:magazine_3030winchester",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_magazine_3030winchester"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"scale": [
+							0.005,
+							0.005,
+							0.005
+						]
+					},
+					"third_person": {
+						"scale": [
+							0.005,
+							0.005,
+							0.005
+						]
+					}
+				}
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.bows"
+			}
+		}
+	}
+}

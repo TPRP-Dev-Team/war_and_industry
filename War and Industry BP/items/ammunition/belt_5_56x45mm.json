@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:belt_5_56x45mm",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_m556nato_belt"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.bows"
+			},
+			"minecraft:display_name": {
+				"value": "5.56x45mm Belt" //What the ammo shows as its display text
+			},
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

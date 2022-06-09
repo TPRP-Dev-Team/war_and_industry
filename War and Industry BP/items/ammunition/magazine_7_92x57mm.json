@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:magazine_7_92x57mm",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_magazine_7_92x57mm"
+			},
+			"minecraft:display_name": {
+				"value": "7.92x57mm Clip"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.bows"
+			}
+		}
+	}
+}
