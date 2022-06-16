@@ -21,12 +21,12 @@
 		"guns_m556nato": {
 			"textures": "textures/items/5_56_NATO_MAGAZINE"
 		},
-		"guns_m16a4_hd_ip": {
-			"textures": "textures/items/M16A4_HDII"
+		"guns_m16a4": {
+			"textures": "textures/items/M16A4"
 		}
 	}
 }
 
-- "guns_m16a4_hd_ip" is the identifier for the texture
+- "guns_m16a4" is the identifier for the texture
 - "textures/items/M16A4_HDII" is the texture location for the texture
 - Multiple textures can be added under the same identifier which will have the item randomly choose one of the textures upon being created (I thin at least)

@@ -25,7 +25,7 @@
         "sounds/M16Single"
       ],
       "min_distance": 0.0,
-      "max_distance": 600.1
+      "max_distance": 600.0
     },
 	"guns.m16suppressed.fire": {
 		"category": "neutral",
@@ -33,7 +33,7 @@
 			"sounds/M16SuppressedSingle"
 		],
 		"min_distance": 0.0,
-		"max_distance": 30.1
+		"max_distance": 30.0
 	},
   }
 }
@@ -54,7 +54,7 @@ Above is an example of the format which is followed in "sound_definitions.json",
         "sounds/M16SuppressedSingle"
     ],
     "min_distance": 0.0,
-    "max_distance": 600.1
+    "max_distance": 600.0
 },
 
 This example sound when called would randomly choose either the M16Single or M16SuppressedSingle sound effect then play it, you can add as many as you would like but at the moment 1 is enough and really sounds the best anyways

@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "namespace:spyglass",
-      "category": "equipment"
+      "category": "commands"
     },
     "components": {
       "minecraft:icon": {

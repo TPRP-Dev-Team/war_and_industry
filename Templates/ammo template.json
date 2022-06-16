@@ -7,12 +7,12 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "guns_m556nato" //texture identifer, set in "item_texture.json"
+        "texture": "guns_m556nato" //texture
       },
-      "minecraft:allow_off_hand": true, //Important for allowing the reload mechanic to work
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.bows" //Tells the game that the item should appear in the "equipment" category
-      }
+      "minecraft:display_name": {
+        "value": "5.56x45mm Magazine" //What the ammo shows as its display text
+      },
+      "minecraft:allow_off_hand": true
     }
   }
 }

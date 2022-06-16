@@ -82,10 +82,35 @@
 							"target": "self"
 						}
 					},
-					{ //Play sound, sounds are defined in "sound definitions.json"
+					{// Gunfire Sound
+						"condition": "q.remaining_durability>1",
 						"run_command": {
 							"command": [
-								"playsound guns.m16.fire @a ~ ~ ~ 80 1 40"
+								"playsound guns.m16.fire @a ~ ~ ~ 1 1 0"
+							]
+						}
+					},
+					{ // Recoil when sneaking
+						"condition": "q.remaining_durability>1 && query.is_sneaking",
+						"run_command": {
+							"command": [
+								"camerashake add @s 0.003 1 rotational"
+							]
+						}
+					},
+					{ // Recoil when standing
+						"condition": "q.remaining_durability>1 && !query.is_sneaking",
+						"run_command": {
+							"command": [
+								"camerashake add @s 0.01 1 rotational"
+							]
+						}
+					},
+					{ // Recoil when sprinting
+						"condition": "q.remaining_durability>1 && query.is_sprinting",
+						"run_command": {
+							"command": [
+								"camerashake add @s 0.04 1 rotational"
 							]
 						}
 					},

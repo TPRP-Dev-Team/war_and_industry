@@ -6,6 +6,10 @@
       "category": "commands" //This part is important so the item doesnt show up in creative inventory
     },
     "components": {
+      "minecraft:durability": {
+        "max_durability": 20 //determines how long the reload time will last, approximately 5-6 durability per second gets used (assuming reasonably smooth performance)
+      },
+      "minecraft:hand_equipped": true,
       "minecraft:icon": {
         "texture": "guns_m16a4_empty" //texture identifer, set in "item_texture.json"
       },
@@ -13,10 +17,6 @@
         "value": "M16A4" //What the gun shows as its display text
       },
       "minecraft:max_stack_size": 1,
-      "minecraft:hand_equipped": true,
-      "minecraft:durability": {
-        "max_durability": 20 //determines how long the reload time will last, approximately 5-6 durability per second gets used (assuming reasonably smooth performance)
-      },
       "minecraft:on_use": {
         "on_use": {
           "condition": "query.get_equipped_item_name('off_hand')=='magazine_556x45'", //This is for checking that the ammo for the gun is in the offhand, replace "magazine_556x45" with the identifier for your guns ammo
@@ -70,7 +70,7 @@
             "condition": "q.remaining_durability==(q.max_durability-6)", //This does not need to be changed, what it does is tell the thing to wait about a second before playing this part
             "run_command": {
               "command": [
-                "playsound guns.m16.reload_1 @a ~ ~ ~ 40 1 40" //"guns.m16.reload_1" is the magazine being put into a magwell sound and can be used on other guns which have magazines, if your gun uses a different reload sound then swap this with your sound
+                "playsound guns.m16.reload_1 @a ~ ~ ~ 1 1 0" //"guns.m16.reload_1" is the magazine being put into a magwell sound and can be used on other guns which have magazines, if your gun uses a different reload sound then swap this with your sound
 
               ]
             }
@@ -79,7 +79,7 @@
             "condition": "q.remaining_durability==9",
             "run_command": {
               "command": [
-                "playsound guns.m16.reload_2 @a ~ ~ ~ 40 1 40" //"guns.m16.reload_2", 2nd reload sound
+                "playsound guns.m16.reload_2 @a ~ ~ ~ 1 1 0" //"guns.m16.reload_2", 2nd reload sound
 
               ]
             }
@@ -88,7 +88,7 @@
             "condition": "q.remaining_durability==4",
             "run_command": {
               "command": [
-                "playsound guns.m16.reload_3 @a ~ ~ ~ 40 1 40" //"guns.m16.reload_3", 3rd reload sound
+                "playsound guns.m16.reload_3 @a ~ ~ ~ 1 1 0" //"guns.m16.reload_3", 3rd reload sound
 
               ]
             }

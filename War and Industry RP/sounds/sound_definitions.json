@@ -8,7 +8,7 @@
 				"sounds/M16Single"
 			],
 			"min_distance": 5.0,
-			"max_distance": 600.1
+			"max_distance": 600.0
 		},
 		"guns.m16suppressed.fire": {
 			"category": "player",
@@ -16,7 +16,7 @@
 				"sounds/M16SuppressedSingle"
 			],
 			"min_distance": 2.0,
-			"max_distance": 20.1
+			"max_distance": 20.0
 		},
 		"guns.m16.reload_1": {
 			"category": "player",
