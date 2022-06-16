@@ -4,17 +4,14 @@
 	"resource_pack_name": "Guns Testing",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
-		"guns_magazine_7_62x63mm": {
-			"textures": "textures/blocks/7_62x63mm"
+		"branch_texture": {
+			"textures": "textures/blocks/branch"
 		},
-		"guns_magazine_7_92x57mm": {
-			"textures": "textures/blocks/7_92x57mm"
+		"stick_texture": {
+			"textures": "textures/blocks/stick"
 		},
-		"guns_magazine_3030winchester": {
-			"textures": "textures/blocks/30-30_WinchesterAmmo"
-		},
-		"guns_musket": {
-			"textures": "textures/blocks/Musket"
+		"stone_texture": {
+			"textures": "textures/blocks/stone"
 		}
 	}
 }

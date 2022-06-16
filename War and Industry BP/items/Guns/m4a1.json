@@ -72,7 +72,7 @@
 						"condition": "q.remaining_durability>1",
 						"shoot": {
 							"projectile": "guns:bullet_556x45",
-							"launch_power": 12
+							"launch_power": 10
 						}
 					},
 					{

@@ -7,10 +7,18 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/pineapple_grenade"
+        "default": "textures/entity/bomb_nuke"
       },
       "geometry": {
-        "default": "geometry.pineapple_grenade"
+        "default": "geometry.bomb.geo"
+      },
+      "animations": {
+        "look": "animation.projectile.look"
+      },
+      "scripts": {
+        "animate": [
+          "look"
+        ]
       },
       "render_controllers": [
         "controller.render.grenade"

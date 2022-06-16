@@ -24,7 +24,7 @@
 			"minecraft:on_use": {
 				"on_use": {
 					"condition": "q.remaining_durability>1",
-					"event": "g18_shoot",
+					"event": "launch_nuke",
 					"target": "self"
 				}
 			},
@@ -63,7 +63,7 @@
 			}
 		},
 		"events": {
-			"g18_shoot": {
+			"launch_nuke": {
 				"sequence": [
 					{
 						"shoot": {
@@ -136,52 +136,51 @@
 						}
 					},
 					{
-						"damage": {
-							"type": "durability",
-							"amount": 10,
-							"target": "self"
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
 						}
 					},
 					{
-						"damage": {
-							"type": "durability",
-							"amount": 10,
-							"target": "self"
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
 						}
 					},
 					{
-						"damage": {
-							"type": "durability",
-							"amount": 10,
-							"target": "self"
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
 						}
 					},
 					{
-						"damage": {
-							"type": "durability",
-							"amount": 10,
-							"target": "self"
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
 						}
 					},
 					{
-						"damage": {
-							"type": "durability",
-							"amount": 10,
-							"target": "self"
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "guns:nuke",
+							"launch_power": 3
 						}
 					},
 					{
 						"run_command": {
 							"command": [
 								"playsound firework.launch @a ~ ~ ~ 1 1 0"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==1",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 0/1"
 							]
 						}
 					}

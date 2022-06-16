@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\War and Industry BP",
+    "\\War and Industry BP\\items",
+    "\\War and Industry BP\\items\\Guns",
+    "\\War and Industry RP",
+    "\\War and Industry RP\\animations",
+    "\\War and Industry RP\\entity",
+    "\\War and Industry RP\\models",
+    "\\War and Industry RP\\models\\entity"
   ],
-  "SelectedNode": "\\Templates",
   "PreviewInSolutionExplorer": false
 }

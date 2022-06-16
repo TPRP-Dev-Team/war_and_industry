@@ -1,0 +1,95 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "wai:branch", //change identifier
+      "is_experimental": false,
+      "properties": {
+        "wai:block_rotation": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": "geometry.branch.geo", //Change .geo
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "branch_texture", //change texture
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:on_player_placing": {
+        "event": "wai:update_rotation"
+      },
+      "minecraft:pick_collision": {
+        "origin": [ -8, 0, -8 ],
+        "size": [ 16, 3, 16 ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [ -8, 0, -8 ],
+        "size": [ 16, 3, 16 ]
+      },
+      "minecraft:loot": "loot_tables/blocks/branch.json",
+      "minecraft:explosion_resistance": 1,
+      "minecraft:block_light_absorbtion": 2,
+      "minecraft:destroy_time": 2,
+      "minecraft:creative_category": {
+        "category": "nature",
+        "group": "itemGroup.name.log"
+      },
+      "tag:wood": {} 
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('wai:block_rotation') == 2",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            180,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('wai:block_rotation') == 3",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('wai:block_rotation') == 4",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            270,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('wai:block_rotation') == 5",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            90,
+            0
+          ]
+        }
+      }
+    ],
+    "events": {
+      "wai:update_rotation": {
+        "set_block_property": {
+          "wai:block_rotation": "query.cardinal_facing_2d"
+        }
+      }
+    }
+  }
+}
