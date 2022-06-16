@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Templates",
+    "\\Templates\\Bullet",
     "\\War and Industry BP",
+    "\\War and Industry BP\\blocks",
     "\\War and Industry BP\\items",
-    "\\War and Industry BP\\items\\Guns",
+    "\\War and Industry BP\\loot_tables",
     "\\War and Industry RP",
-    "\\War and Industry RP\\animations",
-    "\\War and Industry RP\\entity",
-    "\\War and Industry RP\\models",
-    "\\War and Industry RP\\models\\entity"
+    "\\War and Industry RP\\textures",
+    "\\War and Industry RP\\textures\\items"
   ],
+  "SelectedNode": "\\War and Industry BP\\loot_tables\\branch.json",
   "PreviewInSolutionExplorer": false
 }
