@@ -12,6 +12,9 @@
 		},
 		"stone_texture": {
 			"textures": "textures/blocks/stone"
+		},
+		"tin_ore_block_texture": {
+			"textures": "textures/blocks/tin_ore"
 		}
 	}
 }

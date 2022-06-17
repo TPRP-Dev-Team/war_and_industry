@@ -267,6 +267,33 @@
       ]
     },
 
+    //resources
+    "tin_ore": {
+      "textures": [
+        "textures/items/resources/tin_ore"
+      ]
+    },
+    "tin_ingot": {
+      "textures": [
+        "textures/items/resources/tin_ingot"
+      ]
+    },
+    "tin_powder": {
+      "textures": [
+        "textures/items/resources/tin_powder"
+      ]
+    },
+    "bronze_powder": {
+      "textures": [
+        "textures/items/resources/bronze_powder"
+      ]
+    },
+    "bronze_ingot": {
+      "textures": [
+        "textures/items/resources/bronze_ingot"
+      ]
+    },
+
 
     //Other
     "boat_canoe_item": {

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "tprp:pulverizer",
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:display_name": "Pulverizer",
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.ore"
+			},
+			"minecraft:destroy_time": 3,
+			"minecraft:block_light_absorption": 5,
+			"minecraft:explosion_resistance": 3,
+			"minecraft:unit_cube": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "tin_ore_block_texture",
+					"render_method": "opaque"
+				},
+				"top": {
+					"texture": "tin_ore_block_texture",
+					"render_method": "opaque"
+				},
+				"bottom": {
+					"texture": "tin_ore_block_texture",
+					"render_method": "opaque"
+				},
+				"front": {
+					"texture": "tin_ore_block_texture",
+					"render_method": "opaque"
+				}
+			}
+		}
+	}
+}
