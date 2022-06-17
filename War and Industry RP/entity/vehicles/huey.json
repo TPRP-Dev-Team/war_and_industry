@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "boat:huey",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/heli_huey"
+			},
+			"geometry": {
+				"default": "geometry.heli_huey"
+			},
+			"render_controllers": [
+				"controller.render.jeep"
+			]
+		}
+	}
+}

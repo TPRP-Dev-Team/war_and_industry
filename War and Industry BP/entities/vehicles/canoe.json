@@ -1,0 +1,141 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "boat:canoe",
+      "is_summonable": true,
+      "is_spawnable": false,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:floating": {
+        "minecraft:buoyant": {
+          "base_buoyancy": 1.0,
+          "apply_gravity": true,
+          "simulate_waves": true,
+          "big_wave_probability": 0.01,
+          "big_wave_speed": 2.0,
+          "liquid_blocks": [
+            "minecraft:water",
+            "minecraft:flowing_water"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "boat",
+          "inanimate"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.75,
+        "height": 3
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/boat_canoe.json"
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4,
+        "hard_distance": 6,
+        "max_distance": 10
+      },
+      "minecraft:rideable": {
+        "seat_count": 3,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.ride.boat",
+        "seats": [
+          {
+            "position": [
+              0,
+              -0.2,
+              -0.8
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 3
+          },
+          {
+            "position": [
+              0,
+              -0.2,
+              0.8
+            ],
+            "min_rider_count": 2,
+            "max_rider_count": 3
+          },
+          {
+            "position": [
+              0,
+              -0.2,
+              0
+            ],
+            "min_rider_count": 3,
+            "max_rider_count": 3
+          }
+        ]
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:buoyant": {
+        "base_buoyancy": 1.0,
+        "apply_gravity": true,
+        "simulate_waves": true,
+        "big_wave_probability": 0.03,
+        "big_wave_speed": 1.0,
+        "liquid_blocks": [
+          "minecraft:water",
+          "minecraft:flowing_water"
+        ]
+      },
+      //Sets the boat speed in water
+      "minecraft:underwater_movement": {
+        "value": 0.5
+      },
+      "minecraft:water_movement": {
+        "drag_factor": 0.5
+      },
+      //This component is important, without it the boat will sink
+      "minecraft:navigation.walk": {
+        "can_sink": false
+      },
+      //Add this component if you want your boat to be controlled with WASD
+      "minecraft:input_ground_controlled": {},
+      "minecraft:health": {
+        "value": 2,
+        "max": 2
+      },
+      //Sets the boat speed on the ground (set this to zero if you don't want your boats to move on the ground)
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      //This is to prevent the boat from not stopping whenever a player exits, said the boat
+      "minecraft:movement.basic": {},
+      "minecraft:inventory": {
+        "inventory_size": 6,
+        "can_be_siphoned_from": false,
+        "container_type": "horse"
+      }
+    }
+  }
+}

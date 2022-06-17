@@ -1,0 +1,77 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.jeep.sound": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "no_rider": "!query.has_rider" },
+            { "idle_1": "query.has_rider" }
+          ],
+          "on_entry": [
+            "/event entity @s jeep:off"
+          ]
+        },
+        "no_rider": {
+          "transitions": [
+            { "no_rider_2": "!query.has_rider" },
+            { "idle_1": "query.has_rider" }
+          ],
+          "on_entry": [
+            "/event entity @s jeep:off"
+          ]
+        },
+        "no_rider_2": {
+          "transitions": [
+            { "no_rider": "!query.has_rider" },
+            { "idle_1": "query.has_rider" }
+          ],
+          "on_entry": [
+            "/event entity @s jeep:off"
+          ]
+        },
+        "idle_1": {
+          "transitions": [
+            { "no_rider": "!query.has_rider" },
+            { "drive_1": "query.modified_move_speed>0" },
+            { "idle_2": "query.has_rider" }
+          ],
+          "on_entry": [
+            "/event entity @s jeep:idle"
+          ]
+        },
+        "idle_2": {
+          "transitions": [
+            { "no_rider": "!query.has_rider" },
+            { "drive_1": "query.modified_move_speed>0" },
+            { "idle_1": "query.has_rider" }
+          ],
+          "on_entry": [
+            "/event entity @s jeep:idle"
+          ]
+        },
+        "drive_1": {
+          "transitions": [
+            { "no_rider": "!query.has_rider" },
+            { "drive_2": "query.modified_move_speed>0" },
+            { "idle_1": "query.has_rider" }
+          ],
+          "on_entry": [
+            "/event entity @s jeep:drive"
+          ]
+        },
+        "drive_2": {
+          "transitions": [
+            { "no_rider": "!query.has_rider" },
+            { "drive_1": "query.modified_move_speed>0" },
+            { "idle_1": "query.has_rider" }
+          ],
+          "on_entry": [
+            "/event entity @s jeep:drive"
+          ]
+        }
+      }
+    }
+
+  }
+}

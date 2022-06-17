@@ -1,0 +1,109 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cc150.flying": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "base": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function c150_fly"
+          ]
+        },
+        "base": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function c150_fly"
+          ]
+        }
+      }
+    },
+    "controller.animation.cc150.speed": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "jumping_1": "!query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s c150_taxi"
+          ]
+        },
+        "jumping_1": {
+          "transitions": [
+            {
+              "transition_to_default": "query.is_on_ground"
+            },
+            {
+              "jumping_2": "true"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s c150_fly",
+            "/summon boat:propulsion"
+          ]
+        },
+        "jumping_2": {
+          "transitions": [
+            {
+              "transition_to_default": "query.is_on_ground"
+            },
+            {
+              "jumping_1": "true"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s c150_fly"
+          ]
+        },
+        "transition_to_default": {
+          "transitions": [
+            {
+              "transition_to_default": "true"
+            },
+            {
+              "jumping_1": "!query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+            "/effect @s clear"
+          ]
+        }
+      }
+    },
+    "controller.animation.cc150.test_rider": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "has_rider": "query.has_rider"
+            }
+          ]
+        },
+        "has_rider": {
+          "transitions": [
+            {
+              "default": "!query.has_rider"
+            }
+          ],
+          "on_entry": [
+            "/tag @s add has_rider"
+          ],
+          "on_exit": [
+            "/tag @s remove has_rider"
+          ]
+        }
+      }
+    }
+
+  }
+}

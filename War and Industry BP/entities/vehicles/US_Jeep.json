@@ -1,0 +1,258 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "boat:us_jeep",
+      "is_summonable": true,
+      "is_spawnable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "sound"
+        ]
+      },
+      "animations": {
+        "sound": "controller.animation.jeep.sound"
+      }
+    },
+    "component_groups": {
+      "jeep:drive": {
+        "minecraft:ambient_sound_interval": {
+          "event_name": "drive", //query.modified_move_speed>0
+          "range": 0.0,
+          "value": 1.0
+        }
+      },
+      "jeep:idle": {
+        "minecraft:ambient_sound_interval": {
+          "event_name": "idle",
+          "range": 0.0,
+          "value": 1.0
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "car",
+          "inanimate"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1.7,
+        "height": 2
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1000,
+        "max": 1000
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          { //front?
+            "width": 1.7,
+            "height": 1.0,
+            "pivot": [ 0, 0.75, 1 ]
+          },
+          { // Middle
+            "width": 1.7,
+            "height": 0.1,
+            "pivot": [ 0, 0.75, 0 ]
+          },
+          { //Rear?
+            "width": 1.7,
+            "height": 1.0,
+            "pivot": [ 0, 0.75, -1 ]
+          }
+        ]
+      },
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "bamboo",
+          "bamboo_sapling",
+          "carved_pumpkin",
+          "chorus_flower",
+          "chorus_plant",
+          "deadbush",
+          "double_plant",
+          "leaves",
+          "leaves2",
+          "lit_pumpkin",
+          "melon_block",
+          "pumpkin",
+          "snow_layer",
+          "sweet_berry_bush",
+          "tallgrass",
+          "wheat"
+        ]
+      },
+      "minecraft:rideable": {
+        "seat_count": 4,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.ride.jeep",
+        "seats": [
+          {
+            "position": [
+              0.8,
+              1.0,
+              -0.4
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 4
+          },
+          {
+            "position": [
+              -0.8,
+              1.0,
+              -0.4
+            ],
+            "min_rider_count": 2,
+            "max_rider_count": 4
+          },
+          {
+            "position": [
+              1.0,
+              1.8,
+              -2.6
+            ],
+            "min_rider_count": 3,
+            "max_rider_count": 4,
+            "rotate_rider_by": -90
+          },
+          {
+            "position": [
+              -1.0,
+              1.8,
+              -2.6
+            ],
+            "min_rider_count": 2,
+            "max_rider_count": 4,
+            "rotate_rider_by": 90
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:is_stackable": {},
+      "minecraft:push_through": 1,
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:scale": {
+        "value": 0.5
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.05
+      },
+      "minecraft:water_movement": {
+        "drag_factor": 0.2
+      },
+      "minecraft:navigation.walk": {
+        "can_sink": true
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:health": {
+        "value": 40,
+        "max": 40
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          { // Disables damage to the berry bushes
+            "on_damage": {
+              "filters": {
+                "test": "is_block",
+                "subject": "block",
+                "value": "minecraft:sweet_berry_bush"
+              }
+            },
+            "deals_damage": false
+          },
+          { // Sets bullet/arrow damage to half a heart
+            "cause": "projectile",
+            "deals_damage": true,
+            "damage_multiplier": 0.08
+          },
+          { // Disables melee damage
+            "cause": "attack",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:drying_out_timer": {
+        "total_time": 2000
+      },
+      //Sets the boat speed on the ground (set this to zero if you don't want your boats to move on the ground)
+      "minecraft:movement.basic": {},
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:boostable": {
+        "duration": 4.0,
+        "speed_multiplier": 2.0,
+        "boost_items": [
+          {
+            "item": "carrotOnAStick",
+            "damage": 3,
+            "replace_item": "fishing_rod"
+          }
+        ]
+      },
+      //This is to prevent the boat from not stopping whenever a player exits, said the boat
+      //"minecraft:movement.basic": {},
+      "minecraft:inventory": {
+        "container_type": "minecart_chest",
+        "inventory_size": 6
+      }
+    },
+    "events": {
+      "jeep:drive": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [ "jeep:idle" ]
+            },
+            "add": {
+              "component_groups": [ "jeep:drive" ]
+            }
+          }
+        ]
+      },
+      "jeep:idle": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [ "jeep:drive" ]
+            },
+            "add": {
+              "component_groups": [ "jeep:idle" ]
+            }
+          }
+        ]
+      },
+      "jeep:off": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [ "jeep:drive", "jeep:idle" ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

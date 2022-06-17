@@ -1,0 +1,165 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.huey.flying": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "base": "query.has_rider"
+            },
+            {
+              "idle_1": "!query.has_rider"
+            }
+          ],
+          "on_entry": [
+            "/function huey_fly"
+          ]
+        },
+        "base": {
+          "transitions": [
+            {
+              "default": "query.has_rider"
+            },
+            {
+              "idle_1": "!query.has_rider"
+            }
+          ],
+          "on_entry": [
+            "/function huey_fly"
+          ]
+        },
+        "idle_1": {
+          "transitions": [
+            {
+              "base": "query.has_rider"
+            },
+            {
+              "idle_2": "!query.has_rider"
+            }
+          ]
+        },
+        "idle_2": {
+          "transitions": [
+            {
+              "base": "query.has_rider"
+            },
+            {
+              "idle_1": "!query.has_rider"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.huey.speed": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "jumping_1": "!query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s huey:landed"
+          ]
+        },
+        "jumping_1": {
+          "transitions": [
+            {
+              "landing_1": "query.is_on_ground"
+            },
+            {
+              "jumping_2": "!query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s huey:movement"
+          ]
+        },
+        "jumping_2": {
+          "transitions": [
+            {
+              "landing_1": "query.is_on_ground"
+            },
+            {
+              "jumping_1": "!query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s huey:movement"
+          ]
+        },
+        "landing_1": {
+          "transitions": [
+            {
+              "landing_2": "query.is_on_ground"
+            },
+            {
+              "jumping_1": "!query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+            "/effect @s clear",
+            "/event entity @s huey:landed"
+          ]
+        },
+        "landing_2": {
+          "transitions": [
+            {
+              "landing_1": "query.is_on_ground"
+            },
+            {
+              "jumping_1": "!query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+            "/effect @s clear",
+            "/event entity @s huey:landed"
+          ]
+        }
+      }
+    },
+    "controller.animation.huey.test_rider": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "has_rider": "query.has_rider"
+            }
+          ],
+          "on_entry": [
+            "/tag @s remove has_rider"
+          ]
+        },
+        "has_rider": {
+          "transitions": [
+            {
+              "default": "!query.has_rider"
+            },
+            {
+              "has_rider_2": "query.has_rider"
+            }
+          ],
+          "on_entry": [
+            "/tag @s add has_rider"
+          ]
+        },
+        "has_rider_2": {
+          "transitions": [
+            {
+              "default": "!query.has_rider"
+            },
+            {
+              "has_rider": "query.has_rider"
+            }
+          ],
+          "on_entry": [
+            "/tag @s add has_rider"
+          ]
+        }
+      }
+    }
+
+  }
+}

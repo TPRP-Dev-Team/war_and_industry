@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "boat:us_jeep",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/US_Jeep"
+			},
+			"geometry": {
+				"default": "geometry.jeep"
+			},
+			"render_controllers": [
+				"controller.render.jeep"
+			]
+		}
+	}
+}

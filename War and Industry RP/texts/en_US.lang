@@ -1,3 +1,4 @@
+
 item.guns:m556nato=5.56 NATO Magazine
 item.guns:m16a4=M16A4
 item.guns:m16a4s=Suppressed M16A4
@@ -23,3 +24,16 @@ item.guns:nerfretaliator=Nerf Retaliator
 item.spawn_egg.entity.guns:bullet_556x45.name=Spawn 5.56 Bullet
 entity.guns:bullet_556x45.name=5.56 Bullet
 item.guns:m16a4s_empty=Suppressed M16A4
+
+
+item.spawn_egg.entity.boat:canoe.name=Spawn Canoe
+entity.boat:canoe.name=Canoe
+entity.boat:us_jeep.name=US Jeep
+item.boat:canoe_item=Canoe
+action.interact.ride.boat=Ride Canoe
+action.interact.ride.jeep=Ride Jeep
+action.hint.exit.boat:us_jeep=Leave Jeep
+action.interact.ride.cessna_c150=Ride Plane
+action.hint.exit.boat:cessna_c150=Leave Plane
+action.interact.ride.huey=Ride Huey
+action.hint.exit.boat:huey=Leave Huey

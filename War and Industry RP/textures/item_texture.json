@@ -1,270 +1,283 @@
 {
-	"resource_pack_name": "Guns Testing",
-	"texture_name": "atlas.items",
-	"texture_data": {
-		//----- M16A4/M16A4S--------
-		"guns_m16a4s_empty": {
-			"textures": "textures/items/Empty Guns/M16A4S_Empty"
-		},
-		"guns_m16a4_empty": {
-			"textures": "textures/items/Empty Guns/M16A4_Empty"
-		},
-		"guns_m16a4": {
-			"textures": "textures/items/Guns/M16A4"
-		},
-		"guns_m16a4s": {
-			"textures": "textures/items/Guns/M16A4S"
-		},
-		//----- M4A1--------
-		"guns_m4a1": {
-			"textures": "textures/items/Guns/M4A1"
-		},
-		"guns_m4a1_empty": {
-			"textures": "textures/items/Empty Guns/M4A1_Empty"
-		},
-		//----- AUGA3--------
-		"guns_auga3": {
-			"textures": "textures/items/Empty Guns/AUGA3_Empty"
-		},
-		"guns_auga3_empty": {
-			"textures": "textures/items/Guns/AUGA3"
-		},
-		//-------------------------
+  "resource_pack_name": "Guns Testing",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    //----- M16A4/M16A4S--------
+    "guns_m16a4s_empty": {
+      "textures": "textures/items/Empty Guns/M16A4S_Empty"
+    },
+    "guns_m16a4_empty": {
+      "textures": "textures/items/Empty Guns/M16A4_Empty"
+    },
+    "guns_m16a4": {
+      "textures": "textures/items/Guns/M16A4"
+    },
+    "guns_m16a4s": {
+      "textures": "textures/items/Guns/M16A4S"
+    },
+    //----- M4A1--------
+    "guns_m4a1": {
+      "textures": "textures/items/Guns/M4A1"
+    },
+    "guns_m4a1_empty": {
+      "textures": "textures/items/Empty Guns/M4A1_Empty"
+    },
+    //----- AUGA3--------
+    "guns_auga3": {
+      "textures": "textures/items/Empty Guns/AUGA3_Empty"
+    },
+    "guns_auga3_empty": {
+      "textures": "textures/items/Guns/AUGA3"
+    },
+    //-------------------------
 
-		//-------Glock 18----------
-		"guns_g18": {
-			"textures": "textures/items/Guns/G18"
-		},
-		"guns_g18_suppressed": {
-			"textures": "textures/items/Guns/G18Suppressed"
-		},
-		"guns_g18_empty": {
-			"textures": "textures/items/Empty Guns/G18_Empty"
-		},
-		"guns_g18s_empty": {
-			"textures": "textures/items/Empty Guns/G18Suppressed_Empty"
-		},
-		//-------M1911----------
-		"guns_m1911": {
-			"textures": "textures/items/Guns/M1911"
-		},
-		"guns_m1911_empty": {
-			"textures": "textures/items/Empty Guns/M1911_Empty"
-		},
-		//-----------------------------
+    //-------Glock 18----------
+    "guns_g18": {
+      "textures": "textures/items/Guns/G18"
+    },
+    "guns_g18_suppressed": {
+      "textures": "textures/items/Guns/G18Suppressed"
+    },
+    "guns_g18_empty": {
+      "textures": "textures/items/Empty Guns/G18_Empty"
+    },
+    "guns_g18s_empty": {
+      "textures": "textures/items/Empty Guns/G18Suppressed_Empty"
+    },
+    //-------M1911----------
+    "guns_m1911": {
+      "textures": "textures/items/Guns/M1911"
+    },
+    "guns_m1911_empty": {
+      "textures": "textures/items/Empty Guns/M1911_Empty"
+    },
+    //-----------------------------
 
-		//AT-4
-		"guns_at4": {
-			"textures": "textures/items/Guns/AT4"
-		},
+    //AT-4
+    "guns_at4": {
+      "textures": "textures/items/Guns/AT4"
+    },
 
-		//M1 Garand
-		"guns_m1_garand": {
-			"textures": "textures/items/Guns/M1Garand"
-		},
+    //M1 Garand
+    "guns_m1_garand": {
+      "textures": "textures/items/Guns/M1Garand"
+    },
 
-		//Kar 98K
-		"guns_kar98k": {
-			"textures": "textures/items/Guns/Kar98K"
-		},
+    //Kar 98K
+    "guns_kar98k": {
+      "textures": "textures/items/Guns/Kar98K"
+    },
 
-		//30-30 Winchester
-		"guns_3030winchester": {
-			"textures": "textures/items/Guns/30-30_Winchester"
-		},
+    //30-30 Winchester
+    "guns_3030winchester": {
+      "textures": "textures/items/Guns/30-30_Winchester"
+    },
 
-		//AK-47
-		"guns_ak47": {
-			"textures": "textures/items/Guns/AK-47"
-		},
-		"guns_ak47_empty": {
-			"textures": "textures/items/Empty Guns/AK-47_empty"
-		},
+    //AK-47
+    "guns_ak47": {
+      "textures": "textures/items/Guns/AK-47"
+    },
+    "guns_ak47_empty": {
+      "textures": "textures/items/Empty Guns/AK-47_empty"
+    },
 
-		//Flare Gun
-		"guns_flaregun": {
-			"textures": "textures/items/Guns/FlareGun"
-		},
+    //Flare Gun
+    "guns_flaregun": {
+      "textures": "textures/items/Guns/FlareGun"
+    },
 
-		//Bennelli M3
-		"guns_benelli_m3": {
-			"textures": "textures/items/Guns/Benelli_M3"
-		},
+    //Bennelli M3
+    "guns_benelli_m3": {
+      "textures": "textures/items/Guns/Benelli_M3"
+    },
 
-		//Nerf Retaliator
-		"guns_nerfretaliator": {
-			"textures": "textures/items/Guns/NerfRetaliator"
-		},
+    //Nerf Retaliator
+    "guns_nerfretaliator": {
+      "textures": "textures/items/Guns/NerfRetaliator"
+    },
 
-		//Musket
-		"guns_musket": {
-			"textures": "textures/items/Guns/Musket"
-		},
+    //Musket
+    "guns_musket": {
+      "textures": "textures/items/Guns/Musket"
+    },
 
-		//M107
-		"guns_m107": {
-			"textures": "textures/items/Guns/M107A1"
-		},
-		"guns_m107s": {
-			"textures": "textures/items/Guns/M107A1S"
-		},
-		"guns_m107_empty": {
-			"textures": "textures/items/Empty Guns/M107A1_Empty"
-		},
-		"guns_m107s_empty": {
-			"textures": "textures/items/Empty Guns/M107A1S_Empty"
-		},
+    //M107
+    "guns_m107": {
+      "textures": "textures/items/Guns/M107A1"
+    },
+    "guns_m107s": {
+      "textures": "textures/items/Guns/M107A1S"
+    },
+    "guns_m107_empty": {
+      "textures": "textures/items/Empty Guns/M107A1_Empty"
+    },
+    "guns_m107s_empty": {
+      "textures": "textures/items/Empty Guns/M107A1S_Empty"
+    },
 
-		//UMP9
-		"guns_ump9": {
-			"textures": "textures/items/Guns/UMP9"
-		},
-		"guns_ump9_empty": {
-			"textures": "textures/items/Empty Guns/UMP9_Empty"
-		},
+    //UMP9
+    "guns_ump9": {
+      "textures": "textures/items/Guns/UMP9"
+    },
+    "guns_ump9_empty": {
+      "textures": "textures/items/Empty Guns/UMP9_Empty"
+    },
 
-		//MP5
-		"guns_mp5": {
-			"textures": "textures/items/Guns/mp5"
-		},
-		"guns_mp5_empty": {
-			"textures": "textures/items/Empty Guns/mp5_empty"
-		},
+    //MP5
+    "guns_mp5": {
+      "textures": "textures/items/Guns/mp5"
+    },
+    "guns_mp5_empty": {
+      "textures": "textures/items/Empty Guns/mp5_empty"
+    },
 
-		//M249
-		"guns_m249": {
-			"textures": "textures/items/Guns/m249"
-		},
-		"guns_m249_empty": {
-			"textures": "textures/items/Empty Guns/m249_empty"
-		},
-		//M240
-		"guns_m240": {
-			"textures": "textures/items/Guns/M240"
-		},
-		"guns_m240_empty": {
-			"textures": "textures/items/Empty Guns/M240_empty"
-		},
+    //M249
+    "guns_m249": {
+      "textures": "textures/items/Guns/m249"
+    },
+    "guns_m249_empty": {
+      "textures": "textures/items/Empty Guns/m249_empty"
+    },
+    //M240
+    "guns_m240": {
+      "textures": "textures/items/Guns/M240"
+    },
+    "guns_m240_empty": {
+      "textures": "textures/items/Empty Guns/M240_empty"
+    },
 
-		//M32
-		"guns_32": {
-			"textures": "textures/items/Guns/M32"
-		},
+    //M32
+    "guns_32": {
+      "textures": "textures/items/Guns/M32"
+    },
 
-		//Single Action Army
-		"guns_saa": {
-			"textures": "textures/items/Guns/Single Action Army"
-		},
+    //Single Action Army
+    "guns_saa": {
+      "textures": "textures/items/Guns/Single Action Army"
+    },
 
-		//Ammo
-		"guns_magazine_nerf18rd": {
-			"textures": "textures/items/Ammunition/Nerf18Rnd"
-		},
-		"guns_m556nato": {
-			"textures": "textures/items/Ammunition/5_56_NATO_MAGAZINE"
-		},
-		"guns_m556nato_belt": {
-			"textures": "textures/items/Ammunition/5_56_NATO_Belt"
-		},
-		"guns_magazine_12guage": {
-			"textures": "textures/items/Ammunition/12_Guage"
-		},
-		"guns_magazine_7_62x39mm": {
-			"textures": "textures/items/Ammunition/7_62x39mm"
-		},
-		"guns_magazine_7_62x63mm": {
-			"textures": "textures/items/Ammunition/7_62x63mm"
-		},
-		"guns_magazine_7_92x57mm": {
-			"textures": "textures/items/Ammunition/7_92x57mm"
-		},
-		"guns_magazine_3030winchester": {
-			"textures": "textures/items/Ammunition/30-30_WinchesterAmmo"
-		},
-		"guns_magazine_9mm": {
-			"textures": "textures/items/Ammunition/9mmMagazine"
-		},
-		"guns_magazine_9mm_30rd": {
-			"textures": "textures/items/Ammunition/mp5_magazine"
-		},
-		"guns_magazine_musketball": {
-			"textures": "textures/items/Ammunition/Musketball"
-		},
-		"guns_magazine_45cal": {
-			"textures": "textures/items/Ammunition/45calMag"
-		},
-		"guns_magazine_45cal_25rd": {
-			"textures": "textures/items/Ammunition/45cal25rdMagazine"
-		},
-		"guns_magazine_45cal_SAA": {
-			"textures": "textures/items/Ammunition/45cal_SAA"
-		},
-		"guns_magazine_50cal": {
-			"textures": "textures/items/Ammunition/50calMag"
-		},
-		"guns_belt_7_62x51mm": {
-			"textures": "textures/items/Ammunition/45cal_SAA"
-		},
-		"guns_magazine_40mmgrenade": {
-			"textures": "textures/items/Ammunition/40mmGrenade"
-		},
+    //Ammo
+    "guns_magazine_nerf18rd": {
+      "textures": "textures/items/Ammunition/Nerf18Rnd"
+    },
+    "guns_m556nato": {
+      "textures": "textures/items/Ammunition/5_56_NATO_MAGAZINE"
+    },
+    "guns_m556nato_belt": {
+      "textures": "textures/items/Ammunition/5_56_NATO_Belt"
+    },
+    "guns_magazine_12guage": {
+      "textures": "textures/items/Ammunition/12_Guage"
+    },
+    "guns_magazine_7_62x39mm": {
+      "textures": "textures/items/Ammunition/7_62x39mm"
+    },
+    "guns_magazine_7_62x63mm": {
+      "textures": "textures/items/Ammunition/7_62x63mm"
+    },
+    "guns_magazine_7_92x57mm": {
+      "textures": "textures/items/Ammunition/7_92x57mm"
+    },
+    "guns_magazine_3030winchester": {
+      "textures": "textures/items/Ammunition/30-30_WinchesterAmmo"
+    },
+    "guns_magazine_9mm": {
+      "textures": "textures/items/Ammunition/9mmMagazine"
+    },
+    "guns_magazine_9mm_30rd": {
+      "textures": "textures/items/Ammunition/mp5_magazine"
+    },
+    "guns_magazine_musketball": {
+      "textures": "textures/items/Ammunition/Musketball"
+    },
+    "guns_magazine_45cal": {
+      "textures": "textures/items/Ammunition/45calMag"
+    },
+    "guns_magazine_45cal_25rd": {
+      "textures": "textures/items/Ammunition/45cal25rdMagazine"
+    },
+    "guns_magazine_45cal_SAA": {
+      "textures": "textures/items/Ammunition/45cal_SAA"
+    },
+    "guns_magazine_50cal": {
+      "textures": "textures/items/Ammunition/50calMag"
+    },
+    "guns_belt_7_62x51mm": {
+      "textures": "textures/items/Ammunition/45cal_SAA"
+    },
+    "guns_magazine_40mmgrenade": {
+      "textures": "textures/items/Ammunition/40mmGrenade"
+    },
 
-		//US Combat Armor
-		"armor_combat_armor_helmet": {
-			"textures": [
-				"textures/items/Armor/combat_armor_helmet"
-			]
-		},
-		"armor_combat_armor_chestplate": {
-			"textures": [
-				"textures/items/Armor/combat_armor_chestplate"
-			]
-		},
-		"armor_combat_armor_leggings": {
-			"textures": [
-				"textures/items/Armor/combat_armor_leggings"
-			]
-		},
-		"armor_combat_armor_boots": {
-			"textures": [
-				"textures/items/Armor/combat_armor_boots"
-			]
-		},
+    //US Combat Armor
+    "armor_combat_armor_helmet": {
+      "textures": [
+        "textures/items/Armor/combat_armor_helmet"
+      ]
+    },
+    "armor_combat_armor_chestplate": {
+      "textures": [
+        "textures/items/Armor/combat_armor_chestplate"
+      ]
+    },
+    "armor_combat_armor_leggings": {
+      "textures": [
+        "textures/items/Armor/combat_armor_leggings"
+      ]
+    },
+    "armor_combat_armor_boots": {
+      "textures": [
+        "textures/items/Armor/combat_armor_boots"
+      ]
+    },
 
-		//Chinese Combat Armor
-		"armor_china_ballistic_helmet": {
-			"textures": [
-				"textures/items/Armor/china_ballistic_helmet"
-			]
-		},
-		"armor_china_ballistic_vest": {
-			"textures": [
-				"textures/items/Armor/china_ballistic_vest"
-			]
-		},
-		"armor_china_pants": {
-			"textures": [
-				"textures/items/Armor/china_pants"
-			]
-		},
-		"armor_china_boots": {
-			"textures": [
-				"textures/items/Armor/china_boots"
-			]
-		},
+    //Chinese Combat Armor
+    "armor_china_ballistic_helmet": {
+      "textures": [
+        "textures/items/Armor/china_ballistic_helmet"
+      ]
+    },
+    "armor_china_ballistic_vest": {
+      "textures": [
+        "textures/items/Armor/china_ballistic_vest"
+      ]
+    },
+    "armor_china_pants": {
+      "textures": [
+        "textures/items/Armor/china_pants"
+      ]
+    },
+    "armor_china_boots": {
+      "textures": [
+        "textures/items/Armor/china_boots"
+      ]
+    },
 
-		//Consumables
-		"comsumable_medkit": {
-			"textures": [
-				"textures/items/Consumables/MedKit"
-			]
-		},
+    //Consumables
+    "comsumable_medkit": {
+      "textures": [
+        "textures/items/Consumables/MedKit"
+      ]
+    },
 
-		//Grenades
-		"grenade_pineapple": {
-			"textures": [
-				"textures/items/Grenades/PineappleGrenade"
-			]
-		}
-	}
+    //Grenades
+    "grenade_pineapple": {
+      "textures": [
+        "textures/items/Grenades/PineappleGrenade"
+      ]
+    },
+
+
+    //Other
+    "boat_canoe_item": {
+      "textures": [
+        "textures/items/other/canoe_item"
+      ]
+    },
+    "yolk_item": {
+      "textures": [
+        "textures/items/other/yolk"
+      ]
+    }
+  }
 }
