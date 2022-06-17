@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Templates\\Bullet",
-    "\\War and Industry BP\\blocks",
+    "\\War and Industry BP",
     "\\War and Industry BP\\items",
+    "\\War and Industry BP\\items\\other",
     "\\War and Industry BP\\loot_tables",
     "\\War and Industry RP",
     "\\War and Industry RP\\textures",
     "\\War and Industry RP\\textures\\items",
-    "\\War and Industry RP\\textures\\items\\resources"
+    "\\War and Industry RP\\textures\\items\\melee",
+    "\\War and Industry RP\\textures\\items\\other"
   ],
-  "SelectedNode": "\\War and Industry RP\\textures\\items\\resources\\temp.json",
+  "SelectedNode": "\\War and Industry RP\\textures\\items\\melee\\flint_knife.png",
   "PreviewInSolutionExplorer": false
 }
