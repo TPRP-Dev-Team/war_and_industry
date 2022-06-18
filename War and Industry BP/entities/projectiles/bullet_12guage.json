@@ -42,7 +42,7 @@
         ]
       },
       "minecraft:annotation.break_door": {
-        "break_time": 0.0001,
+        "break_time": 0,
         "min_difficulty": "peaceful"
       },
       "minecraft:break_blocks": {
@@ -64,8 +64,8 @@
         },
         //"hit_sound": "bow.hit", //At a later time we will have a standardized hit sound, for now we are doing without one
         "power": 1,
-        "gravity": 0.06, //Change this to a higher number for heavier rounds, the bow uses 0.1
-        "uncertainty_base": 2.0, //This changes the bullets accuracy
+        "gravity": 0.04, //Change this to a higher number for heavier rounds, the bow uses 0.1
+        "uncertainty_base": 10, //This changes the bullets accuracy
         "uncertainty_multiplier": 1, //This multiplier determines how much the gamemode(peaceful, normal, hard) affects the uncertainty
         "anchor": 1,
         "should_bounce": false,

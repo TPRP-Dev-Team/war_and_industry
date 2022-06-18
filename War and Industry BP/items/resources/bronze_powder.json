@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wai:bronze_powder",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "bronze_powder"
+			},
+			"minecraft:creative_category": {
+				"category": "items",
+				"parent": "itemGroup.name.powders"
+			},
+			"minecraft:display_name": {
+				"value": "Bronze Powder" //What the item shows as its display text
+			},
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

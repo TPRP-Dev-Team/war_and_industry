@@ -7,12 +7,34 @@
           "condition": "match_tool",
           "item": "minecraft:iron_pickaxe",
           "count": 1
-        },
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "wai:tin_ore"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
         {
           "condition": "match_tool",
           "item": "minecraft:diamond_pickaxe",
           "count": 1
-        },
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "wai:tin_ore"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
         {
           "condition": "match_tool",
           "item": "minecraft:netherite_pickaxe",
@@ -22,8 +44,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "wai:tin_ore",
-          "weight": 1
+          "name": "wai:tin_ore"
         }
       ]
     }

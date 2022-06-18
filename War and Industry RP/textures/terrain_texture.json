@@ -4,29 +4,95 @@
 	"resource_pack_name": "Guns Testing",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
+
+		//Raw Materials
 		"branch_texture": {
 			"textures": "textures/blocks/branch"
 		},
 		"stick_texture": {
 			"textures": "textures/blocks/stick"
 		},
-		"stone_texture": {
-			"textures": "textures/blocks/stone"
+		"stones_texture": {
+			"textures": "textures/blocks/stones"
 		},
 		"tin_ore_block_texture": {
 			"textures": "textures/blocks/tin_ore"
 		},
+
+		//Metal Blocks
+		"tin_block_texture": {
+			"textures": "textures/blocks/tin_block"
+		},
+		"zinc_block_texture": {
+			"textures": "textures/blocks/tin_block"
+		},
+		"bronze_block_texture": {
+			"textures": "textures/blocks/bronze_block"
+		},
+		"steel_block_texture": {
+			"textures": "textures/blocks/bronze_block"
+		},
+
+		//Standardized
+		"standardized_bottom_texture": {
+			"textures": "textures/blocks/standardized_bottom"
+		},
+		"standardized_top_texture": {
+			"textures": "textures/blocks/standardized_top"
+		},
+		"standardized_advanced_bottom_texture": {
+			"textures": "textures/blocks/standardized_advanced_bottom"
+		},
+
+		//Production Blocks
 		"pulverizer_front_texture": {
-			"textures": "textures/blocks/Pulverizer_Front"
+			"textures": "textures/blocks/pulverizer_front"
 		},
 		"pulverizer_side_texture": {
-			"textures": "textures/blocks/Pulverizer_Side"
-		},
-		"standardized_bottom_texture": {
-			"textures": "textures/blocks/Standardized_Bottom"
+			"textures": "textures/blocks/pulverizer_side"
 		},
 		"pulverizer_top_texture": {
-			"textures": "textures/blocks/Pulverizer_Top"
+			"textures": "textures/blocks/pulverizer_top"
+		},
+		"advanced_pulverizer_front_texture": {
+			"textures": "textures/blocks/advanced_pulverizer_front"
+		},
+		"advanced_pulverizer_side_texture": {
+			"textures": "textures/blocks/advanced_pulverizer_side"
+		},
+		"advanced_pulverizer_top_texture": {
+			"textures": "textures/blocks/advanced_pulverizer_top"
+		},
+		"gunsmithing_front_texture": {
+			"textures": "textures/blocks/gunsmithing_bench_front"
+		},
+		"gunsmithing_side_texture": {
+			"textures": "textures/blocks/gunsmithing_bench_side"
+		},
+		"chemistry_front_texture": {
+			"textures": "textures/blocks/chemistry_set_front"
+		},
+		"chemistry_side_texture": {
+			"textures": "textures/blocks/chemistry_set_side"
+		},
+		"chemistry_top_texture": {
+			"textures": "textures/blocks/chemistry_set_top"
+		},
+		"metalworking_front_texture": {
+			"textures": "textures/blocks/metalworking_bench_front"
+		},
+		"metalworking_side_texture": {
+			"textures": "textures/blocks/metalworking_bench_side"
+		},
+		"metalworking_bottom_texture": {
+			"textures": "textures/blocks/metalworking_bench_bottom"
+		},
+		"vehicle_front_texture": {
+			"textures": "textures/blocks/vehicle_bench_front"
+		},
+		"vehicle_side_texture": {
+			"textures": "textures/blocks/vehicle_bench_side"
 		}
+
 	}
 }

@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:block": {
     "description": {
-      "identifier": "wai:branch", //change identifier
+      "identifier": "wai:stick", //change identifier
       "is_experimental": false,
       "properties": {
         "wai:block_rotation": [
@@ -14,10 +14,10 @@
       }
     },
     "components": {
-      "minecraft:geometry": "geometry.branch.geo", //Change .geo
+      "minecraft:geometry": "geometry.stick.geo", //Change .geo
       "minecraft:material_instances": {
         "*": {
-          "texture": "branch_texture", //change texture
+          "texture": "stick_texture", //change texture
           "render_method": "alpha_test"
         }
       },
@@ -32,7 +32,7 @@
         "origin": [ -8, 0, -8 ],
         "size": [ 16, 3, 16 ]
       },
-      "minecraft:loot": "loot_tables/blocks/branch.json",
+      "minecraft:loot": "loot_tables/blocks/stick.json",
       "minecraft:explosion_resistance": 1,
       "minecraft:destroy_time": 2,
       "minecraft:creative_category": {

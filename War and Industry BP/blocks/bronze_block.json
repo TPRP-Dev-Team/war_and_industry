@@ -2,26 +2,27 @@
 	"format_version": "1.16.0",
 	"minecraft:block": {
 		"description": {
-			"identifier": "wai:tin_ore_block",
+			"identifier": "wai:bronze_block",
 			"is_experimental": false
 		},
 		"components": {
 			"minecraft:creative_category": {
-				"category": "nature",
-				"group": "itemGroup.name.ore"
+				"category": "construction",
+				"group": "itemGroup.name.metal_block"
 			},
 			"minecraft:destroy_time": 2,
-			"tag:stone": {},
+			"tag:metal": {},
+			"tag:iron_pick_diggable": {},
+			"tag:diamond_pick_diggable": {},
 			"minecraft:block_light_absorption": 15,
 			"minecraft:explosion_resistance": 3,
 			"minecraft:unit_cube": {},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "tin_ore_block_texture",
+					"texture": "bronze_block_texture",
 					"render_method": "opaque"
 				}
-			},
-			"minecraft:loot": "loot_tables/blocks/tin_ore.json"
+			}
 
 		}
 	}

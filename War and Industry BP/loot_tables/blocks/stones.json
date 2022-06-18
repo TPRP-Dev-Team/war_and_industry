@@ -5,12 +5,12 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:stick",
-          "weight": 3
+          "name": "minecraft:cobblestone",
+          "weight": 2
         },
         {
           "type": "item",
-          "name": "minecraft:log",
+          "name": "minecraft:flint",
           "weight": 1
         }
       ]

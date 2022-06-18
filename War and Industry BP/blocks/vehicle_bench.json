@@ -1,0 +1,103 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "wai:vehicle_bench",
+			"category": "items",
+			"is_experimental": false,
+			"properties": {
+				"wai:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"category": "items",
+				"parent": "itemGroup.name.crafting"
+			},
+			"minecraft:on_player_placing": {
+				"event": "wai:update_rotation"
+			},
+			"minecraft:destroy_time": 2,
+			"minecraft:block_light_absorption": 5,
+			"minecraft:explosion_resistance": 3,
+			"minecraft:unit_cube": {},
+			"minecraft:crafting_table": {
+				"custom_description": "Vehicle Bench",
+				"grid_size": 1,
+				"crafting_tags": [ "vehicle_bench" ]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "vehicle_side_texture",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "standardized_top_texture",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "standardized_advanced_bottom_texture",
+					"render_method": "opaque"
+				},
+				"north": {
+					"texture": "vehicle_front_texture",
+					"render_method": "opaque"
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('wai:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('wai:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('wai:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('wai:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"wai:update_rotation": {
+				"set_block_property": {
+					"wai:block_rotation": "query.cardinal_facing_2d"
+				}
+			}
+		}
+	}
+}
