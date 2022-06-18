@@ -7,7 +7,7 @@
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "yolk"
+				"texture": "yolk_item"
 			},
 			"minecraft:on_use": {
 				"on_use": {

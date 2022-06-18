@@ -37,3 +37,8 @@ action.interact.ride.cessna_c150=Ride Plane
 action.hint.exit.boat:cessna_c150=Leave Plane
 action.interact.ride.huey=Ride Huey
 action.hint.exit.boat:huey=Leave Huey
+
+tile.wai:branch.name=Branch
+tile.wai:tin_ore_block.name=Zinc Ore
+tile.wai:zinc_ore_block.name=Tin Ore
+tile.wai:pulverizer.name=Pulverizer

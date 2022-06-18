@@ -3,14 +3,14 @@
     "",
     "\\War and Industry BP",
     "\\War and Industry BP\\items",
-    "\\War and Industry BP\\items\\other",
-    "\\War and Industry BP\\loot_tables",
+    "\\War and Industry BP\\items\\ammunition",
+    "\\War and Industry BP\\loot_tables\\blocks",
     "\\War and Industry RP",
+    "\\War and Industry RP\\models",
     "\\War and Industry RP\\textures",
     "\\War and Industry RP\\textures\\items",
-    "\\War and Industry RP\\textures\\items\\melee",
-    "\\War and Industry RP\\textures\\items\\other"
+    "\\War and Industry RP\\textures\\items\\Ammunition"
   ],
-  "SelectedNode": "\\War and Industry RP\\textures\\items\\melee\\flint_knife.png",
+  "SelectedNode": "\\War and Industry RP\\textures\\items\\Ammunition\\7_62x51_NATO_Belt.png",
   "PreviewInSolutionExplorer": false
 }

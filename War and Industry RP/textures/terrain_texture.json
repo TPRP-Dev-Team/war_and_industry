@@ -15,6 +15,18 @@
 		},
 		"tin_ore_block_texture": {
 			"textures": "textures/blocks/tin_ore"
+		},
+		"pulverizer_front_texture": {
+			"textures": "textures/blocks/Pulverizer_Front"
+		},
+		"pulverizer_side_texture": {
+			"textures": "textures/blocks/Pulverizer_Side"
+		},
+		"standardized_bottom_texture": {
+			"textures": "textures/blocks/Standardized_Bottom"
+		},
+		"pulverizer_top_texture": {
+			"textures": "textures/blocks/Pulverizer_Top"
 		}
 	}
 }

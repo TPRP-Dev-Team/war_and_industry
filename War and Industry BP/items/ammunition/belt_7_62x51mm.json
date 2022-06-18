@@ -2,15 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "guns:magazine_12guage",
+			"identifier": "guns:belt_7_62x51mm",
 			"category": "equipment"
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "guns_magazine_12guage"
+				"texture": "guns_belt_7_62x51mm"
 			},
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.bows"
+			},
+			"minecraft:display_name": {
+				"value": "7.62x51mm Belt" //What the ammo shows as its display text
 			},
 			"minecraft:allow_off_hand": true
 		}

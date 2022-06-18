@@ -203,7 +203,7 @@
       "textures": "textures/items/Ammunition/50calMag"
     },
     "guns_belt_7_62x51mm": {
-      "textures": "textures/items/Ammunition/45cal_SAA"
+      "textures": "textures/items/Ammunition/7_62c51_NATO_Belt"
     },
     "guns_magazine_40mmgrenade": {
       "textures": "textures/items/Ammunition/40mmGrenade"
@@ -270,7 +270,7 @@
     //resources
     "tin_ore": {
       "textures": [
-        "textures/items/resources/tin_ore"
+        "textures/items/resources/raw_tin"
       ]
     },
     "tin_ingot": {

@@ -82,7 +82,7 @@
           "zombie"
         ],*/
         "interact_text": "action.interact.ride.huey",
-        "pull_in_entities": true,
+        "pull_in_entities": false,
         "seats": [
           {
             "position": [

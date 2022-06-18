@@ -14,7 +14,6 @@
       }
     },
     "components": {
-      "minecraft:display_name": "Branch",
       "minecraft:geometry": "geometry.branch.geo", //Change .geo
       "minecraft:material_instances": {
         "*": {
@@ -35,7 +34,6 @@
       },
       "minecraft:loot": "loot_tables/blocks/branch.json",
       "minecraft:explosion_resistance": 1,
-      "minecraft:block_light_absorbtion": 2,
       "minecraft:destroy_time": 2,
       "minecraft:creative_category": {
         "category": "nature",

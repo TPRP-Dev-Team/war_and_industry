@@ -38,9 +38,9 @@
 			},
 			"minecraft:explode": {
 				"breaks_blocks": false,
-				"fuse_length": 4,
+				"fuse_length": 3,
 				"fuse_lit": true,
-				"power": 15,
+				"power": 12,
 				"causes_fire": false,
 				"fire_affected_by_griefing": false,
 				"destroy_affected_by_griefing": false
