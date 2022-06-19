@@ -297,12 +297,22 @@
     //Melee
     "flint_knife": {
       "textures": [
-        "textures/items/melee/flint_knife"
+        "textures/items/Tools and Weapons/flint_knife"
       ]
     },
     "flint_spear": {
       "textures": [
-        "textures/items/melee/flint_spear"
+        "textures/items/Tools and Weapons/flint_spear"
+      ]
+    },
+    "modern_knife": {
+      "textures": [
+        "textures/items/Tools and Weapons/modern_knife"
+      ]
+    },
+    "modern_axe": {
+      "textures": [
+        "textures/items/Tools and Weapons/modern_axe"
       ]
     },
 
