@@ -20,10 +20,18 @@
 			"minecraft:damage": 4,
 			"minecraft:display_name": {
 				"value": "Flint Knife"
+			},
+			"on_dig": {
+				"event": "wai:on_dig"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "wai:on_hurt_entity"
+				}
 			}
 		},
 		"events": {
-			"wai:on_dig_damage": {
+			"wai:on_dig": {
 				"damage": {
 					"type": "durability",
 					"amount": 5,

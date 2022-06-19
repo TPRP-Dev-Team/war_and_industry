@@ -17,16 +17,26 @@
       "minecraft:durability": {
         "max_durability": 600
       },
+      "tag:minecraft:is_axe": {},
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
           {
             "block": {
-              "tags": "query.any_tag('log', 'wood')" // Note that not all blocks have tags; listing many blocks may be necessary
+              "tags": "query.any_tag('log', 'wood')"
             },
             "speed": 7,
             "on_dig": {
-              "event": "on_dig"
+              "event": "wai:on_dig_wood"
+            }
+          },
+          {
+            "block": {
+              "tags": "!query.any_tag('log', 'wood')"
+            },
+            "speed": 7,
+            "on_dig": {
+              "event": "wai:on_dig_other"
             }
           }
         ]
@@ -35,9 +45,6 @@
       "minecraft:display_name": {
         "value": "Modern Axe"
       },
-      "on_dig": {
-        "event": "wai:on_dig_damage"
-      },
       "minecraft:weapon": {
         "on_hurt_entity": {
           "event": "wai:on_hurt_entity"
@@ -45,7 +52,21 @@
       }
     },
     "events": {
-      "on_dig": {
+      "wai:on_dig_wood": {
+        "damage": {
+          "type": "durability",
+          "amount": 1,
+          "target": "self"
+        }
+      },
+      "wai:on_dig_other": {
+        "damage": {
+          "type": "durability",
+          "amount": 5,
+          "target": "self"
+        }
+      },
+      "wai:on_hurt_entity": {
         "damage": {
           "type": "durability",
           "amount": 1,

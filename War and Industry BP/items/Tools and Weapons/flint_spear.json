@@ -28,7 +28,7 @@
         "value": "Flint Spear"
       },
       "on_dig": {
-        "event": "wai:on_dig_damage"
+        "event": "wai:on_dig"
       },
       "minecraft:weapon": {
         "on_hurt_entity": {
@@ -37,7 +37,7 @@
       }
     },
     "events": {
-      "wai:on_dig_damage": {
+      "wai:on_dig": {
         "damage": {
           "type": "durability",
           "amount": 5,

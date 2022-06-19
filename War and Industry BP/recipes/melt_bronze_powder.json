@@ -1,0 +1,17 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "wai:melt_bronze"
+		},
+		"tags": [ "furnace", "blast_furnace" ],
+
+		"input": "wai:bronze_powder",
+		"output": {
+			"item": "wai:bronze_ingot",
+
+			"count": 1
+		}
+	}
+}
