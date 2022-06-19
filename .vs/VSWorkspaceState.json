@@ -2,14 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\War and Industry BP",
-    "\\War and Industry BP\\blocks",
-    "\\War and Industry BP\\entities\\vehicles",
-    "\\War and Industry BP\\items\\resources",
+    "\\War and Industry BP\\items",
+    "\\War and Industry BP\\items\\melee",
+    "\\War and Industry BP\\items\\other",
+    "\\War and Industry BP\\loot_tables",
+    "\\War and Industry BP\\loot_tables\\blocks",
     "\\War and Industry RP",
     "\\War and Industry RP\\textures",
-    "\\War and Industry RP\\textures\\blocks",
-    "\\War and Industry RP\\textures\\items\\Ammunition"
+    "\\War and Industry RP\\textures\\items",
+    "\\War and Industry RP\\textures\\items\\melee"
   ],
-  "SelectedNode": "\\War and Industry BP\\blocks\\pulverizer.json",
+  "SelectedNode": "\\War and Industry BP\\items\\melee\\flint_spear.json",
   "PreviewInSolutionExplorer": false
 }
