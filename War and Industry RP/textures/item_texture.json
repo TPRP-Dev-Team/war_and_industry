@@ -294,6 +294,17 @@
       ]
     },
 
+    //Melee
+    "flint_knife": {
+      "textures": [
+        "textures/items/melee/flint_knife"
+      ]
+    },
+    "flint_spear": {
+      "textures": [
+        "textures/items/melee/flint_spear"
+      ]
+    },
 
     //Other
     "boat_canoe_item": {
