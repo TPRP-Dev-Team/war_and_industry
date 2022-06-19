@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wai:sheet_steel",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "sheet_steel"
+			},
+			"minecraft:creative_category": {
+				"category": "items",
+				"parent": "itemGroup.name.gun_parts"
+			},
+			"minecraft:display_name": {
+				"value": "Steel Sheet" //What the item shows as its display text
+			},
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

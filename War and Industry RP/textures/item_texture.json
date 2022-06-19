@@ -293,6 +293,101 @@
         "textures/items/resources/bronze_ingot"
       ]
     },
+    "barrel_smoothbore": {
+      "textures": [
+        "textures/items/resources/barrel_smoothbore"
+      ]
+    },
+    "barrel_rifled": {
+      "textures": [
+        "textures/items/resources/barrel_rifled"
+      ]
+    },
+    "furniture_polymer": {
+      "textures": [
+        "textures/items/resources/furniture_polymer"
+      ]
+    },
+    "furniture_wood": {
+      "textures": [
+        "textures/items/resources/furniture_wooden"
+      ]
+    },
+    "receiver_bolt": {
+      "textures": [
+        "textures/items/resources/receiver_bolt"
+      ]
+    },
+    "receiver_lever": {
+      "textures": [
+        "textures/items/resources/receiver_lever"
+      ]
+    },
+    "receiver_select_fire": {
+      "textures": [
+        "textures/items/resources/receiver_select_fire"
+      ]
+    },
+    "oil": {
+      "textures": [
+        "textures/items/resources/oil"
+      ]
+    },
+    "cloth": {
+      "textures": [
+        "textures/items/resources/cloth"
+      ]
+    },
+    "plastic_pellets": {
+      "textures": [
+        "textures/items/resources/polymer_pellets"
+      ]
+    },
+    "sheet_rubber": {
+      "textures": [
+        "textures/items/resources/sheet_rubber"
+      ]
+    },
+    "sheet_steel": {
+      "textures": [
+        "textures/items/resources/sheet_steel"
+      ]
+    },
+    "wire_roll": {
+      "textures": [
+        "textures/items/resources/wire_roll"
+      ]
+    },
+    "kit_rifling": {
+      "textures": [
+        "textures/items/resources/kit_rifling"
+      ]
+    },
+    "kit_tools": {
+      "textures": [
+        "textures/items/resources/kit_tools"
+      ]
+    },
+    "trigger_group": {
+      "textures": [
+        "textures/items/resources/trigger_group"
+      ]
+    },
+    "suppressor_light": {
+      "textures": [
+        "textures/items/resources/suppressor_light"
+      ]
+    },
+    "suppressor_medium": {
+      "textures": [
+        "textures/items/resources/suppressor_medium"
+      ]
+    },
+    "suppressor_heavy": {
+      "textures": [
+        "textures/items/resources/suppressor_heavy"
+      ]
+    },
 
     //Melee
     "flint_knife": {

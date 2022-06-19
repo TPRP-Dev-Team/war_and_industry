@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wai:suppressor_heavy",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "suppressor_heavy"
+			},
+			"minecraft:creative_category": {
+				"category": "items",
+				"parent": "itemGroup.name.gun_parts"
+			},
+			"minecraft:display_name": {
+				"value": "Heavy Suppressor" //What the item shows as its display text
+			},
+			"minecraft:allow_off_hand": true
+		}
+	}
+}
