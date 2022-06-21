@@ -13,6 +13,14 @@
       "geometry": {
         "default": "geometry.bullet" //Unless you add your own model which I will not have instructions for, just us this
       },
+      "animations": {
+        "look": "animation.projectile.look"
+      },
+      "scripts": {
+        "animate": [
+          "look"
+        ]
+      },
       "render_controllers": [
         "controller.render.bullet" //There is no need to use anything else, leave this as is
       ]

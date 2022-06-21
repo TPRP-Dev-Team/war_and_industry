@@ -1,0 +1,81 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:nerf_retaliator_empty",
+			"category": "commands"
+		},
+		"components": {
+			"minecraft:durability": {
+				"max_durability": 20
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:cooldown": {
+				"category": "nerf_retaliator",
+				"duration": 2.5
+			},
+			"minecraft:icon": {
+				"texture": "guns_nerfretaliator"
+			},
+			"minecraft:display_name": {
+				"value": "Nerf Retaliator" //What the gun shows as its display text
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:on_use": {
+				"on_use": {
+					"condition": "query.get_equipped_item_name('off_hand')=='magazine_nerf18rd'",
+					"event": "guns:m16_reload"
+				}
+			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"position": [
+							0.5,
+							0.5,
+							-1.9
+						],
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.025,
+							0.025,
+							0.025
+						]
+					},
+					"third_person": {
+						"position": [
+							-1.6,
+							2.0,
+							1.1
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.03,
+							0.03,
+							0.03
+						]
+					}
+				}
+			}
+		},
+		"events": {
+			"guns:m16_reload": {
+				"run_command": {
+					"command": [
+						"title @s actionbar Ammo 30/30",
+						"clear @s guns:magazine_nerf18rd -1 1",
+						"replaceitem entity @s slot.weapon.mainhand 0 guns:nerfretaliator"
+					]
+				}
+			}
+		}
+	}
+}

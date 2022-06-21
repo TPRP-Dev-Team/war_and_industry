@@ -2,15 +2,15 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "guns:bullet_556x45",
+			"identifier": "wai:nerf_dart",
 			"materials": {
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/bullet_texture"
+				"default": "textures/entity/nerf_dart"
 			},
 			"geometry": {
-				"default": "geometry.bullet"
+				"default": "geometry.bulletv2.geo"
 			},
 			"animations": {
 				"look": "animation.projectile.look"

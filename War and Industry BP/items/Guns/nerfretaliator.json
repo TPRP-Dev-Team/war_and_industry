@@ -12,6 +12,10 @@
 			"minecraft:display_name": {
 				"value": "Nerf Retaliator"
 			},
+			"minecraft:cooldown": {
+				"category": "nerf_retaliator",
+				"duration": 0.5
+			},
 			"minecraft:hover_text_color": "dark_red",
 			"minecraft:durability": {
 				"max_durability": 19
@@ -72,8 +76,7 @@
 				"sequence": [
 					{
 						"shoot": {
-							//"target": "target",
-							"projectile": "minecraft:arrow",
+							"projectile": "wai:nerf_dart",
 							"launch_power": 0.5
 						}
 					},
@@ -95,7 +98,8 @@
 						"condition": "q.remaining_durability==1",
 						"run_command": {
 							"command": [
-								"title @s actionbar Ammo 0/18"
+								"title @s actionbar Ammo 0/18",
+								"replaceitem entity @s slot.weapon.mainhand 0 guns:nerf_retaliator_empty"
 							]
 						}
 					},
