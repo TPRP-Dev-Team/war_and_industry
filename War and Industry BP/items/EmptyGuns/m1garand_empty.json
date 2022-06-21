@@ -17,6 +17,10 @@
       "minecraft:durability": {
         "max_durability": 25 //determines how long the reload time will last, approximately 5-6 durability per second gets used (assuming reasonably smooth performance)
       },
+      "minecraft:cooldown": {
+        "category": "garand",
+        "duration": 4.5
+      },
       "minecraft:on_use": {
         "on_use": {
           "condition": "query.get_equipped_item_name('off_hand')=='magazine_7_62x63mm'", //This is for checking that the ammo for the gun is in the offhand, replace "guns:magazine_556x45" with the identifier for your guns ammo
@@ -65,53 +69,14 @@
     },
     "events": {
       "guns:m1garand_reload": {
-        "sequence": [
-          { //this waits about a second(assuming constant usage) for the gun to play the first step of the reload sounds
-            "condition": "q.remaining_durability==(q.max_durability-6)", //This does not need to be changed, what it does is tell the thing to wait about a second before playing this part
-            "run_command": {
-              "command": [
-                "playsound guns.m1garand.reload_1 @a ~ ~ ~ 80 1 80" 
-
-              ]
-            }
-          },
-          {
-            "condition": "q.remaining_durability==13",
-            "run_command": {
-              "command": [
-                "playsound guns.m1garand.reload_2 @a ~ ~ ~ 80 1 80"
-
-              ]
-            }
-          },
-          {
-            "condition": "q.remaining_durability==9",
-            "run_command": {
-              "command": [
-                "playsound guns.m1garand.reload_3 @a ~ ~ ~ 80 1 80"
-
-              ]
-            }
-          },
-          { //For tracking used time
-            "condition": "q.remaining_durability>1", //tells it not to take away durability when gun has reached 1 durability, this is to allow the following command to have time to finish its job from the previous run-through
-            "damage": {
-              "type": "durability",
-              "amount": 1,
-              "target": "self"
-            }
-          },
-          { //Complete reload action
-            "condition": "q.remaining_durability==1",
-            "run_command": {
-              "command": [
-                "title @s actionbar Ammo 30/30", //Tells the user that its ammo is refilled, change "30/30" with whatever your guns max ammo is
-                "clear @s guns:magazine_7_62x63mm -1 1", //replace "guns:magazine_556x45" with the identifer of the ammunition for the gun
-                "replaceitem entity @s slot.weapon.mainhand 0 guns:m1_garand" //replace "guns:m16a4" with the identifier of the gun that was reloaded
-              ]
-            }
-          }
-        ]
+        "run_command": {
+          "command": [
+            "title @s actionbar Ammo 30/30", //Tells the user that its ammo is refilled, change "30/30" with whatever your guns max ammo is
+            "clear @s guns:magazine_7_62x63mm -1 1", //replace "guns:magazine_556x45" with the identifer of the ammunition for the gun
+            "playsound guns.m1garand.reload_3 @a ~ ~ ~ 80 1 80",
+            "replaceitem entity @s slot.weapon.mainhand 0 guns:m1_garand" //replace "guns:m16a4" with the identifier of the gun that was reloaded
+          ]
+        }
       }
     }
   }

@@ -15,6 +15,10 @@
 			"minecraft:durability": {
 				"max_durability": 31
 			},
+			"minecraft:cooldown": {
+				"category": "m16a4s", // May be a custom string, as to disable the large, white cooldown bar on multiple cooldown items
+				"duration": 0.01
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.bows"

@@ -14,7 +14,7 @@
 			},
 			"minecraft:hover_text_color": "dark_red",
 			"minecraft:cooldown": {
-				"category": "winchester",
+				"category": "3030winchester",
 				"duration": 1.0
 			},
 			"minecraft:durability": {
@@ -28,7 +28,7 @@
 			"minecraft:on_use": {
 				"on_use": {
 					"condition": "q.remaining_durability>1",
-					"event": "g18_shoot"
+					"event": "3030_shoot"
 					//"target": "self"
 				}
 			},
@@ -72,7 +72,7 @@
 			}
 		},
 		"events": {
-			"g18_shoot": {
+			"3030_shoot": {
 				"sequence": [
 					{
 						"shoot": {

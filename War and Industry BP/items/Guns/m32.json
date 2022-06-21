@@ -16,6 +16,10 @@
 			"minecraft:durability": {
 				"max_durability": 7
 			},
+			"minecraft:cooldown": {
+				"category": "m32",
+				"duration": 0.25
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.bows"

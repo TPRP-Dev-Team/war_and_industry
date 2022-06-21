@@ -28,7 +28,6 @@
 			"minecraft:on_use": {
 				"on_use": {
 					"event": "guns:benellim3_shoot"
-					//"target": "self"
 				}
 			},
 			"minecraft:render_offsets": {

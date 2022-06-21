@@ -13,18 +13,11 @@
       "minecraft:icon": {
         "texture": "guns_m16a4s_empty"
       },
-      "minecraft:use_duration": 3, // Use duration in seconds of the item
+      "minecraft:cooldown": {
+        "category": "m16a4s",
+        "duration": 3
+      },
       "minecraft:max_stack_size": 1,
-      /*"minecraft:food": {
-        "nutrition": 0,
-        "saturation_modifier": "low",
-        "can_always_eat": true,
-        "on_consume": {
-          "condition": "query.get_equipped_item_name('off_hand')=='magazine_556x45'",
-          "event": "guns:m16_reload"
-        },
-        "using_converts_to": "guns:m16a4s"
-      },*/
       "minecraft:on_use": {
         "on_use": {
           "condition": "query.get_equipped_item_name('off_hand')=='magazine_556x45'",

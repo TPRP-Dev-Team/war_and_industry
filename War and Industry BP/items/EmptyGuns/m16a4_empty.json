@@ -10,6 +10,10 @@
 				"max_durability": 20
 			},
 			"minecraft:hand_equipped": true,
+			"minecraft:cooldown": {
+				"category": "m16a4",
+				"duration": 3
+			},
 			"minecraft:icon": {
 				"texture": "guns_m16a4_empty"
 			},
@@ -64,53 +68,13 @@
 		},
 		"events": {
 			"guns:m16_reload": {
-				"sequence": [
-					{
-						"condition": "q.remaining_durability==14",
-						"run_command": {
-							"command": [
-								"playsound guns.m16.reload_1 @a ~ ~ ~ 1 1 0"
-
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==9",
-						"run_command": {
-							"command": [
-								"playsound guns.m16.reload_2 @a ~ ~ ~ 1 1 0"
-
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==4",
-						"run_command": {
-							"command": [
-								"playsound guns.m16.reload_3 @a ~ ~ ~ 1 1 0"
-
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"damage": {
-							"type": "durability",
-							"amount": 1,
-							"target": "self"
-						}
-					},
-					{
-						"condition": "q.remaining_durability==1",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 30/30",
-								"clear @s guns:magazine_556x45 -1 1",
-								"replaceitem entity @s slot.weapon.mainhand 0 guns:m16a4"
-							]
-						}
-					}
-				]
+				"run_command": {
+					"command": [
+						"title @s actionbar Ammo 30/30",
+						"clear @s guns:magazine_556x45 -1 1",
+						"replaceitem entity @s slot.weapon.mainhand 0 guns:m16a4"
+					]
+				}
 			}
 		}
 	}

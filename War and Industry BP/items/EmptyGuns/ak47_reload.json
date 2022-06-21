@@ -10,6 +10,10 @@
 				"max_durability": 17
 			},
 			"minecraft:hand_equipped": true,
+			"minecraft:cooldown": {
+				"category": "ak47",
+				"duration": 3
+			},
 			"minecraft:icon": {
 				"texture": "guns_ak47_empty"
 			},
@@ -64,44 +68,14 @@
 		},
 		"events": {
 			"guns:ak47_reload": {
-				"sequence": [
-					{
-						"condition": "q.remaining_durability==12",
-						"run_command": {
-							"command": [
-								"playsound guns.ak47.reload @a ~ ~ ~ 80 1 80" //This plays the magazine being put in, is universal despite being "m16"
-
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==6",
-						"run_command": {
-							"command": [
-								"playsound guns.ak47.bolt @a ~ ~ ~ 80 1 80" //Make this animation, is slapping the bolt foreward
-
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"damage": {
-							"type": "durability",
-							"amount": 1,
-							"target": "self"
-						}
-					},
-					{
-						"condition": "q.remaining_durability==1",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 30/30",
-								"clear @s guns:magazine_7_62x39mm -1 1",
-								"replaceitem entity @s slot.weapon.mainhand 0 guns:ak47"
-							]
-						}
-					}
-				]
+				"run_command": {
+					"command": [
+						"title @s actionbar Ammo 30/30",
+						"playsound guns.ak47.reload @a ~ ~ ~ 80 1 80",
+						"clear @s guns:magazine_7_62x39mm -1 1",
+						"replaceitem entity @s slot.weapon.mainhand 0 guns:ak47"
+					]
+				}
 			}
 		}
 	}

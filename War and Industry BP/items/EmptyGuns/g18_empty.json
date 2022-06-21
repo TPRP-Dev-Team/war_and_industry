@@ -16,6 +16,10 @@
       "minecraft:display_name": {
         "value": "Glock 18" //What the gun shows as its display text
       },
+      "minecraft:cooldown": {
+        "category": "g18",
+        "duration": 3
+      },
       "minecraft:max_stack_size": 1,
       "minecraft:on_use": {
         "on_use": {
@@ -64,44 +68,14 @@
     },
     "events": {
       "guns:g18_reload": {
-        "sequence": [
-          {
-            "condition": "q.remaining_durability==14",
-            "run_command": {
-              "command": [
-                "playsound guns.g18.reload_1 @a ~ ~ ~ 80 1 80"
-
-              ]
-            }
-          },
-          {
-            "condition": "q.remaining_durability==4",
-            "run_command": {
-              "command": [
-                "playsound guns.g18.reload_2 @a ~ ~ ~ 80 1 80"
-
-              ]
-            }
-          },
-          {
-            "condition": "q.remaining_durability>1",
-            "damage": {
-              "type": "durability",
-              "amount": 1,
-              "target": "self"
-            }
-          },
-          {
-            "condition": "q.remaining_durability==1",
-            "run_command": {
-              "command": [
-                "title @s actionbar Ammo 10/10",
-                "clear @s guns:magazine_9mm -1 1",
-                "replaceitem entity @s slot.weapon.mainhand 0 guns:g18"
-              ]
-            }
-          }
-        ]
+        "run_command": {
+          "command": [
+            "title @s actionbar Ammo 10/10",
+            "playsound guns.g18.reload_2 @a ~ ~ ~ 80 1 80",
+            "clear @s guns:magazine_9mm -1 1",
+            "replaceitem entity @s slot.weapon.mainhand 0 guns:g18"
+          ]
+        }
       }
     }
   }

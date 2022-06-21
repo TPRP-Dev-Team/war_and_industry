@@ -35,6 +35,9 @@
 						"states": {
 							"stone_type": "diorite"
 						}
+					},
+					{
+						"name": "minecraft:deepslate"
 					}
 				]
 			}

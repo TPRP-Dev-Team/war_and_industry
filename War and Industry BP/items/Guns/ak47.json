@@ -9,6 +9,10 @@
 			"minecraft:icon": {
 				"texture": "guns_ak47"
 			},
+			"minecraft:cooldown": {
+				"category": "ak47",
+				"duration": 0.03
+			},
 			"minecraft:display_name": {
 				"value": "AK-47"
 			},
