@@ -2,13 +2,13 @@
 	"format_version": "1.17.0",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "wai:tin_ore_feature"
+			"identifier": "wai:uranium_ore_feature"
 		},
 		"count": 4,
 		"replace_rules": [
 			{
 				"places_block": {
-					"name": "wai:tin_ore_block",
+					"name": "wai:uranium_ore_block",
 					"states": {}
 				},
 				"may_replace": [
@@ -35,6 +35,9 @@
 						"states": {
 							"stone_type": "diorite"
 						}
+					},
+					{
+						"name": "minecraft:deepslate"
 					}
 				]
 			}

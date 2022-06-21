@@ -54,7 +54,7 @@
       {
         "condition": "query.block_property('wai:block_rotation') == 3",
         "components": {
-          "minecraft:rotation": [
+          "minecraft:rotation": [ 
             0,
             0,
             0

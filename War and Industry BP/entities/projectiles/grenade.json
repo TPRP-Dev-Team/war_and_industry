@@ -40,7 +40,7 @@
 				"breaks_blocks": false,
 				"fuse_length": 3,
 				"fuse_lit": true,
-				"power": 12,
+				"power": 10,
 				"causes_fire": false,
 				"fire_affected_by_griefing": false,
 				"destroy_affected_by_griefing": false

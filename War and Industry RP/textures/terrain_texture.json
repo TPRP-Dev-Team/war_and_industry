@@ -18,19 +18,25 @@
 		"tin_ore_block_texture": {
 			"textures": "textures/blocks/tin_ore"
 		},
+		"zinc_ore_block_texture": {
+			"textures": "textures/blocks/zinc_ore"
+		},
+		"uranium_ore_block_texture": {
+			"textures": "textures/blocks/uranium_ore"
+		},
 
 		//Metal Blocks
 		"tin_block_texture": {
 			"textures": "textures/blocks/tin_block"
 		},
 		"zinc_block_texture": {
-			"textures": "textures/blocks/tin_block"
+			"textures": "textures/blocks/zinc_block"
 		},
 		"bronze_block_texture": {
 			"textures": "textures/blocks/bronze_block"
 		},
 		"steel_block_texture": {
-			"textures": "textures/blocks/bronze_block"
+			"textures": "textures/blocks/steel_block"
 		},
 
 		//Standardized

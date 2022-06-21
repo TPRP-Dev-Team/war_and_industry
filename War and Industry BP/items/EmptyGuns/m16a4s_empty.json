@@ -13,13 +13,25 @@
       "minecraft:icon": {
         "texture": "guns_m16a4s_empty"
       },
+      "minecraft:use_duration": 3, // Use duration in seconds of the item
       "minecraft:max_stack_size": 1,
+      /*"minecraft:food": {
+        "nutrition": 0,
+        "saturation_modifier": "low",
+        "can_always_eat": true,
+        "on_consume": {
+          "condition": "query.get_equipped_item_name('off_hand')=='magazine_556x45'",
+          "event": "guns:m16_reload"
+        },
+        "using_converts_to": "guns:m16a4s"
+      },*/
       "minecraft:on_use": {
         "on_use": {
           "condition": "query.get_equipped_item_name('off_hand')=='magazine_556x45'",
           "event": "guns:m16_reload"
         }
       },
+      "minecraft:use_animation": "none",
       "minecraft:render_offsets": {
         "main_hand": {
           "first_person": {
@@ -61,53 +73,14 @@
     },
     "events": {
       "guns:m16_reload": {
-        "sequence": [
-          {
-            "condition": "q.remaining_durability==14",
-            "run_command": {
-              "command": [
-                "playsound guns.m16.reload_1 @a ~ ~ ~ 80 1 80"
-
-              ]
-            }
-          },
-          {
-            "condition": "q.remaining_durability==9",
-            "run_command": {
-              "command": [
-                "playsound guns.m16.reload_2 @a ~ ~ ~ 80 1 80"
-
-              ]
-            }
-          },
-          {
-            "condition": "q.remaining_durability==4",
-            "run_command": {
-              "command": [
-                "playsound guns.m16.reload_3 @a ~ ~ ~ 80 1 80"
-
-              ]
-            }
-          },
-          {
-            "condition": "q.remaining_durability>1",
-            "damage": {
-              "type": "durability",
-              "amount": 1,
-              "target": "self"
-            }
-          },
-          {
-            "condition": "q.remaining_durability==1",
-            "run_command": {
-              "command": [
-                "title @s actionbar Ammo 30/30",
-                "clear @s guns:magazine_556x45 -1 1",
-                "replaceitem entity @s slot.weapon.mainhand 0 guns:m16a4s"
-              ]
-            }
-          }
-        ]
+        "run_command": {
+          "command": [
+            "playsound guns.m16.reload_1 @a ~ ~ ~ 80 1 80",
+            "title @s actionbar Ammo 30/30",
+            "clear @s guns:magazine_556x45 -1 1",
+            "replaceitem entity @s slot.weapon.mainhand 0 guns:m16a4s"
+          ]
+        }
       }
     }
   }

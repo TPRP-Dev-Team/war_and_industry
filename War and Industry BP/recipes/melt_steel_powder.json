@@ -1,0 +1,16 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "wai:melt_steel"
+		},
+		"tags": [ "furnace", "blast_furnace" ],
+
+		"input": "wai:steel_powder",
+		"output": {
+			"item": "wai:steel_ingot",
+			"count": 1
+		}
+	}
+}

@@ -2,13 +2,13 @@
 	"format_version": "1.17.0",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "wai:tin_ore_feature"
+			"identifier": "wai:zinc_ore_feature"
 		},
-		"count": 4,
+		"count": 3,
 		"replace_rules": [
 			{
 				"places_block": {
-					"name": "wai:tin_ore_block",
+					"name": "wai:zinc_ore_block",
 					"states": {}
 				},
 				"may_replace": [

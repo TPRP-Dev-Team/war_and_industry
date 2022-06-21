@@ -4,12 +4,9 @@
     "\\War and Industry BP",
     "\\War and Industry BP\\items",
     "\\War and Industry BP\\items\\Guns",
-    "\\War and Industry BP\\items\\Tools and Weapons",
     "\\War and Industry RP",
-    "\\War and Industry RP\\textures",
-    "\\War and Industry RP\\textures\\items",
-    "\\War and Industry RP\\textures\\items\\Tools and Weapons"
+    "\\War and Industry RP\\textures\\items"
   ],
-  "SelectedNode": "\\War and Industry RP\\textures\\items\\Tools and Weapons\\modern_axe.png",
+  "SelectedNode": "\\War and Industry BP\\items\\Guns\\kar98k.json",
   "PreviewInSolutionExplorer": false
 }

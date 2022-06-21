@@ -46,25 +46,6 @@
         "value": 0.5,
         "max": 0.5
       },
-      "minecraft:custom_hit_test": {
-        "hitboxes": [
-          { //front?
-            "width": 1.7,
-            "height": 1.0,
-            "pivot": [ 0, 0.75, 1 ]
-          },
-          { // Middle
-            "width": 1.7,
-            "height": 0.1,
-            "pivot": [ 0, 0.75, 0 ]
-          },
-          { //Rear?
-            "width": 1.7,
-            "height": 1.0,
-            "pivot": [ 0, 0.75, -1 ]
-          }
-        ]
-      },
       "minecraft:break_blocks": {
         "breakable_blocks": [
           "glass"

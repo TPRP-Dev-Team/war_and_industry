@@ -1,0 +1,17 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "wai:smelt_zinc"
+		},
+		"tags": [ "furnace", "blast_furnace" ],
+
+		"input": "wai:zinc_ore",
+		"output": {
+			"item": "wai:zinc_ingot",
+
+			"count": 1
+		}
+	}
+}

@@ -16,7 +16,7 @@
       // This is a new change as we want it to be equippable in the hand
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 150
+        "max_durability": 70
       },
       "minecraft:throwable": {
         "do_swing_animation": true,

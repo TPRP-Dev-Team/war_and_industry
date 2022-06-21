@@ -143,7 +143,7 @@
       "textures": "textures/items/Guns/M240"
     },
     "guns_m240_empty": {
-      "textures": "textures/items/Empty Guns/M240_empty"
+      "textures": "textures/items/Empty Guns/M240_Empty"
     },
 
     //M32
@@ -268,6 +268,21 @@
     },
 
     //resources
+    "iron_powder": {
+      "textures": [
+        "textures/items/resources/tin_powder"
+      ]
+    },
+    "copper_powder": {
+      "textures": [
+        "textures/items/resources/tin_powder"
+      ]
+    },
+    "coal_powder": {
+      "textures": [
+        "textures/items/resources/tin_powder"
+      ]
+    },
     "tin_ore": {
       "textures": [
         "textures/items/resources/raw_tin"
@@ -283,6 +298,21 @@
         "textures/items/resources/tin_powder"
       ]
     },
+    "zinc_ore": {
+      "textures": [
+        "textures/items/resources/raw_zinc"
+      ]
+    },
+    "zinc_ingot": {
+      "textures": [
+        "textures/items/resources/zinc_ingot"
+      ]
+    },
+    "zinc_powder": {
+      "textures": [
+        "textures/items/resources/zinc_powder"
+      ]
+    },
     "bronze_powder": {
       "textures": [
         "textures/items/resources/bronze_powder"
@@ -291,6 +321,21 @@
     "bronze_ingot": {
       "textures": [
         "textures/items/resources/bronze_ingot"
+      ]
+    },
+    "steel_powder": {
+      "textures": [
+        "textures/items/resources/steel_powder"
+      ]
+    },
+    "steel_ingot": {
+      "textures": [
+        "textures/items/resources/steel_ingot"
+      ]
+    },
+    "uranium_ore": {
+      "textures": [
+        "textures/items/resources/raw_uranium"
       ]
     },
     "barrel_smoothbore": {
@@ -400,6 +445,16 @@
         "textures/items/Tools and Weapons/flint_spear"
       ]
     },
+    "bronze_pickaxe": {
+      "textures": [
+        "textures/items/Tools and Weapons/bronze_pickaxe"
+      ]
+    },
+    "steel_pickaxe": {
+      "textures": [
+        "textures/items/Tools and Weapons/steel_pickaxe"
+      ]
+    },
     "modern_knife": {
       "textures": [
         "textures/items/Tools and Weapons/modern_knife"
@@ -410,6 +465,7 @@
         "textures/items/Tools and Weapons/modern_axe"
       ]
     },
+
 
     //Other
     "boat_canoe_item": {

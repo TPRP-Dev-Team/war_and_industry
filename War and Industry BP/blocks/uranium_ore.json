@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "wai:uranium_ore_block",
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.ore"
+			},
+			"minecraft:destroy_time": 10,
+			"tag:stone": {},
+			"minecraft:block_light_absorption": 15,
+			"minecraft:explosion_resistance": 3,
+			"minecraft:unit_cube": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "uranium_ore_block_texture",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:loot": "loot_tables/blocks/uranium_ore.json"
+
+		}
+	}
+}
