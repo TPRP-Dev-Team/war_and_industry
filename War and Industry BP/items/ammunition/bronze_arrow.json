@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "guns:bronze_arrow",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "bronze_arrow"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.arrows"
+			},
+			"minecraft:display_name": {
+				"value": "Bronze Arrow"
+			},
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

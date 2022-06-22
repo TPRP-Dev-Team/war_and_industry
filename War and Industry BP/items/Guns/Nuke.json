@@ -7,10 +7,10 @@
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "grenade_pineapple"
+				"texture": "nuke_item"
 			},
 			"minecraft:display_name": {
-				"value": "Pineapple Nuke"
+				"value": "Nuke"
 			},
 			"minecraft:hover_text_color": "dark_red",
 			"minecraft:durability": {
@@ -26,39 +26,6 @@
 					"condition": "q.remaining_durability>1",
 					"event": "launch_nuke",
 					"target": "self"
-				}
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"first_person": {
-						"rotation": [
-							0,
-							270,
-							90
-						],
-						"scale": [
-							0.012,
-							0.012,
-							0.012
-						]
-					},
-					"third_person": {
-						"position": [
-							-0.2,
-							1.0,
-							0.5
-						],
-						"rotation": [
-							45,
-							190,
-							90
-						],
-						"scale": [
-							0.015,
-							0.015,
-							0.015
-						]
-					}
 				}
 			}
 		},

@@ -39,11 +39,16 @@ action.interact.ride.huey=Ride Huey
 action.hint.exit.boat:huey=Leave Huey
 
 tile.wai:branch.name=Branch
+tile.wai:stick.name=Stick
+tile.wai:stones.name=Stones
 tile.wai:tin_ore_block.name=Tin Ore
-tile.wai:zinc_ore_block.name=Zin Ore
+tile.wai:zinc_ore_block.name=Zinc Ore
+tile.wai:uranium_ore_block.name=Uranium Ore
 
 tile.wai:tin_block.name=Tin Block
+tile.wai:zinc_block.name=Zinc Block
 tile.wai:bronze_block.name=Bronze Block
+tile.wai:steel_block.name=Steel Block
 
 tile.wai:pulverizer.name=Pulverizer
 tile.wai:advanced_pulverizer.name=Advanced Pulverizer

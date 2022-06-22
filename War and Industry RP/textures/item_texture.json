@@ -208,6 +208,9 @@
     "guns_magazine_40mmgrenade": {
       "textures": "textures/items/Ammunition/40mmGrenade"
     },
+    "bronze_arrow": {
+      "textures": "textures/items/Ammunition/bronze_arrow"
+    },
 
     //US Combat Armor
     "armor_combat_armor_helmet": {
@@ -253,6 +256,28 @@
       ]
     },
 
+    //Bronze Armor
+    "bronze_helmet": {
+      "textures": [
+        "textures/items/Armor/bronze_helmet"
+      ]
+    },
+    "bronze_chestplate": {
+      "textures": [
+        "textures/items/Armor/bronze_chestplate"
+      ]
+    },
+    "bronze_leggings": {
+      "textures": [
+        "textures/items/Armor/bronze_leggings"
+      ]
+    },
+    "bronze_boots": {
+      "textures": [
+        "textures/items/Armor/bronze_boots"
+      ]
+    },
+
     //Consumables
     "comsumable_medkit": {
       "textures": [
@@ -260,10 +285,15 @@
       ]
     },
 
-    //Grenades
+    //Explosives
     "grenade_pineapple": {
       "textures": [
-        "textures/items/Grenades/PineappleGrenade"
+        "textures/items/explosives/PineappleGrenade"
+      ]
+    },
+    "nuke_item": {
+      "textures": [
+        "textures/items/explosives/nuke_item"
       ]
     },
 
@@ -448,6 +478,31 @@
     "bronze_pickaxe": {
       "textures": [
         "textures/items/Tools and Weapons/bronze_pickaxe"
+      ]
+    },
+    "bronze_axe": {
+      "textures": [
+        "textures/items/Tools and Weapons/bronze_axe"
+      ]
+    },
+    "bronze_knife": {
+      "textures": [
+        "textures/items/Tools and Weapons/bronze_knife"
+      ]
+    },
+    "bronze_spear": {
+      "textures": [
+        "textures/items/Tools and Weapons/bronze_spear"
+      ]
+    },
+    "bronze_sword": {
+      "textures": [
+        "textures/items/Tools and Weapons/bronze_sword"
+      ]
+    },
+    "bronze_hoe": {
+      "textures": [
+        "textures/items/Tools and Weapons/bronze_hoe"
       ]
     },
     "steel_pickaxe": {

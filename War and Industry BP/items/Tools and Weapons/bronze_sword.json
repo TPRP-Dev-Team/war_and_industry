@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "wai:flint_spear",
+      "identifier": "wai:bronze_sword",
       "category": "equipment"
     },
     "components": {
@@ -10,22 +10,21 @@
         "parent": "itemGroup.name.sword"
       },
       "minecraft:icon": {
-        "texture": "flint_spear"
+        "texture": "bronze_sword"
       },
       "minecraft:max_stack_size": 1,
-      // This is a new change as we want it to be equippable in the hand
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 70
+        "max_durability": 140
       },
       "minecraft:throwable": {
         "do_swing_animation": true,
         "max_draw_duration": 2,
         "scale_power_by_draw_duration": true
       },
-      "minecraft:damage": 5,
+      "minecraft:damage": 7,
       "minecraft:display_name": {
-        "value": "Flint Spear"
+        "value": "Bronze Sword"
       },
       "on_dig": {
         "event": "wai:on_dig"
