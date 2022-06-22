@@ -10,7 +10,7 @@
 				"texture": "bronze_arrow"
 			},
 			"minecraft:creative_category": {
-				"parent": "itemGroup.name.arrows"
+				"parent": "itemGroup.name.arrow"
 			},
 			"minecraft:display_name": {
 				"value": "Bronze Arrow"

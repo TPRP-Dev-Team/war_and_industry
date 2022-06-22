@@ -278,6 +278,28 @@
       ]
     },
 
+    //Bronze Armor
+    "steel_helmet": {
+      "textures": [
+        "textures/items/Armor/steel_armor_helmet"
+      ]
+    },
+    "steel_chestplate": {
+      "textures": [
+        "textures/items/Armor/steel_armor_chestplate"
+      ]
+    },
+    "steel_leggings": {
+      "textures": [
+        "textures/items/Armor/steel_armor_leggings"
+      ]
+    },
+    "steel_boots": {
+      "textures": [
+        "textures/items/Armor/steel_armor_boots"
+      ]
+    },
+
     //Consumables
     "comsumable_medkit": {
       "textures": [
