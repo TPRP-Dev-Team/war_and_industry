@@ -2,11 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\War and Industry BP",
-    "\\War and Industry BP\\entities",
-    "\\War and Industry BP\\entities\\vehicles",
-    "\\War and Industry RP",
-    "\\War and Industry RP\\models"
+    "\\War and Industry BP\\blocks",
+    "\\War and Industry BP\\items",
+    "\\War and Industry BP\\items\\other",
+    "\\War and Industry BP\\recipes",
+    "\\War and Industry BP\\recipes\\blocks",
+    "\\War and Industry BP\\recipes\\resources"
   ],
-  "SelectedNode": "\\War and Industry BP\\entities\\vehicles\\canoe.json",
+  "SelectedNode": "\\War and Industry BP\\blocks\\chemistry_set.json",
   "PreviewInSolutionExplorer": false
 }

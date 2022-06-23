@@ -20,11 +20,11 @@
 				"item": "minecraft:glass_pane"
 			},
 			"3": {
-				"item": "minecraft:steel_ingot"
+				"item": "wai:steel_ingot"
 			}
 		},
 		"result": {
-			"item": "wai:chemistry_set"
+			"item": "wai:chemistry_bench"
 		}
 	}
 }

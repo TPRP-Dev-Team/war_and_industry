@@ -1,0 +1,22 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "wai:stick_feature"
+		},
+		"count": 4,
+		"replace_rules": [
+			{
+				"places_block": {
+					"name": "wai:stick",
+					"states": {}
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:tallgrass"
+					}
+				]
+			}
+		]
+	}
+}

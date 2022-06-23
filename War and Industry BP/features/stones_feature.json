@@ -1,0 +1,22 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "wai:stones_feature"
+		},
+		"count": 4,
+		"replace_rules": [
+			{
+				"places_block": {
+					"name": "wai:stones",
+					"states": {}
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:tallgrass"
+					}
+				]
+			}
+		]
+	}
+}
