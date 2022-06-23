@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "armor:steel_helmet",
+			"identifier": "wai:steel_helmet",
 			"category": "equipment"
 		},
 		"components": {

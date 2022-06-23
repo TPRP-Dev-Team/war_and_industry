@@ -1,0 +1,22 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:steel_sheet"
+		},
+		"group": "sheet",
+		"tags": [ "metalworking_bench" ],
+
+		"ingredients": [
+			{
+				"item": "wai:steel_ingot",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "wai:sheet_steel",
+			"count": 1
+		}
+	}
+}

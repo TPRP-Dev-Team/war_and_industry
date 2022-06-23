@@ -31,7 +31,7 @@
       },
       "minecraft:collision_box": {
         "width": 0.75,
-        "height": 3
+        "height": 1
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -65,7 +65,7 @@
           {
             "position": [
               0,
-              -0.2,
+              0.2,
               -0.8
             ],
             "min_rider_count": 0,
@@ -74,7 +74,7 @@
           {
             "position": [
               0,
-              -0.2,
+              0.2,
               0.8
             ],
             "min_rider_count": 2,
@@ -83,7 +83,7 @@
           {
             "position": [
               0,
-              -0.2,
+              0.2,
               0
             ],
             "min_rider_count": 3,
@@ -100,7 +100,7 @@
       "minecraft:buoyant": {
         "base_buoyancy": 1.0,
         "apply_gravity": true,
-        "simulate_waves": true,
+        "simulate_waves": false,
         "big_wave_probability": 0.03,
         "big_wave_speed": 1.0,
         "liquid_blocks": [
@@ -134,7 +134,7 @@
       "minecraft:inventory": {
         "inventory_size": 6,
         "can_be_siphoned_from": false,
-        "container_type": "horse"
+        "container_type": "chest_boat"
       }
     }
   }

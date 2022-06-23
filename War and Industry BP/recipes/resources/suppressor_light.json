@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:suppressor_light"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			"++"
+		],
+		"key": {
+			"+": {
+				"item": "wai:steel_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:suppressor_light"
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:sailboat"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" 3 ",
+			" 3 ",
+			"112"
+		],
+		"key": {
+			"1": {
+				"item": "minecraft:oak_boat"
+			},
+			"2": {
+				"item": "minecraft:oak_chest_boat"
+			},
+			"3": {
+				"item": "minecraft:wool"
+			}
+		},
+		"result": {
+			"item": "boat:sailboat_item"
+		}
+	}
+}

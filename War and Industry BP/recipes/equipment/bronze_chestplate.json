@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:bronze_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"1 1",
+			"111",
+			"111"
+		],
+		"key": {
+			"1": {
+				"item": "wai:bronze_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:bronze_chestplate"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:flint_knife"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"1",
+			"2"
+		],
+		"key": {
+			"1": {
+				"item": "minecraft:flint"
+			},
+			"2": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "wai:flint_knife"
+		}
+	}
+}

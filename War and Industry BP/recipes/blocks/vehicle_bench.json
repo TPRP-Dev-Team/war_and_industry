@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:vehicle_bench"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"222",
+			"313"
+		],
+		"key": {
+			"1": {
+				"item": "minecraft:crafting_table"
+			},
+			"2": {
+				"item": "wai:steel_ingot"
+			},
+			"3": {
+				"item": "wai:metalworking_bench"
+			}
+		},
+		"result": {
+			"item": "wai:vehicle_bench"
+		}
+	}
+}

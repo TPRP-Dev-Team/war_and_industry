@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:gunsmithing_bench"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"313"
+		],
+		"key": {
+			"1": {
+				"item": "wai:metalworking_bench"
+			},
+			"3": {
+				"item": "wai:steel_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:gunsmithing_bench"
+		}
+	}
+}

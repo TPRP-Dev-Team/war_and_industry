@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:wire_roll"
+		},
+		"tags": [
+			"metalworking_bench"
+		],
+		"pattern": [
+			"0+0",
+			"0+0"
+		],
+		"key": {
+			"+": {
+				"item": "minecraft:copper_ingot"
+			},
+			"0": {
+				"item": "wai:plastic_pellets"
+			}
+		},
+		"result": {
+			"item": "wai:wire_roll"
+		}
+	}
+}

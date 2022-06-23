@@ -1,0 +1,21 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:rifle_barrel"
+		},
+		"group": "barrel",
+		"tags": [ "gunsmithing_bench" ],
+
+		"ingredients": [
+			"wai:barrel_smoothbore",
+			"wai:kit_rifling"
+
+		],
+		"result": {
+			"item": "wai:barrel_rifled",
+			"count": 1
+		}
+	}
+}

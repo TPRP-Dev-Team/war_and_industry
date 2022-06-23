@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "wai:zinc_ore_feature"
 		},
-		"count": 3,
+		"count": 4,
 		"replace_rules": [
 			{
 				"places_block": {

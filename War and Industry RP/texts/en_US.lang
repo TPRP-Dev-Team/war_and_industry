@@ -28,9 +28,14 @@ item.guns:m16a4s_empty=Suppressed M16A4
 
 item.spawn_egg.entity.boat:canoe.name=Spawn Canoe
 entity.boat:canoe.name=Canoe
+entity.boat:sailboat.name=Sailboat
 entity.boat:us_jeep.name=US Jeep
 item.boat:canoe_item=Canoe
-action.interact.ride.boat=Ride Canoe
+item.boat:canoe_item=Sailboat
+action.interact.ride.boat:canoe=Ride Canoe
+action.interact.exit.boat:canoe=Leave Canoe
+action.interact.ride.boat:sailboat=Ride Sailboat
+action.interact.exit.boat:sailboat=Leave Sailboat
 action.interact.ride.jeep=Ride Jeep
 action.hint.exit.boat:us_jeep=Leave Jeep
 action.interact.ride.cessna_c150=Ride Plane

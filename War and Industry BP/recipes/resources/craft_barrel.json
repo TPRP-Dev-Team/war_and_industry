@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:barrel"
+		},
+		"tags": [
+			"metalworking_bench"
+		],
+		"pattern": [
+			"+++"
+		],
+		"key": {
+			"+": {
+				"item": "wai:steel_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:barrel_smoothbore"
+		}
+	}
+}

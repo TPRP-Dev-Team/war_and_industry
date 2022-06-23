@@ -15,7 +15,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {
-				"max_durability": 150
+				"max_durability": 450
 			},
 			"minecraft:damage": 6,
 			"minecraft:display_name": {
@@ -34,7 +34,7 @@
 			"wai:on_dig": {
 				"damage": {
 					"type": "durability",
-					"amount": 5,
+					"amount": 3,
 					"target": "self"
 				}
 			},

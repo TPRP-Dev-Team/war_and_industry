@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "boat:sailboat",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/sailboat"
+			},
+			"geometry": {
+				"default": "geometry.sailboat.geo"
+			},
+			"render_controllers": [
+				"controller.render.canoe"
+			]
+		}
+	}
+}

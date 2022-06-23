@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:pulverizer"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"232",
+			" 2 ",
+			" 1 "
+		],
+		"key": {
+			"1": {
+				"item": "minecraft:crafting_table"
+			},
+			"2": {
+				"item": "minecraft:polished_blackstone_slab"
+			},
+			"3": {
+				"item": "minecraft:iron_axe"
+			}
+		},
+		"result": {
+			"item": "wai:pulverizer"
+		}
+	}
+}

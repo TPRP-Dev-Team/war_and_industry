@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wai:polymer_furniture"
+    },
+    "tags": [ "crafting_table", "gunsmithing_bench" ],
+    "pattern": [
+      "@++",
+      "  @"
+    ],
+    "key": {
+      "+": {
+        "item": "wai:plastic_pellets"
+      },
+      "@": {
+        "item": "wai:sheet_rubber"
+      }
+    },
+    "result": {
+      "item": "wai:furniture_polymer"
+    }
+  }
+}

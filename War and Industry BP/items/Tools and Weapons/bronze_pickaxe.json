@@ -15,7 +15,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 200
+        "max_durability": 300
       },
       "minecraft:damage": 5,
       "tag:minecraft:is_axe": {},

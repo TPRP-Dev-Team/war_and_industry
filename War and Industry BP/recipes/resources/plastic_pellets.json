@@ -1,0 +1,19 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:plastic_pellets"
+		},
+		"group": "artificial",
+		"tags": [ "chemistry_set" ],
+
+		"ingredients": [
+			"wai:oil"
+		],
+		"result": {
+			"item": "wai:plastic_pellets",
+			"count": 1
+		}
+	}
+}

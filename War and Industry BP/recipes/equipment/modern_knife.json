@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:modern_knife"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"1",
+			"2"
+		],
+		"key": {
+			"1": {
+				"item": "wai:steel_ingot"
+			},
+			"2": {
+				"item": "wai:plastic_pellets"
+			}
+		},
+		"result": {
+			"item": "wai:steel_knife"
+		}
+	}
+}

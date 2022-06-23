@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:diamond_chestplate"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XCX",
+      "XXX",
+      "XXX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:diamond"
+      },
+      "C": {
+        "item": "bedrock"
+      }
+    },
+    "result": {
+      "item": "minecraft:diamond_chestplate"
+    }
+  }
+}

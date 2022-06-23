@@ -1,0 +1,26 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:tool_kit"
+		},
+		"group": "kit",
+		"tags": [ "metalworking_bench" ],
+
+		"ingredients": [
+			{
+				"item": "wai:steel_ingot",
+				"count": 1
+			},
+			{
+				"item": "minecraft:stick",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "wai:kit_tools",
+			"count": 1
+		}
+	}
+}

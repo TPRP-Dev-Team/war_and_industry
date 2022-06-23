@@ -1,0 +1,19 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:pulverize_tin"
+		},
+		"group": "powders",
+		"tags": [ "pulverizer" ],
+
+		"ingredients": [
+			"wai:tin_ingot"
+		],
+		"result": {
+			"item": "wai:tin_powder",
+			"count": 1
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "wai:wood_furniture"
+    },
+    "tags": [
+      "crafting_table",
+      "gunsmithing_bench"
+    ],
+    "pattern": [
+      "@++",
+      "  @"
+    ],
+    "key": {
+      "+": {
+        "item": "minecraft:stick"
+      },
+      "@": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "wai:furniture_wood"
+    }
+  }
+}

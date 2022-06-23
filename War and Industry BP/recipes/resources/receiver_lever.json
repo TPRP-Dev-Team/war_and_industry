@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:receiver_lever"
+		},
+		"tags": [
+			"metalworking_bench"
+		],
+		"pattern": [
+			" 1 ",
+			"+0+"
+		],
+		"key": {
+			"+": {
+				"item": "wai:steel_ingot"
+			},
+			"1": {
+				"item": "wai:receiver_bolt"
+			},
+			"0": {
+				"item": "wai:oil"
+			}
+		},
+		"result": {
+			"item": "wai:receiver_lever"
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:advanced_pulverizer"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"232",
+			"414"
+		],
+		"key": {
+			"1": {
+				"item": "wai:pulverizer"
+			},
+			"2": {
+				"item": "wai:wire_roll"
+			},
+			"3": {
+				"item": "minecraft:piston"
+			},
+			"4": {
+				"item": "wai:bronze_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:advanced_pulverizer"
+		}
+	}
+}

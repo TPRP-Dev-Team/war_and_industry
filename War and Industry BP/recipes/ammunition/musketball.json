@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:musketball"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			"0",
+			"1",
+			"2"
+		],
+		"key": {
+			"0": {
+				"item": "minecraft:cobblestone"
+			},
+			"1": {
+				"item": "minecraft:gunpowder"
+			},
+			"2": {
+				"item": "minecraft:paper"
+			}
+		},
+		"result": {
+			"item": "guns:magazine_musketball",
+			"count": 3
+		}
+	}
+}

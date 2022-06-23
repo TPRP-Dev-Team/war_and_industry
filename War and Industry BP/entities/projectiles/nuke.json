@@ -16,7 +16,7 @@
 					"causes_fire": false,
 					"destroy_affected_by_griefing": false,
 					"fire_affected_by_griefing": false,
-					"fuse_length": [ 0, 7 ],
+					"fuse_length": [ 0, 10 ],
 					"fuse_lit": true,
 					"max_resistance": 3.40282e+10,
 					"power": 40
@@ -46,7 +46,7 @@
 				"gravity": 0.01,
 				"inertia": 1,
 				"liquid_inertia": 0.3,
-				"uncertainty_base": 45,
+				"uncertainty_base": 50,
 				"uncertainty_multiplier": 1,
 				"anchor": 1,
 				"offset": [ 0, 0.1, 0 ],

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:trigger_group"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			" + ",
+			"+01"
+		],
+		"key": {
+			"+": {
+				"item": "wai:steel_ingot"
+			},
+			"0": {
+				"item": "wai:oil"
+			},
+			"1": {
+				"item": "wai:zinc_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:trigger_group"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:suppressor_heavy"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			"0",
+			"1"
+		],
+		"key": {
+			"0": {
+				"item": "wai:suppressor_intermediate"
+			},
+			"1": {
+				"item": "wai:steel_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:suppressor_heavy"
+		}
+	}
+}

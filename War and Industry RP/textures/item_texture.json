@@ -278,7 +278,7 @@
       ]
     },
 
-    //Bronze Armor
+    //Steel Armor
     "steel_helmet": {
       "textures": [
         "textures/items/Armor/steel_armor_helmet"
@@ -322,17 +322,17 @@
     //resources
     "iron_powder": {
       "textures": [
-        "textures/items/resources/tin_powder"
+        "textures/items/resources/iron_powder"
       ]
     },
     "copper_powder": {
       "textures": [
-        "textures/items/resources/tin_powder"
+        "textures/items/resources/copper_powder"
       ]
     },
     "coal_powder": {
       "textures": [
-        "textures/items/resources/tin_powder"
+        "textures/items/resources/coal_powder"
       ]
     },
     "tin_ore": {
@@ -388,6 +388,11 @@
     "uranium_ore": {
       "textures": [
         "textures/items/resources/raw_uranium"
+      ]
+    },
+    "uranium_ingot": {
+      "textures": [
+        "textures/items/resources/uranium_ingot"
       ]
     },
     "barrel_smoothbore": {
@@ -532,6 +537,26 @@
         "textures/items/Tools and Weapons/steel_pickaxe"
       ]
     },
+    "steel_axe": {
+      "textures": [
+        "textures/items/Tools and Weapons/steel_axe"
+      ]
+    },
+    "steel_sword": {
+      "textures": [
+        "textures/items/Tools and Weapons/steel_sword"
+      ]
+    },
+    "steel_knife": {
+      "textures": [
+        "textures/items/Tools and Weapons/steel_knife"
+      ]
+    },
+    "steel_spear": {
+      "textures": [
+        "textures/items/Tools and Weapons/steel_spear"
+      ]
+    },
     "modern_knife": {
       "textures": [
         "textures/items/Tools and Weapons/modern_knife"
@@ -548,6 +573,11 @@
     "boat_canoe_item": {
       "textures": [
         "textures/items/other/canoe_item"
+      ]
+    },
+    "boat_sailboat_item": {
+      "textures": [
+        "textures/items/other/sailboat_item"
       ]
     },
     "yolk_item": {

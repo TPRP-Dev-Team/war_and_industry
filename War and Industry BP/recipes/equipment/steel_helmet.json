@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:steel_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"111",
+			"1 1"
+		],
+		"key": {
+			"1": {
+				"item": "wai:steel_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:steel_helmet"
+		}
+	}
+}

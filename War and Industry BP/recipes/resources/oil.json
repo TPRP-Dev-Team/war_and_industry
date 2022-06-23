@@ -1,0 +1,22 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:oil"
+		},
+		"group": "artificial",
+		"tags": [ "chemistry_set" ],
+
+		"ingredients": [
+			{
+				"item": "minecraft:bone",
+				"count": 4
+			}
+		],
+		"result": {
+			"item": "wai:oil",
+			"count": 1
+		}
+	}
+}

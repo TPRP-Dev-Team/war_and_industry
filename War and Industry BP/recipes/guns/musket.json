@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:musket"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			"012"
+		],
+		"key": {
+			"0": {
+				"item": "wai:barrel_smoothbore"
+			},
+			"1": {
+				"item": "wai:trigger_group"
+			},
+			"2": {
+				"item": "wai:furniture_wood"
+			}
+		},
+		"result": {
+			"item": "guns:musket"
+		}
+	}
+}
