@@ -4,16 +4,24 @@
 		"description": {
 			"identifier": "boat:huey",
 			"materials": {
-				"default": "entity_alphatest"
+				"default": "entity_alphablend"
 			},
 			"textures": {
 				"default": "textures/entity/heli_huey"
 			},
 			"geometry": {
-				"default": "geometry.heli_huey"
+				"default": "geometry.huey_open.geo"
+			},
+			"animations": {
+				"rotor": "animation.heli.rotors"
+			},
+			"scripts": {
+				"animate": [
+					{ "rotor": "query.has_rider" }
+				]
 			},
 			"render_controllers": [
-				"controller.render.jeep"
+				"controller.render.huey"
 			]
 		}
 	}

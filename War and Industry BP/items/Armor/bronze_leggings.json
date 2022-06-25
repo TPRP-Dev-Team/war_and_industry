@@ -29,7 +29,7 @@
 			},
 			"minecraft:render_offsets": "leggings",
 			"minecraft:armor": {
-				"protection": 8
+				"protection": 6
 			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs"

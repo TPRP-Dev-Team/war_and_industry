@@ -2,34 +2,10 @@
   "format_version": "1.16.100",
   "minecraft:entity": {
     "description": {
-      "identifier": "boat:us_jeep",
+      "identifier": "boat:truck",
       "is_summonable": true,
       "is_spawnable": false,
-      "is_experimental": false,
-      "scripts": {
-        "animate": [
-          "sound"
-        ]
-      },
-      "animations": {
-        "sound": "controller.animation.jeep.sound"
-      }
-    },
-    "component_groups": {
-      "jeep:drive": {
-        "minecraft:ambient_sound_interval": {
-          "event_name": "drive", //query.modified_move_speed>0
-          "range": 0.0,
-          "value": 1.0
-        }
-      },
-      "jeep:idle": {
-        "minecraft:ambient_sound_interval": {
-          "event_name": "idle",
-          "range": 0.0,
-          "value": 1.0
-        }
-      }
+      "is_experimental": false
     },
     "components": {
       "minecraft:type_family": {
@@ -80,45 +56,25 @@
         "family_types": [
           "player"
         ],
-        "interact_text": "action.interact.ride.jeep",
+        "interact_text": "action.interact.ride.truck",
         "seats": [
           {
             "position": [
               0.8,
               1.0,
-              -0.4
+              0.4
             ],
             "min_rider_count": 0,
-            "max_rider_count": 4
+            "max_rider_count": 2
           },
           {
             "position": [
               -0.8,
               1.0,
-              -0.4
+              0.4
             ],
             "min_rider_count": 2,
-            "max_rider_count": 4
-          },
-          {
-            "position": [
-              1.0,
-              1.8,
-              -2.6
-            ],
-            "min_rider_count": 3,
-            "max_rider_count": 4,
-            "rotate_rider_by": -90
-          },
-          {
-            "position": [
-              -1.0,
-              1.8,
-              -2.6
-            ],
-            "min_rider_count": 2,
-            "max_rider_count": 4,
-            "rotate_rider_by": 90
+            "max_rider_count": 2
           }
         ]
       },
@@ -205,44 +161,10 @@
       //This is to prevent the boat from not stopping whenever a player exits, said the boat
       //"minecraft:movement.basic": {},
       "minecraft:inventory": {
-        "container_type": "minecart_chest",
-        "inventory_size": 9
+        "container_type": "container",
+        "inventory_size": 27
       }
     },
-    "events": {
-      "jeep:drive": {
-        "sequence": [
-          {
-            "remove": {
-              "component_groups": [ "jeep:idle" ]
-            },
-            "add": {
-              "component_groups": [ "jeep:drive" ]
-            }
-          }
-        ]
-      },
-      "jeep:idle": {
-        "sequence": [
-          {
-            "remove": {
-              "component_groups": [ "jeep:drive" ]
-            },
-            "add": {
-              "component_groups": [ "jeep:idle" ]
-            }
-          }
-        ]
-      },
-      "jeep:off": {
-        "sequence": [
-          {
-            "remove": {
-              "component_groups": [ "jeep:drive", "jeep:idle" ]
-            }
-          }
-        ]
-      }
-    }
+    "events": {}
   }
 }

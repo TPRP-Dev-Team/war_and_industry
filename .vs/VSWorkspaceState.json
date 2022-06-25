@@ -3,12 +3,14 @@
     "",
     "\\War and Industry BP",
     "\\War and Industry BP\\blocks",
-    "\\War and Industry BP\\items",
+    "\\War and Industry BP\\features",
+    "\\War and Industry BP\\feature_rules",
     "\\War and Industry BP\\items\\other",
     "\\War and Industry BP\\recipes",
-    "\\War and Industry BP\\recipes\\blocks",
-    "\\War and Industry BP\\recipes\\resources"
+    "\\War and Industry BP\\recipes\\vanilla_overide",
+    "\\War and Industry BP\\recipes\\vanilla_overide\\stone",
+    "\\War and Industry BP\\recipes\\vanilla_overide\\wooden"
   ],
-  "SelectedNode": "\\War and Industry BP\\blocks\\chemistry_set.json",
+  "SelectedNode": "\\War and Industry BP\\recipes\\vanilla_overide\\wooden\\wooden_sword_from_mangrove_planks.json",
   "PreviewInSolutionExplorer": false
 }

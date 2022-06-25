@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "boat:truck",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/truck"
+			},
+			"geometry": {
+				"default": "geometry.truck.geo"
+			},
+			"render_controllers": [
+				"controller.render.jeep"
+			]
+		}
+	}
+}

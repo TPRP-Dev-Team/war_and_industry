@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.heli.rotors": {
+			"loop": true,
+			"bones": {
+				"rotor": {
+					"rotation": [0, "query.anim_time*20000", 0]
+				},
+				"rear_rotor": {
+					"rotation": ["query.anim_time*7000", 0, 0]
+				}
+			}
+		}
+	}
+}

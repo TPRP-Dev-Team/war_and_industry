@@ -22,11 +22,20 @@
 		},
 		"events": {
 			"spawn_boat": {
-				"run_command": {
-					"command": [
-						"summon boat:sailboat"
-					]
-				}
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon boat:sailboat"
+							]
+						}
+					},
+					{
+						"decrement_stack": {
+							"ignore_game_mode": false
+						}
+					}
+				]
 			}
 		}
 	}

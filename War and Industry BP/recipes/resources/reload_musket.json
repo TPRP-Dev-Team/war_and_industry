@@ -3,23 +3,17 @@
 
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "wai:mix_steel"
+			"identifier": "wai:reload_musket"
 		},
 		"group": "powders",
 		"tags": [ "crafting_table" ],
 
 		"ingredients": [
-			"wai:coal_powder",
-			"wai:zinc_powder",
-			{
-				"item": "wai:iron_powder",
-				"count": 3
-			}
-
+			"guns:musket",
+			"guns:magazine_musketball"
 		],
 		"result": {
-			"item": "wai:steel_powder",
-			"count": 3
+			"item": "guns:musket"
 		}
 	}
 }
