@@ -318,6 +318,26 @@
         "textures/items/explosives/nuke_item"
       ]
     },
+    "100pdr": {
+      "textures": [
+        "textures/items/explosives/100pdr"
+      ]
+    },
+    "200pdr": {
+      "textures": [
+        "textures/items/explosives/200pdr"
+      ]
+    },
+    "500pdr": {
+      "textures": [
+        "textures/items/explosives/500pdr"
+      ]
+    },
+    "1000pdr": {
+      "textures": [
+        "textures/items/explosives/1000pdr"
+      ]
+    },
 
     //resources
     "iron_powder": {

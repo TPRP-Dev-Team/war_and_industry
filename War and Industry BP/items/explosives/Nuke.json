@@ -3,7 +3,7 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "guns:nuke_item",
-			"category": "commands"
+			"category": "equipment"
 		},
 		"components": {
 			"minecraft:icon": {
@@ -18,7 +18,7 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:creative_category": {
-				"parent": "itemGroup.name.bows"
+				"parent": "itemGroup.name.bombs"
 			},
 			"minecraft:hand_equipped": true,
 			"minecraft:on_use": {
@@ -149,6 +149,11 @@
 							"command": [
 								"playsound firework.launch @a ~ ~ ~ 1 1 0"
 							]
+						}
+					},
+					{
+						"decrement_stack": {
+							"ignore_game_mode": false
 						}
 					}
 				]

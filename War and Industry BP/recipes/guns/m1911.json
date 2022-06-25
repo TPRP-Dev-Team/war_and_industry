@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:m1911"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			"024",
+			" 1 "
+		],
+		"key": {
+			"0": {
+				"item": "wai:barrel_rifled"
+			},
+			"1": {
+				"item": "wai:trigger_group"
+			},
+			"2": {
+				"item": "wai:receiver_bolt"
+			},
+			"3": {
+				"item": "wai:oil"
+			}
+		},
+		"result": {
+			"item": "guns:m1911"
+		}
+	}
+}
+

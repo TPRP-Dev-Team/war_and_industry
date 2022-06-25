@@ -1,0 +1,80 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wai:100pdr",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+
+		"component_groups": {
+			"bomb:exploding": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"causes_fire": false,
+					"destroy_affected_by_griefing": false,
+					"fire_affected_by_griefing": false,
+					"fuse_length": [ 0, 5 ],
+					"fuse_lit": true,
+					"max_resistance": 3.40282e+10,
+					"power": 40
+				}
+			}
+		},
+
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.31,
+				"height": 0.31
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "bomb:explode",
+							"target": "self"
+						}
+					},
+					"stick_in_ground": {
+						"shake_time": 0.35
+					}
+				},
+				"power": 0.5,
+				"gravity": 0.05,
+				"inertia": 1,
+				"liquid_inertia": 0.3,
+				"uncertainty_base": 30,
+				"uncertainty_multiplier": 1,
+				"anchor": 1,
+				"offset": [ 0, 0.1, 0 ],
+				"reflect_on_hurt": false,
+				"catch_fire": true
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 150.0,
+					"max_dropped_ticks": 10,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"events": {
+			"bomb:explode": {
+				"add": {
+					"component_groups": [
+						"bomb:exploding"
+					]
+				}
+			}
+		}
+	}
+}

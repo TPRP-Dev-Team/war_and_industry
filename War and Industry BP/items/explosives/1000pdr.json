@@ -1,0 +1,120 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wai:bomb_1000pdr",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "1000pdr"
+			},
+			"minecraft:display_name": {
+				"value": "1000 PDR"
+			},
+			"minecraft:hover_text_color": "dark_red",
+			"minecraft:durability": {
+				"max_durability": 11
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.bombs"
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "launch_bomb",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"launch_bomb": {
+				"sequence": [
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 3
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"playsound firework.launch @a ~ ~ ~ 1 1 0"
+							]
+						}
+					},
+					{
+						"decrement_stack": {
+							"ignore_game_mode": false
+						}
+					}
+				]
+			}
+		}
+	}
+}

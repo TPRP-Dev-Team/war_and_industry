@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:kar98k"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			"032",
+			" 1 "
+		],
+		"key": {
+			"0": {
+				"item": "wai:barrel_rifled"
+			},
+			"1": {
+				"item": "wai:trigger_group"
+			},
+			"2": {
+				"item": "wai:furniture_wood"
+			},
+			"3": {
+				"item": "wai:receiver_bolt"
+			}
+		},
+		"result": {
+			"item": "guns:kar98k"
+		}
+	}
+}
