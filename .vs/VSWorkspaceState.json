@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\War and Industry BP",
-    "\\War and Industry BP\\blocks",
-    "\\War and Industry BP\\features",
-    "\\War and Industry BP\\feature_rules",
-    "\\War and Industry BP\\items\\other",
-    "\\War and Industry BP\\recipes",
-    "\\War and Industry BP\\recipes\\vanilla_overide",
-    "\\War and Industry BP\\recipes\\vanilla_overide\\stone",
-    "\\War and Industry BP\\recipes\\vanilla_overide\\wooden"
+    "\\War and Industry BP\\entities",
+    "\\War and Industry BP\\entities\\vehicles",
+    "\\War and Industry RP",
+    "\\War and Industry RP\\entity",
+    "\\War and Industry RP\\entity\\vehicles",
+    "\\War and Industry RP\\models",
+    "\\War and Industry RP\\textures",
+    "\\War and Industry RP\\textures\\entity"
   ],
-  "SelectedNode": "\\War and Industry BP\\recipes\\vanilla_overide\\wooden\\wooden_sword_from_mangrove_planks.json",
+  "SelectedNode": "\\War and Industry RP\\entity\\vehicles\\US_Jeep.json",
   "PreviewInSolutionExplorer": false
 }
