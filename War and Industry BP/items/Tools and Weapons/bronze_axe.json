@@ -22,24 +22,233 @@
         "use_efficiency": true,
         "destroy_speeds": [
           {
-            "block": {
-              "tags": "query.any_tag('log', 'wood')"
-            },
-            "speed": 5,
-            "on_dig": {
-              "event": "wai:on_dig_wood"
-            }
+            "block": "minecraft:wood",
+            "speed": 10
           },
           {
-            "block": {
-              "tags": "!query.any_tag('log', 'wood')"
-            },
-            "speed": 2,
-            "on_dig": {
-              "event": "wai:on_dig_other"
-            }
+            "block": "minecraft:mangrove_wood",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_mangrove_wood",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:wooden_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:wooden_slab",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:wooden_button",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:wooden_pressure_plate",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:planks",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:crimson_planks",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:mangrove_planks",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:warped_planks",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:log2",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:mangrove_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_acacia_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_birch_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_dark_oak_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_jungle_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_mangrove_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_oak_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_spruce_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:planks",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:crimson_planks",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:mangrove_planks",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:warped_planks",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:log2",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:mangrove_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_acacia_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_birch_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_dark_oak_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_jungle_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_mangrove_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_oak_log",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:stripped_spruce_log",
+            "speed": 10
+          },
+
+
+
+
+          {
+            "block": "minecraft:acacia_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:acacia_trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:birch_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:birch_trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:crimson_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:crimson_trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:dark_oak_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:dark_oak_trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:jungle_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:jungle_trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:mangrove_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:mangrove_trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:spruce_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:spruce_trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:warped_door",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:warped_trapdoor",
+            "speed": 10
+          },
+          {
+            "block": "minecraft:crafting_table",
+            "speed": 10
+          },
+          {
+            "block": "wai:pulverizer",
+            "speed": 15
+          },
+          {
+            "block": "wai:gunsmithing_bench",
+            "speed": 15
           }
-        ]
+        ],
+        "on_dig": {
+          "event": "wai:on_dig_main"
+        }
       },
       "minecraft:damage": 7,
       "minecraft:display_name": {
