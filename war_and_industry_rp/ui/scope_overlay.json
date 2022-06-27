@@ -1,0 +1,27 @@
+{
+  "namespace": "sights",
+
+  //----------------------------
+  //   Instantiate Textures?
+  //----------------------------
+  "scope_overlay_1": {
+    "type": "image",
+    "anchor_from": "left_bottom",
+    "anchor_to": "right_top",
+    "texture": "textures/ui/scope_1",
+    "layer": 1,
+    "size": [ 128, 128 ]
+  },
+  "scope_overlay_2": {
+    "type": "image",
+    "anchor_from": "left_bottom",
+    "anchor_to": "right_top",
+    "texture": "textures/ui/scope_2",
+    "layer": 1,
+    "size": [ 128, 128 ]
+  }
+
+  //----------------------------
+  //   Make UI Callable?
+  //----------------------------
+}

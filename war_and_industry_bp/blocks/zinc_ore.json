@@ -20,7 +20,7 @@
 					"render_method": "opaque"
 				}
 			},
-			"minecraft:loot": "loot_tables/zinc_ore"
+			"minecraft:loot": "loot_tables/blocks/zinc_ore.json"
 
 		}
 	}

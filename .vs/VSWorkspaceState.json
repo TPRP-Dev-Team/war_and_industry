@@ -2,15 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\War and Industry BP",
-    "\\War and Industry BP\\entities",
-    "\\War and Industry BP\\entities\\vehicles",
-    "\\War and Industry RP",
-    "\\War and Industry RP\\entity",
-    "\\War and Industry RP\\entity\\vehicles",
-    "\\War and Industry RP\\models",
-    "\\War and Industry RP\\textures",
-    "\\War and Industry RP\\textures\\entity"
+    "\\War and Industry BP\\items",
+    "\\War and Industry BP\\items\\tools_and_weapons",
+    "\\War and Industry BP\\recipes",
+    "\\War and Industry RP\\entity"
   ],
-  "SelectedNode": "\\War and Industry RP\\entity\\vehicles\\US_Jeep.json",
+  "SelectedNode": "\\War and Industry BP\\items\\tools_and_weapons\\steel_axe.json",
   "PreviewInSolutionExplorer": false
 }

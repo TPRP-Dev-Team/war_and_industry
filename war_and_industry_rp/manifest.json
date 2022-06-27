@@ -1,0 +1,32 @@
+{ // Resource Pack Manifest
+  "format_version": 2,
+  "header": {
+    "name": "War & Industry",
+    "description": "War & Industry",
+    "min_engine_version": [
+      1,
+      17,
+      0
+    ],
+    "uuid": "785404f4-cd72-456b-ba1b-fe10d4f6e2af", // Resource Pack ID
+    "version": [ //Probably used for automatic updating purposes
+      1,
+      1,
+      12
+    ]
+  },
+  "modules": [
+    {
+      "description": "War & Industry",
+      "type": "resources",
+      "uuid": "a0a66f89-a558-4e9f-8d06-6859a1251dd5",
+      "version": [
+        1,
+        1,
+        12
+      ]
+    }
+  ],
+  "metadata": {
+  }
+}

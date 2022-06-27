@@ -19,7 +19,7 @@
 					"fuse_length": [ 0, 5 ],
 					"fuse_lit": true,
 					"max_resistance": 3.40282e+10,
-					"power": 40
+					"power": 20
 				}
 			}
 		},
