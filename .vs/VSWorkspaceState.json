@@ -1,12 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\War and Industry BP",
-    "\\War and Industry BP\\items",
-    "\\War and Industry BP\\items\\tools_and_weapons",
-    "\\War and Industry BP\\recipes",
-    "\\War and Industry RP\\entity"
+    "\\war_and_industry_bp",
+    "\\war_and_industry_rp\\textures\\items"
   ],
-  "SelectedNode": "\\War and Industry BP\\items\\tools_and_weapons\\steel_axe.json",
+  "SelectedNode": "\\war_and_industry_rp",
   "PreviewInSolutionExplorer": false
 }

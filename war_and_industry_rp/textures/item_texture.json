@@ -158,58 +158,58 @@
 
     //Ammo
     "guns_magazine_nerf18rd": {
-      "textures": "textures/items/Ammunition/Nerf18Rnd"
+      "textures": "textures/items/ammunition/Nerf18Rnd"
     },
     "guns_m556nato": {
-      "textures": "textures/items/Ammunition/5_56_NATO_MAGAZINE"
+      "textures": "textures/items/ammunition/5_56_NATO_MAGAZINE"
     },
     "guns_m556nato_belt": {
-      "textures": "textures/items/Ammunition/5_56_NATO_Belt"
+      "textures": "textures/items/ammunition/5_56_NATO_Belt"
     },
     "guns_magazine_12guage": {
-      "textures": "textures/items/Ammunition/12_Guage"
+      "textures": "textures/items/ammunition/12_Guage"
     },
     "guns_magazine_7_62x39mm": {
-      "textures": "textures/items/Ammunition/7_62x39mm"
+      "textures": "textures/items/ammunition/7_62x39mm"
     },
     "guns_magazine_7_62x63mm": {
-      "textures": "textures/items/Ammunition/7_62x63mm"
+      "textures": "textures/items/ammunition/7_62x63mm"
     },
     "guns_magazine_7_92x57mm": {
-      "textures": "textures/items/Ammunition/7_92x57mm"
+      "textures": "textures/items/ammunition/7_92x57mm"
     },
     "guns_magazine_3030winchester": {
-      "textures": "textures/items/Ammunition/30-30_WinchesterAmmo"
+      "textures": "textures/items/ammunition/30-30_WinchesterAmmo"
     },
     "guns_magazine_9mm": {
-      "textures": "textures/items/Ammunition/9mmMagazine"
+      "textures": "textures/items/ammunition/9mmMagazine"
     },
     "guns_magazine_9mm_30rd": {
-      "textures": "textures/items/Ammunition/mp5_magazine"
+      "textures": "textures/items/ammunition/mp5_magazine"
     },
     "guns_magazine_musketball": {
-      "textures": "textures/items/Ammunition/Musketball"
+      "textures": "textures/items/ammunition/Musketball"
     },
     "guns_magazine_45cal": {
-      "textures": "textures/items/Ammunition/45calMag"
+      "textures": "textures/items/ammunition/45calMag"
     },
     "guns_magazine_45cal_25rd": {
-      "textures": "textures/items/Ammunition/45cal25rdMagazine"
+      "textures": "textures/items/ammunition/45cal25rdMagazine"
     },
     "guns_magazine_45cal_SAA": {
-      "textures": "textures/items/Ammunition/45cal_SAA"
+      "textures": "textures/items/ammunition/45cal_SAA"
     },
     "guns_magazine_50cal": {
-      "textures": "textures/items/Ammunition/50calMag"
+      "textures": "textures/items/ammunition/50calMag"
     },
     "guns_belt_7_62x51mm": {
-      "textures": "textures/items/Ammunition/7_62x51_NATO_Belt"
+      "textures": "textures/items/ammunition/7_62x51_NATO_Belt"
     },
     "guns_magazine_40mmgrenade": {
-      "textures": "textures/items/Ammunition/40mmGrenade"
+      "textures": "textures/items/ammunition/40mmGrenade"
     },
     "bronze_arrow": {
-      "textures": "textures/items/Ammunition/bronze_arrow"
+      "textures": "textures/items/ammunition/bronze_arrow"
     },
 
     //US Combat armor

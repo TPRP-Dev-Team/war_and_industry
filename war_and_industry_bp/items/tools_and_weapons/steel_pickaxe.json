@@ -21,6 +21,415 @@
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
+          //Troublesome
+          {
+            "block": "crying_obsidian",
+            "speed": 15,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "redstone_ore",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "deepslate_redstone_ore",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          //Untested
+          {
+            "block": "raw_copper_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "raw_gold_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "raw_iron_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "cut_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "cut_copper_slab",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "cut_copper_stairs",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "exosed_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "exosed_cut_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "exosed_cut_copper_slab",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "exosed_cut_copper_stairs",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "oxidized_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "oxidized_cut_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "oxidized_cut_copper_slab",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "oxidized_cut_copper_stairs",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_cut_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_cut_copper_slab",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_cut_copper_stairs",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_exosed_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_exosed_cut_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_exosed_cut_copper_slab",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_exosed_cut_copper_stairs",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_oxidized_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_oxidized_cut_copper",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_oxidized_cut_copper_slab",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "waxed_oxidized_cut_copper_stairs",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          //Working
+          {
+            "block": "minecraft:netherrack",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:nether_brick",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:red_nether_brick",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:red_nether_brick_stairs",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:chiseled_nether_bricks",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:cracked_nether_bricks",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:nether_brick_fence",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:nether_brick_stairs",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:ancient_debris",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:netherite_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:coal_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:netherite_block",
+            "speed": 13,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:copper_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:iron_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:diamond_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:lapis_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:gold_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:emerald_block",
+            "speed": 18,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:amethyst_block",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:amethyst_cluster",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:budding_amethyst",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:small_amethyst_bud",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:medium_amethyst_bud",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:large_amethyst_bud",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:calcite",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:smooth_basalt",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:polished_basalt",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:basalt",
+            "speed": 20,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:obsidian",
+            "speed": 15,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
           {
             "block": "minecraft:ice",
             "speed": 5,
@@ -38,20 +447,6 @@
           {
             "block": "minecraft:tuff",
             "speed": 1,
-            "on_dig": {
-              "event": "wai:on_dig_main"
-            }
-          },
-          {
-            "block": "minecraft:obsidian",
-            "speed": 10,
-            "on_dig": {
-              "event": "wai:on_dig_main"
-            }
-          },
-          {
-            "block": "minecraft:crying_obsidian",
-            "speed": 10,
             "on_dig": {
               "event": "wai:on_dig_main"
             }
@@ -120,13 +515,6 @@
             }
           },
           {
-            "block": "minecraft:redstone_ore",
-            "speed": 18,
-            "on_dig": {
-              "event": "wai:on_dig_main"
-            }
-          },
-          {
             "block": "minecraft:nether_gold_ore",
             "speed": 18,
             "on_dig": {
@@ -184,13 +572,6 @@
           },
           {
             "block": "minecraft:deepslate_lapis_ore",
-            "speed": 18,
-            "on_dig": {
-              "event": "wai:on_dig_main"
-            }
-          },
-          {
-            "block": "minecraft:deepslate_redstone_ore",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"
@@ -1061,14 +1442,14 @@
       "wai:on_dig_other": {
         "damage": {
           "type": "durability",
-          "amount": 5,
+          "amount": 3,
           "target": "self"
         }
       },
       "wai:on_hurt_entity": {
         "damage": {
           "type": "durability",
-          "amount": 1,
+          "amount": 3,
           "target": "self"
         }
       }
