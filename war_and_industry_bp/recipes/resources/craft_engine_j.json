@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_engine_j"
+		},
+		"tags": [
+			"metalworking_bench"
+		],
+		"pattern": [
+			"232",
+			"051",
+			"242"
+		],
+		"key": {
+			"0": {
+				"item": "wai:steel_ingot"
+			},
+			"1": {
+				"item": "wai:wire_roll"
+			},
+			"2": {
+				"item": "wai:sheet_steel"
+			},
+			"3": {
+				"item": "wai:kit_tools"
+			},
+			"4": {
+				"item": "wai:oil"
+			},
+			"5": {
+				"item": "wai:combustion_engine"
+			}
+		},
+		"result": {
+			"item": "wai:jet_engine"
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_f15c"
+		},
+		"tags": [
+			"vehicle_bench"
+		],
+		"pattern": [
+			"143",
+			"013",
+			"2 1"
+		],
+		"key": {
+			"0": {
+				"item": "wai:jet_engine"
+			},
+			"1": {
+				"item": "wai:steel_block"
+			},
+			"2": {
+				"item": "wai:wheel"
+			},
+			"3": {
+				"item": "wai:sheet_steel"
+			},
+			"4": {
+				"item": "minecraft:glass_pane"
+			}
+		},
+		"result": {
+			"item": "wai:f15c_item"
+		}
+	}
+}

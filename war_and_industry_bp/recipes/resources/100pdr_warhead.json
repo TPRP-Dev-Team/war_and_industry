@@ -1,0 +1,25 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:craft_100pdr_warhead"
+		},
+		"group": "warhead",
+		"tags": [ "metalworking_bench" ],
+
+		"ingredients": [
+			{
+				"item": "wai:steel_ingot",
+				"count": 7
+			},
+			{
+				"item": "minecraft:gunpowder",
+				"count": 2
+			}
+		],
+		"result": {
+			"item": "wai:warhead_100pdr"
+		}
+	}
+}

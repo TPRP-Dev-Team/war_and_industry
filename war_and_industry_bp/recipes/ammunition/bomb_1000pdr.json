@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_1000pdr_bomb"
+		},
+		"tags": [
+			"metalworking_bench"
+		],
+		"pattern": [
+			"000",
+			"132",
+			"000"
+		],
+		"key": {
+			"0": {
+				"item": "wai:sheet_steel"
+			},
+			"1": {
+				"item": "wai:warhead_1000pdr"
+			},
+			"2": {
+				"item": "wai:wire_roll"
+			},
+			"3": {
+				"item": "wai:bronze_block"
+			}
+		},
+		"result": {
+			"item": "wai:bomb_1000pdr"
+		}
+	}
+}

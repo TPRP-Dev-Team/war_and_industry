@@ -23,7 +23,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:on_use": {
         "on_use": {
-          "condition": "query.get_equipped_item_name('off_hand')=='magazine_m32'",
+          "condition": "query.get_equipped_item_name('off_hand')=='grenade_40mm'",
           "event": "guns:m32_reload"
         }
       },
@@ -72,7 +72,7 @@
           "command": [
             "title @s actionbar Ammo 5/5",
             "playsound guns.g18.reload_2 @a ~ ~ ~ 80 1 80",
-            "clear @s guns:magazine_m32 -1 1",
+            "clear @s wai:grenade_40mm -1 1",
             "replaceitem entity @s slot.weapon.mainhand 0 guns:m32"
           ]
         }

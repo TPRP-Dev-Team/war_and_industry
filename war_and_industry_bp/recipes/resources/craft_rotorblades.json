@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_rotorblades"
+		},
+		"tags": [
+			"metalworking_bench"
+		],
+		"pattern": [
+			"1 1",
+			" 0 ",
+			"1 1"
+		],
+		"key": {
+			"0": {
+				"item": "wai:steel_block"
+			},
+			"1": {
+				"item": "wai:steel_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:rotorblade"
+		}
+	}
+}

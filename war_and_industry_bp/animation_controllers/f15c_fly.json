@@ -1,0 +1,111 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.f15c.flying": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "base": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function f15c_fly"
+          ]
+        },
+        "base": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function f15c_fly"
+          ]
+        }
+      }
+    },
+    "controller.animation.f15c.speed": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "jumping_1": "!query.is_on_ground"
+            },
+            {
+              "transition_to_default": "true"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s f15c_taxi"
+          ]
+        },
+        "jumping_1": {
+          "transitions": [
+            {
+              "transition_to_default": "query.is_on_ground"
+            },
+            {
+              "jumping_2": "true"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s f15c_fly"
+          ]
+        },
+        "jumping_2": {
+          "transitions": [
+            {
+              "transition_to_default": "query.is_on_ground"
+            },
+            {
+              "jumping_1": "true"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s f15c_fly"
+          ]
+        },
+        "transition_to_default": {
+          "transitions": [
+            {
+              "jumping_1": "!query.is_on_ground"
+            },
+            {
+              "default": "true"
+            }
+          ],
+          "on_entry": [
+            "/event entity @s f15c_taxi"
+          ]
+        }
+      }
+    },
+    "controller.animation.f15c.test_rider": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "has_rider": "query.has_rider"
+            }
+          ]
+        },
+        "has_rider": {
+          "transitions": [
+            {
+              "default": "!query.has_rider"
+            }
+          ],
+          "on_entry": [
+            "/tag @s add has_rider"
+          ],
+          "on_exit": [
+            "/tag @s remove has_rider"
+          ]
+        }
+      }
+    }
+
+  }
+}

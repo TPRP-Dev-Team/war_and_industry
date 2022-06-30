@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wai:huey_item",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "huey_item"
+			},
+			"minecraft:on_use_on": {
+				"on_use_on": {
+					"event": "spawn_boat",
+					"target": "self"
+				}
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.aircraft"
+			},
+			"minecraft:display_name": {
+				"value": "UH-1 Huey"
+			},
+			"minecraft:max_stack_size": 1
+		},
+		"events": {
+			"spawn_boat": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon boat:huey"
+							]
+						}
+					},
+					{
+						"decrement_stack": {
+							"ignore_game_mode": false
+						}
+					}
+				]
+			}
+		}
+	}
+}
+				

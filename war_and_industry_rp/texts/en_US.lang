@@ -40,8 +40,13 @@ action.interact.ride.jeep=Ride Jeep
 action.hint.exit.boat:us_jeep=Leave Jeep
 action.interact.ride.cessna_c150=Ride Plane
 action.hint.exit.boat:cessna_c150=Leave Plane
-action.interact.ride.huey=Ride Huey
-action.hint.exit.boat:huey=Leave Huey
+action.interact.ride.huey=Ride UH-1 Huey
+action.hint.exit.boat:huey=Leave UH-1 Huey
+action.interact.ride.truck=Ride Pickup Truck
+action.hint.exit.boat:truck=Leave Pickup Truck
+action.interact.ride.f15c=Ride F15C Eagle
+action.hint.exit.boat:f15c=Leave F15C Eagle
+
 
 tile.wai:branch.name=Branch
 tile.wai:stick.name=Stick

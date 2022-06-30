@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wai:c150_item",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "c150_item"
+			},
+			"minecraft:on_use_on": {
+				"on_use_on": {
+					"event": "spawn_boat",
+					"target": "self"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "Cessna C150"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.aircraft"
+			},
+			"minecraft:max_stack_size": 1
+		},
+		"events": {
+			"spawn_boat": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon boat:cessna_c150"
+							]
+						}
+					},
+					{
+						"decrement_stack": {
+							"ignore_game_mode": false
+						}
+					}
+				]
+			}
+		}
+	}
+}
+				

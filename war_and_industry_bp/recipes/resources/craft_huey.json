@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_huey"
+		},
+		"tags": [
+			"vehicle_bench"
+		],
+		"pattern": [
+			" 1 ",
+			"202",
+			"333"
+		],
+		"key": {
+			"0": {
+				"item": "wai:combustion_engine"
+			},
+			"1": {
+				"item": "wai:rotorblade"
+			},
+			"2": {
+				"item": "wai:steel_block"
+			},
+			"3": {
+				"item": "wai:sheet_steel"
+			}
+		},
+		"result": {
+			"item": "wai:huey_item"
+		}
+	}
+}

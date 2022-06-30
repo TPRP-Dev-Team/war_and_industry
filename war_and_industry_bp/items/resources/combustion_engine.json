@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "wai:combustion_engine",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "combustion_engine"
+      },
+      "minecraft:creative_category": {
+        "category": "items",
+        "parent": "itemGroup.name.vehicle_parts"
+      },
+      "minecraft:display_name": {
+        "value": "Combusion Engine" //What the item shows as its display text
+      },
+      "minecraft:allow_off_hand": true
+    }
+  }
+}

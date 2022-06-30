@@ -338,6 +338,31 @@
         "textures/items/explosives/1000pdr"
       ]
     },
+    "100pdr_warhead": {
+      "textures": [
+        "textures/items/resources/100pdr_warhead"
+      ]
+    },
+    "200pdr_warhead": {
+      "textures": [
+        "textures/items/resources/200pdr_warhead"
+      ]
+    },
+    "500pdr_warhead": {
+      "textures": [
+        "textures/items/resources/500pdr_warhead"
+      ]
+    },
+    "1000pdr_warhead": {
+      "textures": [
+        "textures/items/resources/1000pdr_warhead"
+      ]
+    },
+    "nuclear_warhead": {
+      "textures": [
+        "textures/items/resources/nuclear_warhead"
+      ]
+    },
 
     //resources
     "iron_powder": {
@@ -510,6 +535,31 @@
         "textures/items/resources/suppressor_heavy"
       ]
     },
+    "combustion_engine": {
+      "textures": [
+        "textures/items/resources/combustion_engine"
+      ]
+    },
+    "jet_engine": {
+      "textures": [
+        "textures/items/resources/jet_engine"
+      ]
+    },
+    "wheel": {
+      "textures": [
+        "textures/items/resources/wheel"
+      ]
+    },
+    "transmission": {
+      "textures": [
+        "textures/items/resources/transmission"
+      ]
+    },
+    "rotorblades": {
+      "textures": [
+        "textures/items/resources/rotor"
+      ]
+    },
 
     //Melee
     "flint_knife": {
@@ -594,6 +644,31 @@
     "boat_sailboat_item": {
       "textures": [
         "textures/items/other/sailboat_item"
+      ]
+    },
+    "jeep_item": {
+      "textures": [
+        "textures/items/other/jeep_item"
+      ]
+    },
+    "truck_item": {
+      "textures": [
+        "textures/items/other/truck_item"
+      ]
+    },
+    "c150_item": {
+      "textures": [
+        "textures/items/other/cessna_c150_item"
+      ]
+    },
+    "huey_item": {
+      "textures": [
+        "textures/items/other/huey_item"
+      ]
+    },
+    "f15c_item": {
+      "textures": [
+        "textures/items/other/f15c_item"
       ]
     },
     "yolk_item": {

@@ -5,7 +5,7 @@
 		"description": {
 			"identifier": "wai:reload_musket"
 		},
-		"group": "powders",
+		"group": "reload",
 		"tags": [ "crafting_table" ],
 
 		"ingredients": [

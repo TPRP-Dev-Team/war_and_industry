@@ -1,0 +1,26 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:craft_762mag"
+		},
+		"group": "ammo",
+		"tags": [ "gunsmithing_bench" ],
+
+		"ingredients": [
+			"wai:plastic_pellets",
+			{
+				"item": "wai:bronze_ingot",
+				"count": 2
+			},
+			{
+				"item": "minecraft:gunpowder",
+				"count": 5
+			}
+		],
+		"result": {
+			"item": "guns:magazine_7_62x39mm"
+		}
+	}
+}

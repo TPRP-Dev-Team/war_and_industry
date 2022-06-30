@@ -8,8 +8,8 @@
 			"gunsmithing_bench"
 		],
 		"pattern": [
-			"024",
-			" 1 "
+			"023",
+			" 14"
 		],
 		"key": {
 			"0": {
@@ -23,6 +23,9 @@
 			},
 			"3": {
 				"item": "wai:oil"
+			},
+			"4": {
+				"item": "minecraft:planks"
 			}
 		},
 		"result": {

@@ -1,0 +1,259 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "boat:f15c",
+      "is_summonable": true,
+      "is_spawnable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "flying",
+          "test_rider",
+          "speed"
+        ]
+      },
+      "animations": {
+        "flying": "controller.animation.f15c.flying",
+        "test_rider": "controller.animation.f15c.test_rider",
+        "speed": "controller.animation.f15c.speed"
+      }
+    },
+    "component_groups": {
+      "f15c:fly": {
+        "minecraft:movement": {
+          "value": 1.0
+        },
+        "minecraft:boostable": {
+          "duration": 10.0,
+          "speed_multiplier": 12,
+          "boost_items": [
+            {
+              "item": "carrotOnAStick",
+              "damage": 0
+            }
+          ]
+        }
+      },
+      "f15c:taxi": {
+        "minecraft:movement": {
+          "value": 0.2
+        }
+      }
+    },
+    "components": {
+      "minecraft:movement.basic": {},
+      "minecraft:type_family": {
+        "family": [
+          "plane",
+          "inanimate"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 3,
+        "height": 3
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "glass"
+        ]
+      },
+      "minecraft:rideable": {
+        "seat_count": 3,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.ride.f15c",
+        "seats": [
+          {
+            "position": [
+              0.0,
+              1.0,
+              2.7
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 1
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:is_stackable": {},
+      "minecraft:push_through": 1,
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      //Sets the boat speed in water
+      "minecraft:underwater_movement": {
+        "value": 0.1
+      },
+      "minecraft:water_movement": {
+        "drag_factor": 0.1
+      },
+      //Add this component if you want your boat to be controlled with WASD
+      "minecraft:input_ground_controlled": {},
+      "minecraft:health": {
+        "value": 40,
+        "max": 40
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          { // Reduces Fall Damage
+            "cause": "fall",
+            "deals_damage": true,
+            "damage_modifier": -5
+          },
+          { // Disables damage to the berry bushes
+            "on_damage": {
+              "filters": {
+                "test": "is_block",
+                "subject": "block",
+                "value": "minecraft:sweet_berry_bush"
+              }
+            },
+            "deals_damage": false
+          },
+          { // Sets bullet/arrow damage to half a heart
+            "cause": "projectile",
+            "deals_damage": true,
+            "damage_multiplier": 0.08
+          },
+          { // Disables melee damage
+            "cause": "attack",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:spawn_entity": {
+        "entities": [
+          {
+            "max_wait_time": 0,
+            "min_wait_time": 0,
+            "num_to_spawn": 1,
+            "should_leash": false,
+            "single_use": true,
+            "spawn_entity": "wai:100pdr",
+            "spawn_event": "drop_100pdr",
+            "spawn_item": "wai:bomb_100pdr",
+            "spawn_method": "born"
+          },
+          {
+            "max_wait_time": 0,
+            "min_wait_time": 0,
+            "num_to_spawn": 2,
+            "should_leash": false,
+            "single_use": true,
+            "spawn_entity": "wai:100pdr",
+            "spawn_event": "drop_200pdr",
+            "spawn_item": "wai:bomb_200pdr",
+            "spawn_method": "born"
+          },
+          {
+            "max_wait_time": 0,
+            "min_wait_time": 0,
+            "num_to_spawn": 5,
+            "should_leash": false,
+            "single_use": true,
+            "spawn_entity": "wai:100pdr",
+            "spawn_event": "drop_500pdr",
+            "spawn_item": "wai:bomb_500pdr",
+            "spawn_method": "born"
+          },
+          {
+            "max_wait_time": 0,
+            "min_wait_time": 0,
+            "num_to_spawn": 10,
+            "should_leash": false,
+            "single_use": true,
+            "spawn_entity": "wai:100pdr",
+            "spawn_event": "drop_1000pdr",
+            "spawn_item": "wai:bomb_1000pdr",
+            "spawn_method": "born"
+          },
+          {
+            "max_wait_time": 0,
+            "min_wait_time": 0,
+            "num_to_spawn": 15,
+            "should_leash": false,
+            "single_use": true,
+            "spawn_entity": "guns:nuke",
+            "spawn_event": "drop_nuke",
+            "spawn_item": "guns:nuke",
+            "spawn_method": "born"
+          }
+        ]
+      },
+      "minecraft:drying_out_timer": {
+        "total_time": 2000
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": true
+      },
+      //This is to prevent the boat from not stopping whenever a player exits, said the boat
+      "minecraft:inventory": {
+        "container_type": "minecart_chest",
+        "inventory_size": 2
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [ "f15c:taxi" ]
+        }
+      },
+      "f15c_fly": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [ "f15c:taxi" ]
+            },
+            "add": {
+              "component_groups": [ "f15c:fly" ]
+            }
+          }
+        ]
+      },
+      "f15c_taxi": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [ "f15c:fly" ]
+            },
+            "add": {
+              "component_groups": [ "f15c:taxi" ]
+            }
+          }
+        ]
+      },
+      "drop_100pdr": {},
+      "drop_200pdr": {},
+      "drop_500pdr": {},
+      "drop_1000pdr": {},
+      "drop_nuke": {}
+    }
+  }
+}

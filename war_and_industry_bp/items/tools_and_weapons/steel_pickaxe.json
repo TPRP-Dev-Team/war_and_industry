@@ -43,6 +43,20 @@
               "event": "wai:on_dig_main"
             }
           },
+          {
+            "block": "minecraft:furnace",
+            "speed": 13,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
+          {
+            "block": "minecraft:blast_furnace",
+            "speed": 13,
+            "on_dig": {
+              "event": "wai:on_dig_main"
+            }
+          },
           //Untested
           {
             "block": "raw_copper_block",
@@ -87,28 +101,28 @@
             }
           },
           {
-            "block": "exosed_copper",
+            "block": "exposed_copper",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"
             }
           },
           {
-            "block": "exosed_cut_copper",
+            "block": "exposed_cut_copper",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"
             }
           },
           {
-            "block": "exosed_cut_copper_slab",
+            "block": "exposed_cut_copper_slab",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"
             }
           },
           {
-            "block": "exosed_cut_copper_stairs",
+            "block": "exposed_cut_copper_stairs",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"
@@ -171,28 +185,28 @@
             }
           },
           {
-            "block": "waxed_exosed_copper",
+            "block": "waxed_exposed_copper",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"
             }
           },
           {
-            "block": "waxed_exosed_cut_copper",
+            "block": "waxed_exposed_cut_copper",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"
             }
           },
           {
-            "block": "waxed_exosed_cut_copper_slab",
+            "block": "waxed_exposed_cut_copper_slab",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"
             }
           },
           {
-            "block": "waxed_exosed_cut_copper_stairs",
+            "block": "waxed_exposed_cut_copper_stairs",
             "speed": 18,
             "on_dig": {
               "event": "wai:on_dig_main"

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_transmission"
+		},
+		"tags": [
+			"metalworking_bench"
+		],
+		"pattern": [
+			"212",
+			"040",
+			"232"
+		],
+		"key": {
+			"0": {
+				"item": "wai:steel_ingot"
+			},
+			"1": {
+				"item": "wai:wire_roll"
+			},
+			"2": {
+				"item": "wai:sheet_steel"
+			},
+			"3": {
+				"item": "wai:kit_tools"
+			},
+			"4": {
+				"item": "wai:oil"
+			}
+		},
+		"result": {
+			"item": "wai:transmission"
+		}
+	}
+}

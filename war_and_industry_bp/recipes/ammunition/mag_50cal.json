@@ -1,0 +1,29 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:craft_50cal"
+		},
+		"group": "ammo",
+		"tags": [ "gunsmithing_bench" ],
+
+		"ingredients": [
+			{
+				"item": "wai:plastic_pellets",
+				"count": 1
+			},
+			{
+				"item": "wai:bronze_ingot",
+				"count": 2
+			},
+			{
+				"item": "minecraft:gunpowder",
+				"count": 6
+			}
+		],
+		"result": {
+			"item": "guns:magazine_50cal"
+		}
+	}
+}

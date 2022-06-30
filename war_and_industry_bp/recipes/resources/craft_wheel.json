@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_wheel"
+		},
+		"tags": [
+			"metalworking_bench"
+		],
+		"pattern": [
+			" 0 ",
+			"010",
+			" 0 "
+		],
+		"key": {
+			"0": {
+				"item": "wai:sheet_rubber"
+			},
+			"1": {
+				"item": "wai:steel_ingot"
+			}
+		},
+		"result": {
+			"item": "wai:wheel"
+		}
+	}
+}

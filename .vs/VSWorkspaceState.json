@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\war_and_industry_bp",
-    "\\war_and_industry_rp\\textures\\items"
+    "\\war_and_industry_bp\\entities",
+    "\\war_and_industry_bp\\entities\\vehicles",
+    "\\war_and_industry_bp\\items",
+    "\\war_and_industry_bp\\recipes",
+    "\\war_and_industry_bp\\recipes\\ammunition",
+    "\\war_and_industry_bp\\recipes\\resources",
+    "\\war_and_industry_rp",
+    "\\war_and_industry_rp\\texts"
   ],
-  "SelectedNode": "\\war_and_industry_rp",
+  "SelectedNode": "\\war_and_industry_bp\\entities\\vehicles\\f15c.json",
   "PreviewInSolutionExplorer": false
 }

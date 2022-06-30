@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_g18"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			"023",
+			" 14"
+		],
+		"key": {
+			"0": {
+				"item": "wai:barrel_rifled"
+			},
+			"1": {
+				"item": "wai:trigger_group"
+			},
+			"2": {
+				"item": "wai:receiver_bolt"
+			},
+			"3": {
+				"item": "wai:oil"
+			},
+			"4": {
+				"item": "wai:plastic_pellets"
+			}
+		},
+		"result": {
+			"item": "guns:g18"
+		}
+	}
+}
+

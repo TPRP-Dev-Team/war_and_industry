@@ -20,7 +20,8 @@
 			}
 		},
 		"result": {
-			"item": "wai:wire_roll"
+			"item": "wai:wire_roll",
+			"count": 2
 		}
 	}
 }

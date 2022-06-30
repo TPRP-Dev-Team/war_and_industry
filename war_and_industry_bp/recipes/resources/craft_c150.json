@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_c150"
+		},
+		"tags": [
+			"vehicle_bench"
+		],
+		"pattern": [
+			" 3 ",
+			"013",
+			"2  "
+		],
+		"key": {
+			"0": {
+				"item": "wai:combustion_engine"
+			},
+			"1": {
+				"item": "wai:steel_block"
+			},
+			"2": {
+				"item": "wai:wheel"
+			},
+			"3": {
+				"item": "wai:sheet_steel"
+			}
+		},
+		"result": {
+			"item": "wai:c150_item"
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_jeep"
+		},
+		"tags": [
+			"vehicle_bench"
+		],
+		"pattern": [
+			"2 2",
+			"013",
+			"2 2"
+		],
+		"key": {
+			"0": {
+				"item": "wai:combustion_engine"
+			},
+			"1": {
+				"item": "wai:transmission"
+			},
+			"2": {
+				"item": "wai:wheel"
+			},
+			"3": {
+				"item": "wai:sheet_steel"
+			}
+		},
+		"result": {
+			"item": "wai:jeep_item"
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wai:craft_m32"
+		},
+		"tags": [
+			"gunsmithing_bench"
+		],
+		"pattern": [
+			"032",
+			" 14"
+		],
+		"key": {
+			"0": {
+				"item": "wai:barrel_smoothbore"
+			},
+			"1": {
+				"item": "wai:trigger_group"
+			},
+			"2": {
+				"item": "wai:furniture_polymer"
+			},
+			"3": {
+				"item": "wai:steel_ingot"
+			},
+			"4": {
+				"item": "wai:oil"
+			}
+		},
+		"result": {
+			"item": "guns:m32"
+		}
+	}
+}
+

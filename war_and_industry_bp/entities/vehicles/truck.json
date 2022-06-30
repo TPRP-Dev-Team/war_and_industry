@@ -153,8 +153,7 @@
         "boost_items": [
           {
             "item": "carrotOnAStick",
-            "damage": 3,
-            "replace_item": "fishing_rod"
+            "damage": 0
           }
         ]
       },

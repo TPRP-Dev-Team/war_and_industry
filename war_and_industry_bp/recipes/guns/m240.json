@@ -1,0 +1,19 @@
+{
+	"format_version": "1.17.41",
+
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "wai:craft_m240"
+		},
+		"group": "guns",
+		"tags": [ "gunsmithing_bench" ],
+
+		"ingredients": [
+			"wai:barrel_rifled",
+			"guns:m249"
+		],
+		"result": {
+			"item": "guns:m240"
+		}
+	}
+}
