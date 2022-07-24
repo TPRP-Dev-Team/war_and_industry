@@ -5,14 +5,14 @@
     "description": "War & Industry",
     "min_engine_version": [
       1,
-      17,
-      0
+      19,
+      10
     ],
     "uuid": "785404f4-cd72-456b-ba1b-fe10d4f6e2af", // Resource Pack ID
     "version": [ //Probably used for automatic updating purposes
       1,
       1,
-      14
+      15
     ]
   },
   "modules": [
@@ -23,7 +23,7 @@
       "version": [
         1,
         1,
-        14
+        15
       ]
     }
   ],

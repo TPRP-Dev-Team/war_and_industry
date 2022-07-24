@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\war_and_industry_bp",
-    "\\war_and_industry_bp\\entities",
-    "\\war_and_industry_bp\\entities\\vehicles",
+    "\\war_and_industry_bp\\functions",
     "\\war_and_industry_bp\\items",
     "\\war_and_industry_bp\\recipes",
     "\\war_and_industry_bp\\recipes\\ammunition",
@@ -11,6 +10,6 @@
     "\\war_and_industry_rp",
     "\\war_and_industry_rp\\texts"
   ],
-  "SelectedNode": "\\war_and_industry_bp\\entities\\vehicles\\f15c.json",
+  "SelectedNode": "\\war_and_industry_bp\\functions\\huey_fly.mcfunction",
   "PreviewInSolutionExplorer": false
 }

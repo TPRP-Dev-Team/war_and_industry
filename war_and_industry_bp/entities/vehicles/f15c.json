@@ -248,12 +248,7 @@
             }
           }
         ]
-      },
-      "drop_100pdr": {},
-      "drop_200pdr": {},
-      "drop_500pdr": {},
-      "drop_1000pdr": {},
-      "drop_nuke": {}
+      }
     }
   }
 }

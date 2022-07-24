@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
 			"identifier": "wai:gunsmithing_bench",
@@ -17,7 +17,7 @@
 		"components": {
 			"minecraft:creative_category": {
 				"category": "items",
-				"parent": "itemGroup.name.crafting"
+				"parent": "itemGroup.name.bench"
 			},
 			"minecraft:on_player_placing": {
 				"event": "wai:update_rotation"
@@ -28,7 +28,7 @@
 			"minecraft:unit_cube": {},
 			"minecraft:crafting_table": {
 				"custom_description": "Gunsmithing Bench",
-				"grid_size": 1,
+				"grid_size": 3,
 				"crafting_tags": [ "gunsmithing_bench" ]
 			},
 			"minecraft:material_instances": {

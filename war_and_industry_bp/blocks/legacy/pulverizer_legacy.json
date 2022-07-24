@@ -24,7 +24,7 @@
 			"minecraft:unit_cube": {},
 			"minecraft:crafting_table": {
 				"custom_description": "Pulverizer",
-				"grid_size": 1,
+				"grid_size": 3,
 				"crafting_tags": [ "pulverizer" ]
 			},
 			"minecraft:material_instances": {
