@@ -2,14 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\war_and_industry_bp",
-    "\\war_and_industry_bp\\functions",
-    "\\war_and_industry_bp\\items",
-    "\\war_and_industry_bp\\recipes",
-    "\\war_and_industry_bp\\recipes\\ammunition",
-    "\\war_and_industry_bp\\recipes\\resources",
-    "\\war_and_industry_rp",
-    "\\war_and_industry_rp\\texts"
+    "\\war_and_industry_bp\\items"
   ],
-  "SelectedNode": "\\war_and_industry_bp\\functions\\huey_fly.mcfunction",
+  "SelectedNode": "\\war_and_industry_bp\\items\\guns",
   "PreviewInSolutionExplorer": false
 }
