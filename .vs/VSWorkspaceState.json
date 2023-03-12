@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\war_and_industry_bp",
-    "\\war_and_industry_bp\\items"
+    "\\war_and_industry_bp\\items",
+    "\\war_and_industry_bp\\items\\other"
   ],
-  "SelectedNode": "\\war_and_industry_bp\\items\\guns",
   "PreviewInSolutionExplorer": false
 }

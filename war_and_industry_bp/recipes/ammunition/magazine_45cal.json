@@ -10,10 +10,13 @@
 
 		"ingredients": [
 			"wai:steel_ingot",
-			"wai:bronze_ingot",
+			{
+				"item": "wai:bronze_ingot",
+				"count": 2
+			},
 			{
 				"item": "minecraft:gunpowder",
-				"count": 4
+				"count": 3
 			}
 		],
 		"result": {
