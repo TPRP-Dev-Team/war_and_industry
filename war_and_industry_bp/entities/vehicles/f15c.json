@@ -46,6 +46,7 @@
       "minecraft:type_family": {
         "family": [
           "plane",
+          "fighter",
           "inanimate"
         ]
       },
@@ -145,65 +146,65 @@
           }
         ]
       },
-      "minecraft:spawn_entity": {
-        "entities": [
-          {
-            "max_wait_time": 0,
-            "min_wait_time": 0,
-            "num_to_spawn": 1,
-            "should_leash": false,
-            "single_use": true,
-            "spawn_entity": "wai:100pdr",
-            "spawn_event": "drop_100pdr",
-            "spawn_item": "wai:bomb_100pdr",
-            "spawn_method": "born"
-          },
-          {
-            "max_wait_time": 0,
-            "min_wait_time": 0,
-            "num_to_spawn": 2,
-            "should_leash": false,
-            "single_use": true,
-            "spawn_entity": "wai:100pdr",
-            "spawn_event": "drop_200pdr",
-            "spawn_item": "wai:bomb_200pdr",
-            "spawn_method": "born"
-          },
-          {
-            "max_wait_time": 0,
-            "min_wait_time": 0,
-            "num_to_spawn": 5,
-            "should_leash": false,
-            "single_use": true,
-            "spawn_entity": "wai:100pdr",
-            "spawn_event": "drop_500pdr",
-            "spawn_item": "wai:bomb_500pdr",
-            "spawn_method": "born"
-          },
-          {
-            "max_wait_time": 0,
-            "min_wait_time": 0,
-            "num_to_spawn": 10,
-            "should_leash": false,
-            "single_use": true,
-            "spawn_entity": "wai:100pdr",
-            "spawn_event": "drop_1000pdr",
-            "spawn_item": "wai:bomb_1000pdr",
-            "spawn_method": "born"
-          },
-          {
-            "max_wait_time": 0,
-            "min_wait_time": 0,
-            "num_to_spawn": 15,
-            "should_leash": false,
-            "single_use": true,
-            "spawn_entity": "guns:nuke",
-            "spawn_event": "drop_nuke",
-            "spawn_item": "guns:nuke",
-            "spawn_method": "born"
-          }
-        ]
-      },
+      //"minecraft:spawn_entity": {
+      //  "entities": [
+      //    {
+      //      "max_wait_time": 0,
+      //      "min_wait_time": 0,
+      //      "num_to_spawn": 1,
+      //      "should_leash": false,
+      //      "single_use": true,
+      //      "spawn_entity": "wai:100pdr",
+      //      "spawn_event": "drop_100pdr",
+      //      "spawn_item": "wai:bomb_100pdr",
+      //      "spawn_method": "born"
+      //    },
+      //    {
+      //      "max_wait_time": 0,
+      //      "min_wait_time": 0,
+      //      "num_to_spawn": 2,
+      //      "should_leash": false,
+      //      "single_use": true,
+      //      "spawn_entity": "wai:100pdr",
+      //      "spawn_event": "drop_200pdr",
+      //      "spawn_item": "wai:bomb_200pdr",
+      //      "spawn_method": "born"
+      //    },
+      //    {
+      //      "max_wait_time": 0,
+      //      "min_wait_time": 0,
+      //      "num_to_spawn": 5,
+      //      "should_leash": false,
+      //      "single_use": true,
+      //      "spawn_entity": "wai:100pdr",
+      //      "spawn_event": "drop_500pdr",
+      //      "spawn_item": "wai:bomb_500pdr",
+      //      "spawn_method": "born"
+      //    },
+      //    {
+      //      "max_wait_time": 0,
+      //      "min_wait_time": 0,
+      //      "num_to_spawn": 10,
+      //      "should_leash": false,
+      //      "single_use": true,
+      //      "spawn_entity": "wai:100pdr",
+      //      "spawn_event": "drop_1000pdr",
+      //      "spawn_item": "wai:bomb_1000pdr",
+      //      "spawn_method": "born"
+      //    },
+      //    {
+      //      "max_wait_time": 0,
+      //      "min_wait_time": 0,
+      //      "num_to_spawn": 15,
+      //      "should_leash": false,
+      //      "single_use": true,
+      //      "spawn_entity": "guns:nuke",
+      //      "spawn_event": "drop_nuke",
+      //      "spawn_item": "guns:nuke",
+      //      "spawn_method": "born"
+      //    }
+      //  ]
+      //},
       "minecraft:drying_out_timer": {
         "total_time": 2000
       },

@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\war_and_industry_bp",
+    "\\war_and_industry_bp\\entities",
+    "\\war_and_industry_bp\\entities\\vehicles",
     "\\war_and_industry_bp\\items",
-    "\\war_and_industry_bp\\items\\other"
+    "\\war_and_industry_bp\\items\\explosives"
   ],
+  "SelectedNode": "\\war_and_industry_bp\\items\\explosives\\500pdr.json",
   "PreviewInSolutionExplorer": false
 }

@@ -33,115 +33,163 @@
 			"launch_nuke": {
 				"sequence": [
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
-							"projectile": "guns:nuke",
-							"launch_power": 3
+							"projectile": "wai:100pdr",
+							"launch_power": 1
+						}
+					},
+					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 1
+						}
+					},
+					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 1
+						}
+					},
+					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 1
+						}
+					},
+					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
+						"shoot": {
+							"target": "target",
+							"projectile": "wai:100pdr",
+							"launch_power": 1
 						}
 					},
 					{

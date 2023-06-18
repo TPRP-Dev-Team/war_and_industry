@@ -32,73 +32,83 @@
 			"launch_bomb": {
 				"sequence": [
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{
+						"condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
 						"shoot": {
 							"target": "target",
 							"projectile": "wai:100pdr",
-							"launch_power": 3
+							"launch_power": 1
 						}
 					},
 					{

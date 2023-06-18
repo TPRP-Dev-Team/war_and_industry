@@ -32,24 +32,31 @@
       "launch_bomb": {
         "sequence": [
           {
+            "condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
             "shoot": {
               "target": "target",
               "projectile": "wai:100pdr",
-              "launch_power": 3
+              "launch_power": 1
             }
           },
           {
+            "condition": "query.count(query.get_nearby_entities(7, 'boat:f15c')) > 0 ",
             "shoot": {
               "target": "target",
               "projectile": "wai:100pdr",
-              "launch_power": 3
+              "launch_power": 1
             }
           },
           {
             "run_command": {
               "command": [
-                "event entity @e[type=boat:f15c,r=7] drop_200pdr"
+                "playsound firework.launch @a ~ ~ ~ 1 1 0"
               ]
+            }
+          },
+          {
+            "decrement_stack": {
+              "ignore_game_mode": false
             }
           }
         ]
