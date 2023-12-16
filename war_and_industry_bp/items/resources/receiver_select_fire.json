@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.30",
 	"minecraft:item": {
 		"description": {
 			"identifier": "wai:receiver_select_fire",
@@ -8,10 +8,6 @@
 		"components": {
 			"minecraft:icon": {
 				"texture": "receiver_select_fire"
-			},
-			"minecraft:creative_category": {
-				"category": "items",
-				"parent": "itemGroup.name.gun_parts"
 			},
 			"minecraft:display_name": {
 				"value": "Select-Fire Receiver" //What the item shows as its display text

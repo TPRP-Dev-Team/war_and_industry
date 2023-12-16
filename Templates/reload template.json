@@ -1,9 +1,9 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.20.30",
   "minecraft:item": {
     "description": {
       "identifier": "guns:m16a4_empty", //the empty guns itendifier
-      "category": "commands" //This part is important so the item doesnt show up in creative inventory
+      "category": "commands" //This part is important so the item doesnt show up in menu inventory
     },
     "components": {
       "minecraft:durability": {

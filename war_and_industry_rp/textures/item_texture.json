@@ -301,7 +301,7 @@
     },
 
     //consumables
-    "comsumable_medkit": {
+    "consumable_medkit": {
       "textures": [
         "textures/items/consumables/MedKit"
       ]

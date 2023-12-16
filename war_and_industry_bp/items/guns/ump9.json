@@ -3,325 +3,323 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "guns:ump9",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:icon": {
-				"texture": "guns_ump9"
+			
+			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"minecraft:display_name": {
-				"value": "UMP9"
-			},
-			"minecraft:durability": {
-				"max_durability": 26
-			},
-			"minecraft:cooldown": {
-				"category": "ump9",
-				"duration": 0.01
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.bows"
-			},
-			"minecraft:hand_equipped": true,
-			"minecraft:on_use": {
-				"on_use": {
-					"condition": "q.remaining_durability>0",
-					"event": "guns:ump9_shoot"
-				}
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"first_person": {
-						"position": [
-							0.5,
-							0.5,
-							-1.5
-						],
-						"rotation": [
-							0,
-							270,
-							90
-						],
-						"scale": [
-							0.025,
-							0.025,
-							0.025
-						]
-					},
-					"third_person": {
-						"position": [
-							-1.6,
-							1.8,
-							1.1
-						],
-						"rotation": [
-							45,
-							190,
-							90
-						],
-						"scale": [
-							0.03,
-							0.03,
-							0.03
-						]
+			"components": {
+				"minecraft:icon": {
+					"texture": "guns_ump9"
+				},
+				"minecraft:display_name": {
+					"value": "UMP9"
+				},
+				"minecraft:durability": {
+					"max_durability": 26
+				},
+				"minecraft:cooldown": {
+					"category": "ump9",
+					"duration": 0.01
+				},
+				"minecraft:max_stack_size": 1,
+				"minecraft:hand_equipped": true,
+				"minecraft:on_use": {
+					"on_use": {
+						"condition": "q.remaining_durability>0",
+						"event": "guns:ump9_shoot"
 					}
-				}
-			}
-		},
-		"events": {
-			"guns:ump9_shoot": {
-				"sequence": [
-					{
-						"condition": "q.remaining_durability>1",
-						"shoot": {
-							"projectile": "guns:bullet_45cal",
-							"launch_power": 8
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"damage": {
-							"type": "durability",
-							"amount": 1,
-							"target": "self"
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"run_command": {
-							"command": [
-								"playsound guns.ump9.fire @a ~ ~ ~ 1 1 0"
+				},
+				"minecraft:render_offsets": {
+					"main_hand": {
+						"first_person": {
+							"position": [
+								0.5,
+								0.5,
+								-1.5
+							],
+							"rotation": [
+								0,
+								270,
+								90
+							],
+							"scale": [
+								0.025,
+								0.025,
+								0.025
 							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && query.is_sneaking",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.003 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && !query.is_sneaking",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.01 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && query.is_sprinting",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.04 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==1",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 0/25",
-								"replaceitem entity @s slot.weapon.mainhand 0 guns:ump9_empty"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==2",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 1/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==3",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 2/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==4",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 3/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==5",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 4/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==6",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 5/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==7",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 6/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==8",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 7/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==9",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 8/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==10",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 9/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==11",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 10/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==12",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 11/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==13",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 12/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==14",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 13/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==15",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 14/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==16",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 15/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==17",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 16/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==18",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 17/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==19",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 18/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==20",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 19/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==21",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 20/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==22",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 21/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==23",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 22/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==24",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 23/25"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==25",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 24/25"
+						},
+						"third_person": {
+							"position": [
+								-1.6,
+								1.8,
+								1.1
+							],
+							"rotation": [
+								45,
+								190,
+								90
+							],
+							"scale": [
+								0.03,
+								0.03,
+								0.03
 							]
 						}
 					}
-				]
+				}
+			},
+			"events": {
+				"guns:ump9_shoot": {
+					"sequence": [
+						{
+							"condition": "q.remaining_durability>1",
+							"shoot": {
+								"projectile": "guns:bullet_45cal",
+								"launch_power": 8
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1",
+							"damage": {
+								"type": "durability",
+								"amount": 1,
+								"target": "self"
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1",
+							"run_command": {
+								"command": [
+									"playsound guns.ump9.fire @a ~ ~ ~ 1 1 0"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && query.is_sneaking",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.003 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && !query.is_sneaking",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.01 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && query.is_sprinting",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.04 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==1",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 0/25",
+									"replaceitem entity @s slot.weapon.mainhand 0 guns:ump9_empty"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==2",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 1/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==3",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 2/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==4",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 3/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==5",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 4/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==6",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 5/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==7",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 6/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==8",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 7/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==9",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 8/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==10",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 9/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==11",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 10/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==12",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 11/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==13",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 12/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==14",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 13/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==15",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 14/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==16",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 15/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==17",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 16/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==18",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 17/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==19",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 18/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==20",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 19/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==21",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 20/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==22",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 21/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==23",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 22/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==24",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 23/25"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==25",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 24/25"
+								]
+							}
+						}
+					]
+				}
 			}
 		}
-	}
 }

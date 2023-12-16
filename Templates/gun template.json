@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.30",
 	"minecraft:item": {
 		"description": {
 			"identifier": "guns:m16a4", //the guns itendifier
@@ -16,7 +16,7 @@
 				"max_durability": 31
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:creative_category": { //Tells the game that the item should appear in the "equipment" category
+			"menu_category": { //Tells the game that the item should appear in the "equipment" category
 				"parent": "itemGroup.name.bows"
 			},
 			"minecraft:hand_equipped": true, //not 100% sure what this does so just leave it

@@ -2,7 +2,7 @@
 	"format_version": "1.13.0",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "wai:overworld_underground_tin_ore",
+			"identifier": "wai:stick_feature",
 			"places_feature": "wai:tin_ore_feature"
 		},
 		"conditions": {

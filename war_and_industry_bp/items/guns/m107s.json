@@ -3,221 +3,218 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "guns:m107s",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:icon": {
-				"texture": "guns_m107s"
+			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"minecraft:display_name": {
-				"value": "Suppressed M107"
-			},
-			"minecraft:hover_text_color": "dark_red",
-			"minecraft:cooldown": {
-				"category": "M107s",
-				"duration": 2.845
-			},
-			"minecraft:durability": {
-				"max_durability": 11
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.bows"
-			},
-			"minecraft:hand_equipped": true,
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "guns:m107s_shoot"
-				}
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"first_person": {
-						"position": [
-							0.5,
-							0.5,
-							-1.5
-						],
-						"rotation": [
-							0,
-							270,
-							90
-						],
-						"scale": [
-							0.025,
-							0.025,
-							0.025
-						]
-					},
-					"third_person": {
-						"position": [
-							-1.6,
-							2.1,
-							1.1
-						],
-						"rotation": [
-							45,
-							190,
-							90
-						],
-						"scale": [
-							0.03,
-							0.03,
-							0.03
-						]
+			"components": {
+				"minecraft:icon": {
+					"texture": "guns_m107s"
+				},
+				"minecraft:display_name": {
+					"value": "Suppressed M107"
+				},
+				"minecraft:hover_text_color": "dark_red",
+				"minecraft:cooldown": {
+					"category": "M107s",
+					"duration": 2.845
+				},
+				"minecraft:durability": {
+					"max_durability": 11
+				},
+				"minecraft:max_stack_size": 1,
+				"minecraft:hand_equipped": true,
+				"minecraft:on_use": {
+					"on_use": {
+						"event": "guns:m107s_shoot"
 					}
-				}
-			}
-		},
-		"events": {
-			"guns:m107s_shoot": {
-				"sequence": [
-					{
-						"condition": "q.remaining_durability>1",
-						"shoot": {
-							"projectile": "guns:bullet_50cal",
-							"launch_power": 11
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"damage": {
-							"type": "durability",
-							"amount": 1,
-							"target": "self"
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"run_command": {
-							"command": [
-								"playsound guns.m107s.fire @a ~ ~ ~ 1 1 0"
+				},
+				"minecraft:render_offsets": {
+					"main_hand": {
+						"first_person": {
+							"position": [
+								0.5,
+								0.5,
+								-1.5
+							],
+							"rotation": [
+								0,
+								270,
+								90
+							],
+							"scale": [
+								0.025,
+								0.025,
+								0.025
 							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"run_command": {
-							"command": [
-								"playsound guns.m107.fire @a ~ ~ ~ 1 1 0"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && query.is_sneaking",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.006 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && !query.is_sneaking",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.02 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && query.is_sprinting",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.06 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==1",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 0/10",
-								"replaceitem entity @s slot.weapon.mainhand 0 guns:m107_empty"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==2",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 1/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==3",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 2/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==4",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 3/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==5",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 4/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==6",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 5/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==7",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 6/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==8",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 7/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==9",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 8/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==10",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 9/10"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"run_command": {
-							"command": [
-								"playsound guns.kar98k.bolt @a ~ ~ ~ 60 1 5" //need to make M107 bolt sound effect
+						},
+						"third_person": {
+							"position": [
+								-1.6,
+								2.1,
+								1.1
+							],
+							"rotation": [
+								45,
+								190,
+								90
+							],
+							"scale": [
+								0.03,
+								0.03,
+								0.03
 							]
 						}
 					}
-				]
+				}
+			},
+			"events": {
+				"guns:m107s_shoot": {
+					"sequence": [
+						{
+							"condition": "q.remaining_durability>1",
+							"shoot": {
+								"projectile": "guns:bullet_50cal",
+								"launch_power": 11
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1",
+							"damage": {
+								"type": "durability",
+								"amount": 1,
+								"target": "self"
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1",
+							"run_command": {
+								"command": [
+									"playsound guns.m107s.fire @a ~ ~ ~ 1 1 0"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1",
+							"run_command": {
+								"command": [
+									"playsound guns.m107.fire @a ~ ~ ~ 1 1 0"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && query.is_sneaking",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.006 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && !query.is_sneaking",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.02 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && query.is_sprinting",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.06 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==1",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 0/10",
+									"replaceitem entity @s slot.weapon.mainhand 0 guns:m107_empty"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==2",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 1/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==3",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 2/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==4",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 3/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==5",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 4/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==6",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 5/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==7",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 6/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==8",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 7/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==9",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 8/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==10",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 9/10"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1",
+							"run_command": {
+								"command": [
+									"playsound guns.kar98k.bolt @a ~ ~ ~ 60 1 5" //need to make M107 bolt sound effect
+								]
+							}
+						}
+					]
+				}
 			}
 		}
-	}
 }

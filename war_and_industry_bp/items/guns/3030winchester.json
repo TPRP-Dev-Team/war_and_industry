@@ -3,180 +3,177 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "guns:3030winchester",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:icon": {
-				"texture": "guns_3030winchester"
+		  "category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"minecraft:display_name": {
-				"value": "30-30 Winchester"
-			},
-			"minecraft:hover_text_color": "dark_red",
-			"minecraft:cooldown": {
-				"category": "3030winchester",
-				"duration": 1.0
-			},
-			"minecraft:durability": {
-				"max_durability": 7
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.bows"
-			},
-			"minecraft:hand_equipped": true,
-			"minecraft:on_use": {
-				"on_use": {
-					"condition": "q.remaining_durability>1",
-					"event": "3030_shoot"
-					//"target": "self"
-				}
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"first_person": {
-						"position": [
-							0.5,
-							0.5,
-							-1.5
-						],
-						"rotation": [
-							0,
-							270,
-							90
-						],
-						"scale": [
-							0.025,
-							0.025,
-							0.025
-						]
-					},
-					"third_person": {
-						"position": [
-							-1.6,
-							2.1,
-							1.1
-						],
-						"rotation": [
-							45,
-							190,
-							90
-						],
-						"scale": [
-							0.03,
-							0.03,
-							0.03
-						]
+			"components": {
+				"minecraft:icon": {
+					"texture": "guns_3030winchester"
+				},
+				"minecraft:display_name": {
+					"value": "30-30 Winchester"
+				},
+				"minecraft:hover_text_color": "dark_red",
+				"minecraft:cooldown": {
+					"category": "3030winchester",
+					"duration": 1.0
+				},
+				"minecraft:durability": {
+					"max_durability": 7
+				},
+				"minecraft:max_stack_size": 1,
+				"minecraft:hand_equipped": true,
+				"minecraft:on_use": {
+					"on_use": {
+						"condition": "q.remaining_durability>1",
+						"event": "3030_shoot"
+						//"target": "self"
 					}
-				}
-			}
-		},
-		"events": {
-			"3030_shoot": {
-				"sequence": [
-					{
-						"shoot": {
-							//"target": "target",
-							"projectile": "guns:bullet_30-30",
-							"launch_power": 11
-						}
-					},
-					{
-						"damage": {
-							"type": "durability",
-							"amount": 1,
-							"target": "self"
-						}
-					},
-					{
-						"run_command": {
-							"command": [
-								"playsound guns.3030winchester.fire @a ~ ~ ~ 1 1 1"
+				},
+				"minecraft:render_offsets": {
+					"main_hand": {
+						"first_person": {
+							"position": [
+								0.5,
+								0.5,
+								-1.5
+							],
+							"rotation": [
+								0,
+								270,
+								90
+							],
+							"scale": [
+								0.025,
+								0.025,
+								0.025
 							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && query.is_sneaking",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.003 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && !query.is_sneaking",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.01 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && query.is_sprinting",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.04 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==1",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 0/6",
-								"replaceitem entity @s slot.weapon.mainhand 0 guns:3030winchester_empty"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==2",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 1/6"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==3",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 2/6"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==4",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 3/6"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==5",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 4/6"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==6",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 5/6"
-							]
-						}
-					},
-					{
-						"run_command": {
-							"command": [
-								"playsound guns.3030winchester.lever @a ~ ~ ~ 80 1 40"
+						},
+						"third_person": {
+							"position": [
+								-1.6,
+								2.1,
+								1.1
+							],
+							"rotation": [
+								45,
+								190,
+								90
+							],
+							"scale": [
+								0.03,
+								0.03,
+								0.03
 							]
 						}
 					}
-				]
+				}
+			},
+			"events": {
+				"3030_shoot": {
+					"sequence": [
+						{
+							"shoot": {
+								//"target": "target",
+								"projectile": "guns:bullet_30-30",
+								"launch_power": 11
+							}
+						},
+						{
+							"damage": {
+								"type": "durability",
+								"amount": 1,
+								"target": "self"
+							}
+						},
+						{
+							"run_command": {
+								"command": [
+									"playsound guns.3030winchester.fire @a ~ ~ ~ 1 1 1"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && query.is_sneaking",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.003 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && !query.is_sneaking",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.01 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && query.is_sprinting",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.04 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==1",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 0/6",
+									"replaceitem entity @s slot.weapon.mainhand 0 guns:3030winchester_empty"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==2",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 1/6"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==3",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 2/6"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==4",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 3/6"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==5",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 4/6"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==6",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 5/6"
+								]
+							}
+						},
+						{
+							"run_command": {
+								"command": [
+									"playsound guns.3030winchester.lever @a ~ ~ ~ 80 1 40"
+								]
+							}
+						}
+					]
+				}
 			}
 		}
-	}
 }

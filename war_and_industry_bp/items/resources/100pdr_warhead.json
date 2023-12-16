@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.20.30",
   "minecraft:item": {
     "description": {
       "identifier": "wai:warhead_100pdr",
@@ -8,10 +8,6 @@
     "components": {
       "minecraft:icon": {
         "texture": "100pdr_warhead"
-      },
-      "minecraft:creative_category": {
-        "category": "items",
-        "parent": "itemGroup.name.warheads"
       },
       "minecraft:display_name": {
         "value": "100 PDR Warhead" //What the item shows as its display text

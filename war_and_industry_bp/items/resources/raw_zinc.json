@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.30",
 	"minecraft:item": {
 		"description": {
 			"identifier": "wai:zinc_ore",
@@ -8,10 +8,6 @@
 		"components": {
 			"minecraft:icon": {
 				"texture": "zinc_ore"
-			},
-			"minecraft:creative_category": {
-				"category": "items",
-				"parent": "itemGroup.name.raw_ore"
 			},
 			"minecraft:display_name": {
 				"value": "Zinc Ore" //What the item shows as its display text

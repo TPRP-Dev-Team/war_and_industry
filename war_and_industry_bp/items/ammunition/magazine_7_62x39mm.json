@@ -1,16 +1,16 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.30",
 	"minecraft:item": {
 		"description": {
 			"identifier": "guns:magazine_7_62x39mm",
-			"category": "equipment"
+			"menu_category": {
+				"group": "itemGroup.name.arrow",
+				"category": "equipment"
+			}
 		},
 		"components": {
 			"minecraft:icon": {
 				"texture": "guns_magazine_7_62x39mm"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.bows"
 			},
 			"minecraft:allow_off_hand": true
 		}

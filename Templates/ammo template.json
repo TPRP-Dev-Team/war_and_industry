@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.20.30",
   "minecraft:item": {
     "description": {
       "identifier": "guns:magazine_556x45", //the ammo itendifier

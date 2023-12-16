@@ -3,165 +3,162 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "guns:saa",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:icon": {
-				"texture": "guns_saa"
+			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"minecraft:display_name": {
-				"value": "Single Action Army"
-			},
-			"minecraft:hover_text_color": "dark_red",
-			"minecraft:durability": {
-				"max_durability": 6
-			},
-			"minecraft:cooldown": {
-				"category": "saa",
-				"duration": 0.1
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.bows"
-			},
-			"minecraft:hand_equipped": true,
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "guns:saa_shoot"
-				}
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"first_person": {
-						"position": [
-							0.5,
-							0.5,
-							-1.7
-						],
-						"rotation": [
-							0,
-							270,
-							90
-						],
-						"scale": [
-							0.025,
-							0.025,
-							0.025
-						]
-					},
-					"third_person": {
-						"position": [
-							-1.6,
-							2.0,
-							0.5
-						],
-						"rotation": [
-							45,
-							190,
-							90
-						],
-						"scale": [
-							0.03,
-							0.03,
-							0.03
-						]
+			"components": {
+				"minecraft:icon": {
+					"texture": "guns_saa"
+				},
+				"minecraft:display_name": {
+					"value": "Single Action Army"
+				},
+				"minecraft:hover_text_color": "dark_red",
+				"minecraft:durability": {
+					"max_durability": 6
+				},
+				"minecraft:cooldown": {
+					"category": "saa",
+					"duration": 0.1
+				},
+				"minecraft:max_stack_size": 1,
+				"minecraft:hand_equipped": true,
+				"minecraft:on_use": {
+					"on_use": {
+						"event": "guns:saa_shoot"
 					}
-				}
-			}
-		},
-		"events": {
-			"guns:saa_shoot": {
-				"sequence": [
-					{
-						"condition": "q.remaining_durability>1",
-						"shoot": {
-							"projectile": "guns:bullet_9mm",
-							"launch_power": 10
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"damage": {
-							"type": "durability",
-							"amount": 1,
-							"target": "self"
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1",
-						"run_command": {
-							"command": [
-								"playsound guns.g18.fire @a ~ ~ ~ 1 1 0"
+				},
+				"minecraft:render_offsets": {
+					"main_hand": {
+						"first_person": {
+							"position": [
+								0.5,
+								0.5,
+								-1.7
+							],
+							"rotation": [
+								0,
+								270,
+								90
+							],
+							"scale": [
+								0.025,
+								0.025,
+								0.025
 							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && query.is_sneaking",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.006 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && !query.is_sneaking",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.02 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability>1 && query.is_sprinting",
-						"run_command": {
-							"command": [
-								"camerashake add @s 0.06 1 rotational"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==1",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 0/5",
-								"replaceitem entity @s slot.weapon.mainhand 0 guns:saa_empty"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==2",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 1/5"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==3",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 2/5"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==4",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 3/5"
-							]
-						}
-					},
-					{
-						"condition": "q.remaining_durability==5",
-						"run_command": {
-							"command": [
-								"title @s actionbar Ammo 4/5"
+						},
+						"third_person": {
+							"position": [
+								-1.6,
+								2.0,
+								0.5
+							],
+							"rotation": [
+								45,
+								190,
+								90
+							],
+							"scale": [
+								0.03,
+								0.03,
+								0.03
 							]
 						}
 					}
-				]
+				}
+			},
+			"events": {
+				"guns:saa_shoot": {
+					"sequence": [
+						{
+							"condition": "q.remaining_durability>1",
+							"shoot": {
+								"projectile": "guns:bullet_9mm",
+								"launch_power": 10
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1",
+							"damage": {
+								"type": "durability",
+								"amount": 1,
+								"target": "self"
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1",
+							"run_command": {
+								"command": [
+									"playsound guns.g18.fire @a ~ ~ ~ 1 1 0"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && query.is_sneaking",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.006 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && !query.is_sneaking",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.02 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability>1 && query.is_sprinting",
+							"run_command": {
+								"command": [
+									"camerashake add @s 0.06 1 rotational"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==1",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 0/5",
+									"replaceitem entity @s slot.weapon.mainhand 0 guns:saa_empty"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==2",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 1/5"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==3",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 2/5"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==4",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 3/5"
+								]
+							}
+						},
+						{
+							"condition": "q.remaining_durability==5",
+							"run_command": {
+								"command": [
+									"title @s actionbar Ammo 4/5"
+								]
+							}
+						}
+					]
+				}
 			}
 		}
-	}
 }

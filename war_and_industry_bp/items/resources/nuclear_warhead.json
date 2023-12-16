@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.20.30",
   "minecraft:item": {
     "description": {
       "identifier": "wai:warhead_nuclear",
@@ -8,10 +8,6 @@
     "components": {
       "minecraft:icon": {
         "texture": "nuclear_warhead"
-      },
-      "minecraft:creative_category": {
-        "category": "items",
-        "parent": "itemGroup.name.warheads"
       },
       "minecraft:display_name": {
         "value": "Nuclear Warhead" //What the item shows as its display text

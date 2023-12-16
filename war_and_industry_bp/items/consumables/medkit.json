@@ -6,26 +6,24 @@
       "category": "equipment"
     },
     "components": {
+      "minecraft:icon": {
+        "texture": "consumable_medkit"
+      },
+      "minecraft:display_name": {
+        "value": "Med Kit"
+      },
+
       "minecraft:use_duration": 5,
       "minecraft:max_stack_size": 1,
       "minecraft:food": {
-        "nutrition": 2,
-        "saturation_modifier": "low",
+        "nutrition": 1,
+        "saturation_modifier": "poor",
         "can_always_eat": true,
         "on_consume": {
           "event": "guns:use_medkit"
         }
       },
-      "minecraft:use_animation": "eat",
-      "minecraft:icon": {
-        "texture": "comsumable_medkit"
-      },
-      "minecraft:display_name": {
-        "value": "Med Kit"
-      },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.bow"
-      }
+      "minecraft:use_animation": "eat"
     },
     "events": {
       "guns:use_medkit": {
