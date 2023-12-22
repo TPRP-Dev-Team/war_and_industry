@@ -13,8 +13,9 @@
       "minecraft:icon": {
         "texture": "guns_benelli_m3"
       },
+      "minecraft:hover_text_color": "dark_red",
       "minecraft:display_name": {
-        "value": "Benelli M3" //What the gun shows as its display text
+        "value": "Benelli M3\n12 Guage" //What the gun shows as its display text
       },
       "minecraft:cooldown": {
         "category": "m3",

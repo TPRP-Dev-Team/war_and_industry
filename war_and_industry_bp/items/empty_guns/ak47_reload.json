@@ -17,8 +17,9 @@
 			"minecraft:icon": {
 				"texture": "guns_ak47_empty"
 			},
+			"minecraft:hover_text_color": "dark_red",
 			"minecraft:display_name": {
-				"value": "AK-47" //What the gun shows as its display text
+				"value": "AK-47\n7.62x39" //What the gun shows as its display text
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:on_use": {

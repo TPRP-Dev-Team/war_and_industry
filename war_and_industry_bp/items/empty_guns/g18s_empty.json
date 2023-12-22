@@ -13,8 +13,9 @@
       "minecraft:icon": {
         "texture": "guns_g18s_empty"
       },
+      "minecraft:hover_text_color": "dark_red",
       "minecraft:display_name": {
-        "value": "Suppressed Glock 18" //What the gun shows as its display text
+        "value": "Suppressed Glock 18\n9mm" //What the gun shows as its display text
       },
       "minecraft:cooldown": {
         "category": "g18s",

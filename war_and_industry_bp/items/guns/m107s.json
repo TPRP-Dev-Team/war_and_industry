@@ -5,67 +5,67 @@
 			"identifier": "guns:m107s",
 			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"components": {
-				"minecraft:icon": {
-					"texture": "guns_m107s"
-				},
-				"minecraft:display_name": {
-					"value": "Suppressed M107"
-				},
-				"minecraft:hover_text_color": "dark_red",
-				"minecraft:cooldown": {
-					"category": "M107s",
-					"duration": 2.845
-				},
-				"minecraft:durability": {
-					"max_durability": 11
-				},
-				"minecraft:max_stack_size": 1,
-				"minecraft:hand_equipped": true,
-				"minecraft:on_use": {
-					"on_use": {
-						"event": "guns:m107s_shoot"
-					}
-				},
-				"minecraft:render_offsets": {
-					"main_hand": {
-						"first_person": {
-							"position": [
-								0.5,
-								0.5,
-								-1.5
-							],
-							"rotation": [
-								0,
-								270,
-								90
-							],
-							"scale": [
-								0.025,
-								0.025,
-								0.025
-							]
-						},
-						"third_person": {
-							"position": [
-								-1.6,
-								2.1,
-								1.1
-							],
-							"rotation": [
-								45,
-								190,
-								90
-							],
-							"scale": [
-								0.03,
-								0.03,
-								0.03
-							]
-						}
-					}
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_m107s"
+			},
+			"minecraft:hover_text_color": "dark_red",
+			"minecraft:display_name": {
+				"value": "Suppressed M107\n.50 Cal" //What the gun shows as its display text
+			},
+			"minecraft:cooldown": {
+				"category": "M107s",
+				"duration": 2.845
+			},
+			"minecraft:durability": {
+				"max_durability": 11
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "guns:m107s_shoot"
 				}
 			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"position": [
+							0.5,
+							0.5,
+							-1.5
+						],
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.025,
+							0.025,
+							0.025
+						]
+					},
+					"third_person": {
+						"position": [
+							-1.6,
+							2.1,
+							1.1
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.03,
+							0.03,
+							0.03
+						]
+					}
+				}
+			}
+		},
 			"events": {
 				"guns:m107s_shoot": {
 					"sequence": [

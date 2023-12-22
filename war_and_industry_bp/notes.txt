@@ -1,0 +1,9 @@
+Gun Colors:
+Dark Red - Empty
+Gray - Musket
+Green - Bolt
+Dark Green - Lever Action/Revolver
+Dark Aqua - Semi-Auto
+Blue - Auto (mag)
+Gold - Auto (belt)
+Purple - Explosives

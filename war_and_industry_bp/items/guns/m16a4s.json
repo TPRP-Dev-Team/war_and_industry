@@ -5,67 +5,68 @@
 			"identifier": "guns:m16a4s",
 			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"components": {
-				"minecraft:icon": {
-					"texture": "guns_m16a4s"
-				},
-				"minecraft:display_name": {
-					"value": "Suppressed M16A4"
-				},
-				"minecraft:durability": {
-					"max_durability": 31
-				},
-				"minecraft:cooldown": {
-					"category": "m16a4s", // May be a custom string, as to disable the large, white cooldown bar on multiple cooldown items
-					"duration": 0.01
-				},
-				"minecraft:max_stack_size": 1,
-				"minecraft:hand_equipped": true,
-				"minecraft:on_use": {
-					"on_use": {
-						"event": "guns:m16s_shoot"
-						//"target": "self"
-					}
-				},
-				"minecraft:render_offsets": {
-					"main_hand": {
-						"first_person": {
-							"position": [
-								0.5,
-								0.5,
-								-1.9
-							],
-							"rotation": [
-								0,
-								270,
-								90
-							],
-							"scale": [
-								0.025,
-								0.025,
-								0.025
-							]
-						},
-						"third_person": {
-							"position": [
-								-1.6,
-								2.0,
-								1.1
-							],
-							"rotation": [
-								45,
-								190,
-								90
-							],
-							"scale": [
-								0.03,
-								0.03,
-								0.03
-							]
-						}
-					}
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_m16a4s"
+			},
+			"minecraft:hover_text_color": "blue",
+			"minecraft:display_name": {
+				"value": "Suppressed M16A4\n5.56x45 NATO" //What the gun shows as its display text
+			},
+			"minecraft:durability": {
+				"max_durability": 31
+			},
+			"minecraft:cooldown": {
+				"category": "m16a4s", // May be a custom string, as to disable the large, white cooldown bar on multiple cooldown items
+				"duration": 0.01
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "guns:m16s_shoot"
+					//"target": "self"
 				}
 			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"position": [
+							0.5,
+							0.5,
+							-1.9
+						],
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.025,
+							0.025,
+							0.025
+						]
+					},
+					"third_person": {
+						"position": [
+							-1.6,
+							2.0,
+							1.1
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.03,
+							0.03,
+							0.03
+						]
+					}
+				}
+			}
+		},
 			"events": {
 				"guns:m16s_shoot": {
 					"sequence": [

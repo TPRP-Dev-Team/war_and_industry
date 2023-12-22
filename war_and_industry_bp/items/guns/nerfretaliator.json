@@ -10,7 +10,7 @@
 					"texture": "guns_nerfretaliator"
 				},
 				"minecraft:display_name": {
-					"value": "Nerf Retaliator"
+					"value": "Nerf Retaliator\n18 Round Mag"
 				},
 				"minecraft:cooldown": {
 					"category": "nerf_retaliator",

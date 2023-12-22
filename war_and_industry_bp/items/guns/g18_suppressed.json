@@ -5,67 +5,67 @@
 			"identifier": "guns:g18_suppressed",
 			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"components": {
-				"minecraft:icon": {
-					"texture": "guns_g18_suppressed"
-				},
-				"minecraft:display_name": {
-					"value": "Suppressed Glock 18"
-				},
-				"minecraft:hover_text_color": "dark_red",
-				"minecraft:durability": {
-					"max_durability": 11
-				},
-				"minecraft:cooldown": {
-					"category": "g18s",
-					"duration": 0.01
-				},
-				"minecraft:max_stack_size": 1,
-				"minecraft:hand_equipped": true,
-				"minecraft:on_use": {
-					"on_use": {
-						"event": "guns:g18s_shoot"
-					}
-				},
-				"minecraft:render_offsets": {
-					"main_hand": {
-						"first_person": {
-							"position": [
-								0.5,
-								0.5,
-								-1.7
-							],
-							"rotation": [
-								0,
-								270,
-								90
-							],
-							"scale": [
-								0.025,
-								0.025,
-								0.025
-							]
-						},
-						"third_person": {
-							"position": [
-								-1.6,
-								2.0,
-								0.5
-							],
-							"rotation": [
-								45,
-								190,
-								90
-							],
-							"scale": [
-								0.03,
-								0.03,
-								0.03
-							]
-						}
-					}
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_g18_suppressed"
+			},
+			"minecraft:hover_text_color": "dark_aqua",
+			"minecraft:display_name": {
+				"value": "Suppressed Glock 18\n9mm" //What the gun shows as its display text
+			},
+			"minecraft:durability": {
+				"max_durability": 11
+			},
+			"minecraft:cooldown": {
+				"category": "g18s",
+				"duration": 0.01
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "guns:g18s_shoot"
 				}
 			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"position": [
+							0.5,
+							0.5,
+							-1.7
+						],
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.025,
+							0.025,
+							0.025
+						]
+					},
+					"third_person": {
+						"position": [
+							-1.6,
+							2.0,
+							0.5
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.03,
+							0.03,
+							0.03
+						]
+					}
+				}
+			}
+		},
 			"events": {
 				"guns:g18s_shoot": {
 					"sequence": [

@@ -13,8 +13,9 @@
       "minecraft:icon": {
         "texture": "guns_32"
       },
+      "minecraft:hover_text_color": "dark_red",
       "minecraft:display_name": {
-        "value": "M32" //What the gun shows as its display text
+        "value": "M32\n40mm Grenade" //What the gun shows as its display text
       },
       "minecraft:cooldown": {
         "category": "m32",

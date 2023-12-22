@@ -5,67 +5,68 @@
 			"identifier": "guns:mp5",
 			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"components": {
-				"minecraft:icon": {
-					"texture": "guns_mp5"
-				},
-				"minecraft:display_name": {
-					"value": "MP5"
-				},
-				"minecraft:durability": {
-					"max_durability": 31
-				},
-				"minecraft:cooldown": {
-					"category": "mp5",
-					"duration": 0.01
-				},
-				"minecraft:max_stack_size": 1,
-				"minecraft:hand_equipped": true,
-				"minecraft:on_use": {
-					"on_use": {
-						"condition": "q.remaining_durability>0",
-						"event": "guns:mp5_shoot"
-					}
-				},
-				"minecraft:render_offsets": {
-					"main_hand": {
-						"first_person": {
-							"position": [
-								0.5,
-								0.5,
-								-1.5
-							],
-							"rotation": [
-								0,
-								270,
-								90
-							],
-							"scale": [
-								0.025,
-								0.025,
-								0.025
-							]
-						},
-						"third_person": {
-							"position": [
-								-1.6,
-								1.8,
-								1.1
-							],
-							"rotation": [
-								45,
-								190,
-								90
-							],
-							"scale": [
-								0.03,
-								0.03,
-								0.03
-							]
-						}
-					}
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_mp5"
+			},
+			"minecraft:hover_text_color": "blue",
+			"minecraft:display_name": {
+				"value": "MP5\n30rd 9mm" //What the gun shows as its display text
+			},
+			"minecraft:durability": {
+				"max_durability": 31
+			},
+			"minecraft:cooldown": {
+				"category": "mp5",
+				"duration": 0.01
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"condition": "q.remaining_durability>0",
+					"event": "guns:mp5_shoot"
 				}
 			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"position": [
+							0.5,
+							0.5,
+							-1.5
+						],
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.025,
+							0.025,
+							0.025
+						]
+					},
+					"third_person": {
+						"position": [
+							-1.6,
+							1.8,
+							1.1
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.03,
+							0.03,
+							0.03
+						]
+					}
+				}
+			}
+		},
 			"events": {
 				"guns:mp5_shoot": {
 					"sequence": [

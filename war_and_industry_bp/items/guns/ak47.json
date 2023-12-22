@@ -5,68 +5,68 @@
 			"identifier": "guns:ak47",
 			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"components": {
-				"minecraft:icon": {
-					"texture": "guns_ak47"
-				},
-				"minecraft:cooldown": {
-					"category": "ak47",
-					"duration": 0.03
-				},
-				"minecraft:display_name": {
-					"value": "AK-47"
-				},
-				"minecraft:hover_text_color": "dark_red",
-				"minecraft:durability": {
-					"max_durability": 31
-				},
-				"minecraft:max_stack_size": 1,
-				"minecraft:hand_equipped": true,
-				"minecraft:on_use": {
-					"on_use": {
-						"condition": "q.remaining_durability>0",
-						"event": "guns:ak47_shoot"
-					}
-				},
-				"minecraft:render_offsets": {
-					"main_hand": {
-						"first_person": {
-							"position": [
-								0.5,
-								0.5,
-								-1.5
-							],
-							"rotation": [
-								0,
-								270,
-								90
-							],
-							"scale": [
-								0.025,
-								0.025,
-								0.025
-							]
-						},
-						"third_person": {
-							"position": [
-								-1.6,
-								1.8,
-								1.1
-							],
-							"rotation": [
-								45,
-								190,
-								90
-							],
-							"scale": [
-								0.03,
-								0.03,
-								0.03
-							]
-						}
-					}
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_ak47"
+			},
+			"minecraft:cooldown": {
+				"category": "ak47",
+				"duration": 0.03
+			},
+			"minecraft:hover_text_color": "blue",
+			"minecraft:display_name": {
+				"value": "AK-47\n7.62x39" //What the gun shows as its display text
+			},
+			"minecraft:durability": {
+				"max_durability": 31
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"condition": "q.remaining_durability>0",
+					"event": "guns:ak47_shoot"
 				}
 			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"position": [
+							0.5,
+							0.5,
+							-1.5
+						],
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.025,
+							0.025,
+							0.025
+						]
+					},
+					"third_person": {
+						"position": [
+							-1.6,
+							1.8,
+							1.1
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.03,
+							0.03,
+							0.03
+						]
+					}
+				}
+			}
+		},
 			"events": {
 				"guns:ak47_shoot": {
 					"sequence": [

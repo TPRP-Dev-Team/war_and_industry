@@ -5,65 +5,65 @@
 			"identifier": "guns:g18e",
 			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
 			},
-			"components": {
-				"minecraft:icon": {
-					"texture": "guns_at4"
-				},
-				"minecraft:display_name": {
-					"value": "AT 4"
-				},
-				"minecraft:hover_text_color": "dark_red",
-				"minecraft:durability": {
-					"max_durability": 11
-				},
-				"minecraft:max_stack_size": 1,
-				"minecraft:hand_equipped": true,
-				"minecraft:on_use": {
-					"on_use": {
-						"condition": "q.remaining_durability>1",
-						"event": "g18_shoot",
-						"target": "self"
-					}
-				},
-				"minecraft:render_offsets": {
-					"main_hand": {
-						"first_person": {
-							"position": [
-								0.5,
-								0.5,
-								-1.3
-							],
-							"rotation": [
-								0,
-								270,
-								90
-							],
-							"scale": [
-								0.025,
-								0.08,
-								0.025
-							]
-						},
-						"third_person": {
-							"position": [
-								-1.5,
-								1.5,
-								1.5
-							],
-							"rotation": [
-								45,
-								190,
-								90
-							],
-							"scale": [
-								0.03,
-								0.1,
-								0.03
-							]
-						}
-					}
+		"components": {
+			"minecraft:icon": {
+				"texture": "guns_at4"
+			},
+			"minecraft:hover_text_color": "light_purple",
+			"minecraft:display_name": {
+				"value": "AT-4" //What the gun shows as its display text
+			},
+			"minecraft:durability": {
+				"max_durability": 11
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"condition": "q.remaining_durability>1",
+					"event": "g18_shoot",
+					"target": "self"
 				}
 			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"position": [
+							0.5,
+							0.5,
+							-1.3
+						],
+						"rotation": [
+							0,
+							270,
+							90
+						],
+						"scale": [
+							0.025,
+							0.08,
+							0.025
+						]
+					},
+					"third_person": {
+						"position": [
+							-1.5,
+							1.5,
+							1.5
+						],
+						"rotation": [
+							45,
+							190,
+							90
+						],
+						"scale": [
+							0.03,
+							0.1,
+							0.03
+						]
+					}
+				}
+			}
+		},
 			"events": {
 				"g18_shoot": {
 					"sequence": [

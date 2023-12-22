@@ -13,8 +13,9 @@
       "minecraft:icon": {
         "texture": "guns_saa"
       },
+      "minecraft:hover_text_color": "dark_red",
       "minecraft:display_name": {
-        "value": "Single Action Army" //What the gun shows as its display text
+        "value": "Single Action Army\nSAA .45 Cal" //What the gun shows as its display text
       },
       "minecraft:cooldown": {
         "category": "saa",

@@ -2,14 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\war_and_industry_bp",
-    "\\war_and_industry_bp\\entities",
-    "\\war_and_industry_bp\\entities\\projectiles",
-    "\\war_and_industry_bp\\entities\\vehicles",
-    "\\war_and_industry_bp\\feature_rules",
-    "\\war_and_industry_rp",
-    "\\war_and_industry_rp\\textures\\items",
-    "\\war_and_industry_rp\\textures\\items\\consumables"
+    "\\war_and_industry_bp\\items",
+    "\\war_and_industry_bp\\items\\explosives"
   ],
-  "SelectedNode": "\\war_and_industry_bp\\entities\\vehicles\\truck.json",
+  "SelectedNode": "\\war_and_industry_bp\\items\\explosives\\pineapple_grenade.json",
   "PreviewInSolutionExplorer": false
 }

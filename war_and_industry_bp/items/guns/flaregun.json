@@ -3,7 +3,7 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "guns:flaregun",
-			"category": "equipment" // The creative inventory or recipe book tab that the block is placed into
+			"category": "commands" // The creative inventory or recipe book tab that the block is placed into
 			},
 			"components": {
 				"minecraft:icon": {

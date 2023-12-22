@@ -10,9 +10,9 @@
 					"texture": "guns_musket"
 				},
 				"minecraft:display_name": {
-					"value": "Musket"
+					"value": "Musket\nMusketball"
 				},
-				"minecraft:hover_text_color": "dark_red",
+				"minecraft:hover_text_color": "gray",
 				"minecraft:durability": {
 					"max_durability": 11
 				},

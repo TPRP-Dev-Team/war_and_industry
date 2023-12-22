@@ -13,8 +13,9 @@
 			"minecraft:icon": {
 				"texture": "guns_m107_empty"
 			},
+			"minecraft:hover_text_color": "dark_red",
 			"minecraft:display_name": {
-				"value": "M107" //What the gun shows as its display text
+				"value": "M107\n.50 Cal" //What the gun shows as its display text
 			},
 			"minecraft:cooldown": {
 				"category": "M107",

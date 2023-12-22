@@ -13,8 +13,9 @@
       "minecraft:icon": {
         "texture": "guns_m1911_empty"
       },
+      "minecraft:hover_text_color": "dark_red",
       "minecraft:display_name": {
-        "value": "M1911" //What the gun shows as its display text
+        "value": "M1911\n.45 Cal" //What the gun shows as its display text
       },
       "minecraft:cooldown": {
         "category": "m1911",

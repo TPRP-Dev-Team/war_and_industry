@@ -17,8 +17,9 @@
 			"minecraft:icon": {
 				"texture": "guns_m16a4_empty"
 			},
+			"minecraft:hover_text_color": "dark_red",
 			"minecraft:display_name": {
-				"value": "M16A4" //What the gun shows as its display text
+				"value": "M16A4\n5.56x45 NATO" //What the gun shows as its display text
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:on_use": {
